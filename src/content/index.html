@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
+    <title>Homepage - strona do ćwiczeń z kursu Cotenfrondend</title>
     <meta name="description" content="Description" />
 
     <!-- Title -->
@@ -31,9 +31,970 @@
     />
 
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=latin-ext"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Literata&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello world - with simple PWA support!</h1>
+    <header class="site-header">
+      <nav class="navigation">
+        <ul class="navigation__list navigation__list--js">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#section-purpose">Cel strony</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#section-sites">Miejsca, które warto odwiedzić</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#section-tools">Obsługa narzędzi pobocznych</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#section-animations">Animacje</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#section-console">Konsola</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#section-good-practices">Dobre praktyki</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#section-js">JS</a>
+          </li>
+        </ul>
+        <button class="navigation__switcher navigation__switcher--js" aria-label="otwórz menu">&#9776; </button>
+      </nav>
+    </header>
+  
+    <main class="main">
+  
+      <header class="header">
+        <h1 class="header__title header__title--js">
+          Strona rozwijana na potrzeby kursu Cotenfrontend
+        </h1>
+        <button class="header__button header__button--js">Ciekawa wiadomość</button>
+        <div class="header__circle"></div>
+      </header>
+  
+      <!-- purpose - cel strony -->
+      <section class="section section--blue" id="section-purpose">
+        <h2 class="section__title section__title--simple">Cel strony</h2>
+        <p class="section__content section__content--simple">Strona ma na celu pomoc w nauce frontendu. Stopniowe
+          ulepszanie tej strony i
+          dodawanie do niej nowych elementów pomoże mi w dobrym opanowaniu i rozwijaniu niezbędnych umiejętności.</p>
+        <p class="section__content section__content--simple">Zawarte są tu również pomocne materiały, do których mogę w
+          każdej chwili zajrzeć.
+        </p>
+      </section>
+      <!-- EO purpose section -->
+  
+      <!-- links and www sites -->
+      <section class="section section--red" id="section-sites">
+        <h2 class="section__title">Miejsca, które warto odwiedzić</h2>
+  
+        <!-- sites - strony -->
+        <article class="article">
+          <h3 class="article__title">Strony</h3>
+          <ul class="article__list">
+            <li class="article__list-element"><a class="article__link" href="https://www.awwwards.com">Awwwards</a> Źródło
+              inspiracji - nagradzane strony do
+              podpatrzenia</li>
+            <li class="article__list-element"><a class="article__link"
+                href="https://www.webdesignernews.com">Webdesignernews</a>
+              Newsy ze świata designu stron
+              oraz ciekawe porady</li>
+            <li class="article__list-element"><a class="article__link" href="https://css-tricks.com">CSS-tricks</a>
+              Porady,
+              sztuczki i techniki do użycia za
+              pomocą
+              CSSów</li>
+            <li class="article__list-element"><a class="article__link" href="http://validator.w3.org">Validator W3</a>
+              Walidacja
+              kodu źródłowego strony</li>
+            <li class="article__list-element"><a class="article__link" href="http://codepen.io">Codepen</a> Dzielenie się
+              kodem na
+              szybko.</li>
+            <li class="article__list-element"><a class="article__link"
+                href="https://dailyweb.pl/kompleksowy-przewodnik-po-bem-jak-pisac-piekne-cssy-i-nie-tylko/">Kompleksowy
+                przewodnik po BEM.</a> Jak pisać piękne CSSy i nie tylko</li>
+            <li class="article__list-element"><a class="article__link article__link--wrong"
+                href="https://www.w3schools.com/">W3Schools</a> - zawiera przestarzałe i niepoprawne informacje</li>
+            <li class="article__list-element"><a class="article__link" href="https://stackoverflow.com/">StackOverflow</a>
+              Odpowiedzi na wątpliwości i pytania.</li>
+            <li class="article__list-element"><a class="article__link" href="https://code.visualstudio.com/">Visual Studio
+                strona</a></li>
+            <li class="article__list-element"><a class="article__link" href="https://caniuse.com/">Can i use</a></li>
+            <li class="article__list-element"><a class="article__link" href="https://css-tricks.com/">CSS tricks</a></li>
+            <li class="article__list-element"><a class="article__link" href="https://cssgradient.io/">CssGradient.Io</a>
+            </li>
+            <li class="article__list-element"><a class="article__link"
+                href="https://9elements.github.io/fancy-border-radius/">Fancy Border Radius</a></li>
+            <li class="article__list-element"><a class="article__link" href="https://bennettfeely.com/clippy/">CSS
+                clip-path makes</a></li>
+          </ul>
+          <figure class="img-container">
+            <img class="img-container__image" src="img/grupy_polskojezyczne.jpg"
+              alt="zrzut ekranu prezentujący linki do różnych grup związanych z frontendem">
+            <figcaption class="img-container__title">Grupy polskojęzyczne</figcaption>
+          </figure>
+        </article>
+  
+        <!-- articles artykuly -->
+        <article class="article">
+          <h3 class="article__title">Artykuły, krótsze fragmenty, przydatne strony</h3>
+          <ul class="article__list">
+            <li class="article__list-element"><a class="article__link"
+                href="https://css-tricks.com/how-to-section-your-html">How
+                to section your html</a></li>
+            <li class="article__list-element"><a class="article__link" href="https://en.bem.info/forum/12/">Naming of
+                List
+                Items
+                (BEM)</a></li>
+            <li class="article__list-element"><a class="article__link" href="http://getbem.com/faq/">BEM FAQ</a></li>
+            <li class="article__list-element"><a class="article__link"
+                href="https://www.toptal.com/designers/htmlarrows/">Toptal</a> Symbole HTML i CSS (np. symbol ampersanda w
+              css ma swój kod!)
+          </ul>
+        </article>
+      </section>
+      <!-- EO sites section -->
+  
+      <!-- tools - narzedzia -->
+      <section class="section section--orange" id="section-tools">
+        <h2 class="section__title">Obsługa narzędzi pobocznych - Github, Git, Gitk, konsola</h2>
+  
+        <!-- GIT -->
+        <article class="article">
+          <h3 class="article__title">GIT</h3>
+          <p class="article__content">Git to narzędzie do kontroli wersji. </p>
+          <p class="article__content">Kroki do postępowania przy obsłudze GITa:</p>
+          <ol class="article__list">
+            <li class="article__list-element">Instalacja GITa ze strony <a class="article__link"
+                href="https://git-scm.com/">www.git-scm.com</a></li>
+            <li class="article__list-element">Dodanie konta przy użyciu konsoli (jednorazowo):
+              <code class="article__code">git config --global user.name "Imię Nazwisko"</code>
+            </li>
+            <li class="article__list-element">Dodanie konta-email (jednorazowo):
+              <code class="article__code">git config --global user.email przykladowy_email@wp.pl</code>
+            </li>
+            <li class="article__list-element">Sprawdzenie stanu: <code
+                class="article__code">git config --get user.name</code>. Polecenie
+              sprawdzi użytkownika. Analogicznie
+              można zrobić dla adresu e-mail.</li>
+            <li class="article__list-element">Założenie repozytorium w katalogu, w którym mam pliki: <code
+                class="article__code">git init</code>
+            </li>
+            <li class="article__list-element">Sprawdzenie statusu: <code class="article__code">git status</code></li>
+            <li class="article__list-element">Git pokaże, że pliki są nieśledzone: <code
+                class="article__code">untracked files</code>. Aby
+              polecić GITowi śledzenie plików
+              wpisuję: <code class="article__code">git add .</code>. Kropka na końcu (koniecznie po spacji) pozwoli na
+              dodanie wszystkich plików
+              znajdujących się w katalogu. Mogę również dodawać pojedyncze pliki.</li>
+            <li class="article__list-element">Robienie commita: <code
+                class="article__code">git commit -m "opis commita po angielsku"</code>.</li>
+            <li class="article__list-element">Nie commitujemy node_modules! - Każdy może sobie zrobić npm install i
+              ściągnąć wymagane paczki</li>
+            <li class="article__list-element"><code class="article__code">.gitignore</code> W folderze tworzę plik .gitignore, a w środku tworzę zapis: <code class="article__code">node_modules</code> Dzięki temu git będzie wiedział, że ma ignorować plik node_modules</li>
+            <li class="article__list-element"><code class="article__code">git clone https://github.com/rafalpiekarski/homepage</code> Pobieranie</li> 
+          </ol>
+        </article>
+  
+        <!-- GITK -->
+        <article class="article">
+          <h3 class="article__title">GITK</h3>
+          <p class="article__content">GITK służy do graficznego pokazania commitów itp. GITK uruchamia się z linii
+            komend za pomocą polecenia: <code class="article__code"> gitk</code> .</p>
+          <figure class="img-container">
+            <img class="img-container__image" src="img/gitk001.jpg">
+            <figcaption class="img-container__title">Widok okna aplikacji GITK</figcaption>
+          </figure>
+        </article>
+  
+        <!-- Github -->
+        <article class="article">
+          <h3 class="article__title">GITHUB</h3>
+          <p class="article__content">Github pozwala na dzielenie się swoim repozytorium wraz z historią commitów itp.
+            Pozwala na publikację kodu z
+            lokalnego GITa</p>
+          <p class="article__content">Kroki przy tworzeniu repozytorium na Githubie są następujące:</p>
+          <ol class="article__list">
+            <li class="article__list-element">Zalogowanie się na stronie <a class="article__link"
+                href="https://github.com/">github.com</a></li>
+            <li class="article__list-element">Założenie nowego repozytorium
+              <ol class="article__list">
+                <li class="article__list-element">Kliknięcie w button <code class="article__code">New</code></li>
+                <li class="article__list-element">Wypełnienie podstawowych informacji: nazwa, opis, readme, etc.</li>
+                <li class="article__list-element">Kliknięcie w button <code class="article__code">Create repository</code>
+                </li>
+                <li class="article__list-element">Wypchnięcie istniejącego repozytorium na stronę Githuba za pomocą
+                  poleceń w konsoli:
+                  <ol class="article__list">
+                    <li class="article__list-element"><code
+                        class="article__code">git remote add origin https://github.com/rafalpiekarski/nazwaRepozytriumNaGithub.git</code>
+                    </li>
+                    <li class="article__list-element"><code class="article__code">git push -u origin master</code></li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </article>
+  
+        <!-- SASS -->
+        <article class="article">
+          <h3 class="article__title">SASS</h3>
+          <ul class="article__list">
+            <li class="article__list-element">SASS jest narzędziem, ma swoją składnię i ma swoją składnię SASSową.
+              Będziemy korzystać ze składni SCSS.</li>
+            <li class="article__list-element">.SCSS jest dla programisty, kod przechodzi przez SASS i trafia jako .CSS do
+              przeglądarki.</li>
+            <li class="article__list-element"><a class="link: href=" https://www.sassmeister.com">www.sassmeister.com </a>
+                Strona do przetwarzania kodu sassowego na .css</li> <li class="article__list-element"><code
+                  class="article__code">$favouriteColor: #ccc;</code> Zadeklarowałem zmienną,w której przetrzymuję
+                ulubiony kolor.</li>
+            <li class="article__list-element"><code class="article__code">.main { color: $favouriteColor;}</code>
+              Zastosowałem zmienną do właściwości color.</li>
+            <li class="article__list"><code class="article__code">$desktop: 1024px; @media (min-width: $desktop;)</code>
+              Zastosowałem deklarację zmiennej do tego, by użyć jej w zapytaniu @media</li>
+            <li class="article__list"><code
+                class="article__code">@mixin borderBackground { border-radius: 10px; background: hotpink;} .main {@include borderBackground;}</code>
+              W mixinie zawarte ileś tam własności. Dopisują się one w pliku .css</li>
+            <li class="article__list"><code
+                class="article__code">@mixin borderBackgroundParameter($radius, $background) {border-radius: $radius; background: $background;}</code>
+              Przydatne. Tworzę 'funkcję', któe przyjmują parametry. Stosowane w generatorach bądź przy tworzeniu efektów.
+            </li>
+            <li class="article__list"><code
+                class="article__code">.font-style {font-size: 13px; color: green;}<br> .main {color: $favouriteColor; @include borderBackgroundParameter(13px, blue);<br> @extend .font-style;<br> </code>
+              Wszystkie wspólne style z klas .main oraz .font-style zostały wrzucone na górę arkusza .css. Stosując @mixin
+              własności dopiszą się do klas, a tutaj wspólne zostały wyrzucone na górę. Lepiej korzystać z mixinów i
+              include.</li>
+            <li class="article__list">Nie modyfikujemy plików .CSS jeśli mamy pliki .SCSS</li>
+          </ul>
+          <figure class="img-container">
+            <img class="img-container__image" src="img/sass002.jpg">
+            <figcaption class="img-container__title">Zastosowanie parent selector & w SASS</figcaption>
+          </figure>
+        </article>
+  
+        <!-- Node.js i NPM-->
+        <article class="article">
+          <h3 class="article__title">Node.js oraz NPM</h3>
+          <ol class="article__list">
+            <li class="article__list-element">Node to javascript uruchamiany poza przeglądarką. Nie wymaga przeglądarki.
+              Uruchamia się w systemie, za pomocą np. terminala. Node nie ma dostepu do DOM.</li>
+            <li class="article__list-element"><a class="article__link" href="https://nodejs.org/">https://nodejs.org/</a>
+              Instalujemy wersję node - </li>
+            <li class="article__list-element"><code class="article__code">node -v</code> Aby sprawdzić, czy node się
+              zainstalował.</li>
+            <li class="article__list-element">Tworzę skrypt JS-owy i zapisuję go jako np. script.js</li>
+            <li class="article__list-element"><code class="article__code">node script.js</code> Uruchomienie skryptu o
+              nazwie script.js. </li>
+          </ol>
+          <ol class="article__list">
+            <li class="article__list-element"><a class="article__link" href="https://www.npmjs.com/">NPM</a> Wyszukiwarka
+              pakietów, repozytorium pakietów, sklep</li>
+            <li class="article__list-element">Paczki - dodajemy sporo gotowych bibliotek bądź narzędzi do projektu. Jet to
+              uniwersalne źródło ze wszstkimi narzędziami, z dostępdem do aktualizacji.</li>
+            <li class="article__list-element"><code class="article__code">npm init</code> Polecenie robimy tylko raz, gdy
+              zakładamy projekt. Zadaniem tego polecenia jest stworzenie pliku konfiguracyjnego</li>
+            <li class="article__list-element">Npm będzie teraz zadawać pytania: nazwa paczki. W nawiasie <code
+                class="article__code">package name: (cwiczenia)</code> podana jest wartość domyślna. Jeśli pasuje, to
+              można zatwierdzać.</li>
+            <li class="article__list-element"><code class="article__code">package.json</code> Stworzył się plik
+              package.json, w którym sa podstawowe informacje o projekcie. Można do niego zajrzeć.</li>
+            <li class="article__list-element"><code class="article__code">npm install momentjs</code> Instalacja paczki o
+              nazwie momentjs (ta tutaj przykładowa paczka służy do zabaw z czasem w JS).</li>
+            <li class="article__list-element">Paczka się instaluje. Widoczne błędy nie są tak istotne - są to błędy
+              twórców paczki, a nie zwiazane z moim komputerem.</li>
+            <li class="article__list-element"><code class="article__code">"dependencies": { "momentjs": "2.0.0"}</code>
+              Wewnątrz pliku package.json znalazł się wpis o tym, że przykładowa paczka momentjs jest w zainstalowana.
+            </li>
+            <li class="article__list-element"><code class="article__code">node_modules</code> Pojawił się katalog o nazwie
+              node_modules, w którym znajdują się paczki (moduły) npmowe. Nie edytujemy tego katalogu! W środku jest
+              podfolder moments.</li>
+            <li class="article__list-element">Zainstalowanie paczek nie oznacza, że są w projekcie.</li>
+            <li class="article__list-element">Można nawet skasować folder node_modules - informacje o tym, jakie paczki są
+              potrzebne jest we właściwości dependencies. Wystarczy wpisać <code class="article__code">npm install </code>
+            </li>
+            <li class="article__list-element"><code class="article__code">package-lock.json</code> To commitujemy. Ale nie
+              zmieniamy w nim nic! Plik pozwala na zablokowanie wersji, pomaga w pilnowaniu czy wersja jest odpowiednia.
+              Pobierając od kogoś projekt wiemy, jakie wersje których paczek są w projekcie - nie wyjdzie sytuacja, gdy
+              mamy np. nowszą paczkę, która jest niekompatybilna z wersją zastosowaną w projekcie.</li>
+          </ol>
+        </article>
+  
+        <!-- Gulp starter kit-->
+        <article class="article">
+          <h3 class="article__title">Gulp starter kit</h3>
+          <ul class="article__list">
+            <li class="article__list-element">Gulp to narzędzie do automatyzacji pracy. Gulp wykona szerego procesów w tle - np. uruchomienie preprocesora CSS, automatyczne przeładowanie przeglądarki po zapisaniu kodu, minifikacja kodu JS i CSS, konkatenacja kodu JS i CSS, oraz inne. Poszczególne procesy (taski) dodaje się za pomocą skonfigurowanych pluginów. </li>
+            <li class="article__list-element">Starter kit z kursu zawiera: serwer lokalny z autoodświeżaniem, wsparcie dla SCSS i sourcemap, minifikacja, webpack, publikacja na githubpages.</li>
+            <li class="article__list-element">ściągam gulp starter kit z: <code class="article__code">https://github.com/maciejkorsan/wtf-gulp-starter</code> oraz rozpakowuję w jakimś folderze (np. c://dev/wtf-gulp-starter (mogę to zrobić za pomoca GITa - git clone)</li>
+            <li class="article__list-element">Tworzę nowy projekt i kopiuję do niego wszystkie pliki z rozpakowanego gulpa startera bez repozytorium gitowego - założę nowe.</li>
+            <li class="article__list-element">Zakładam repozytorium na Githubie do nowego projektu</li>
+            <li class="article__list-element">Tworzę repozytorium nowe i łączę je z Githubem (git init + git add + git commit + git remote add origin https://github.com/rafalpiekarski/nazwa.git + git push -u origin master)</li>
+            <li class="article__list-element">Sprawdzam, czy jest plik .gitignore - tworzę go i wrzucam do niego node_modules. Zapisuję i pushuję tę zmianę.</li>
+            <li class="article__list-element">Zanim zacznę pracę z gulpem, powinienem go zainstalować globalnie jako administrator: <code class="article__code">npm install -g gulp-cli</code> - tylko raz na cały system.</li>
+            <li class="article__list-element">W katalogu projektu (tylko raz na projekt) instaluję <code class="article__code">npm install</code></li>
+            <li class="article__list-element">Za każdym uruchomieniem projektu wpisuję <code class="article__code">gulp</code></li>
+            <li class="article__list-element">Po wpisaniu gulp konsola mieli poelcenia, a później gulp jest uruchomiony w konsoli. Nie mogę wpisywać innych poleceń wtedy. Jeśli chciałbym coś innego w konsoli wpisać, to <code class="article__code">ctr + c</code> a później najwyżej jeszcze raz wpisać gulp.</li>
+            <li class="article__list-element"></li>Pojawił się katalog <code class="article__code">src</code> To źródło strony. Tylko w tym katalogu pracuję.</li>
+            <li class="article__list-element">W katalogu src jest katalog <code class="article__code">content</code> i to w nim znajduje się index.html oraz inne pliki html. Mogę też tutaj tworzyć inne strony.</li>
+            <li class="article__list-element">W katalogu dist znajdują się pliki, które służą serwerowi do wyświetlenia strony. To wyniki naszej pracy, które wędrują na serwer. Tutaj nic nie robię. Mogę nawet skasować ten folder, a on się jeszcze raz wygeneruje.</li>
+            <li class="articke__list-element">W folderze <code class="article__code">scss</code> znajdują się pliki związane z cssami. W pliku <code class="article__code">_variables</code> dodaję breakpointy do mobilek, zmienne.</li>
+            <li class="article__list-element"><code class="article__code">Sourcemap</code> Wchodząc w F12 i patrząc na jakąś regułę na stronie będzie odniesienie do tego, w której linijce i w którym pliku jest dana reguła CSS</li>
+            <li class="article__list-element"><code class="article__code">Assets</code> Mogę tam stworzyć folder img i wrzucać do niego obrazki. Albo wrzucać bezpośrednio w folder assets, albo tworzyć podfoldery.</li>
+            <li class="article__list-element">Skrypty NPMowe - w pliku package.json znajduje się przykładowo: <code class="article__code"> "scripts: { "predeploy": "gulp build", "deploy": "gh-pages -d dist"</code></li>
+            <li class="article__list-element">Github szuka pliku index.html, żeby wyświetlić stronę. Nie ma tego pliku, gdyż jest schowany w katalogu dist. Chcemy wrzucić zawartość naszego dista do gałęzi. Zrobimy to przy użyciu dedykowanej paczki: gh-pages. Można to zrobić samymi komendami gita, ale to dużo poleceń. Używamy polecenia <code class="article__code">npm run deploy</code> .Polecenie run oznacza, że chcemy coś uruchomić, a deploy to nazwa paczki. Opublikuje się nowa gałąź na githubie, która posłuży do wyświetlania strony na ghpages.</li>
+          </ul>
+        </article>
+  
+      </section>
+      <!-- EO tools section -->
+  
+      <!-- animations - animacje -->
+      <section class="section section--yellow" id="section-animations">
+        <h2 class="section__title">Przejścia i animacje</h2>
+  
+        <!-- Transition -->
+        <article class="article">
+          <h3 class="article__title">Transition</h3>
+          <ul class="article__list">
+            <li class="article__list-element">Przejście ustawia się na elemencie, który ma się zmienić, a nie na
+              wyzwalaczu (triggerze) - mówimy
+              elementowi "elemencie, jeśli będziesz się zmieniał, to rób to np. przez sekundę"</li>
+            <li class="article__list-element">Mechanizmem wyzwalającym w CSS jest zazwyczaj <code
+                class="article__code">:hover</code>. w JS może
+              to być już np. kliknięcie.
+              Najczęściej spotykany sposób na zastosowanie jakiegoś efektu to dodawanie / odejmowanie klasy w zależności
+              od potrzeb (np. <code class="article__code">button</code> vs <code
+                class="article__code">button.show</code>).</li>
+            <li class="article__list-element">co warto animować: kolory, opacity, pozycję, model pudełkowy (marign,
+              padding, border), transformacje
+              (rotate, scale).
+            </li>
+            <li class="article__list-element">Do czego nie warto stosować transition: display, float, position, rodzaj
+              czcionki.</li>
+            <li class="article__list-element">Aby użyć transition potrzeba: wartośći początkowej + wartości końcowej +
+              określenia samego przejścia +
+              zdefiniowanie triggera (wyzwalacza)</li>
+            <li class="article__list-element">Przykład zastosowania transition dla kilku właściwośći:
+              <code class="article__code">transition: color 1s ease, font-size 1s 2s linear, top 1s ease-in 3s;</code>.
+            </li>
+          </ul>
+        </article>
+  
+        <!-- Transform -->
+        <article class="article">
+          <h3 class="article__title">Transform</h3>
+          <ul class="article__list">
+            <li class="article__list-element"><code class="article__code">translate</code> przemieszcza dany element.
+              Odnosi się do elementu, a
+              nie do rodzica!. Właśnie
+              dzięki temu może być użyty bardzo dobrze do wysrodkowania elementu.</li>
+            <li class="article__list-element"><code class="article__code">transform</code> można zrobić np. na tekście.
+            </li>
+            <li class="article__list-element"><code class="article__code">transform: translate(10rem, -5%);</code>
+              przesunięcie o zadaną wartość
+              w osi X oraz Y</li>
+            <li class="article__list-element"><code class="article__code">transform: scale();</code> powiększa bądź
+              pomniejsza element.
+              <code class="article__code">scale(-1)</code> umożliwia
+              obrócenie lustrzane elementu.</li>
+            <li class="article__list-element"><code
+                class="article__code">transform: translateX(200px); transform: translateY(100px);</code>
+              Wykona się tylko translateY,
+              ponieważ translateX zostanie przez translateY nadpisane. Wynika to z tego, że są to elementy jednej
+              zbiorczej właściwości translate.</li>
+            <li class="article__list-element">Jeśli napiszę <code
+                class="article__code">div {transform: rotate(60deg) translateX(200px);}</code>
+              to nie mogę napisać
+              <code class="article__code"> div:hover {transform: rotate(30deg);</code>. Ponieważ właściwość translateX nie
+              wystąpiła, to będzie
+              miała domyślną wartość, tutaj wynosi ona (0), więc zostanie nadpisana z wartością (0). </li>
+            <li class="article__list-element"><code class="article__code">transform: translate(100px)</code> oznacza to
+              samo, co
+              <code class="article__code">translate(100px, 100px)</code>.</li>
+            <li class="article__list-element"><code
+                class="article__code">scaleY(-100px); transform: scaleX(-100px);</code> Nie można tak
+              napisać, ponieważ pierwsze scaleY
+              zostanie nadpisane przez to, co jest w scaleX. (do sprawdzenia)</li>
+            <li>Dodawanie więcej niż jednej transformacji translate - jedna po drugiej jest bez przecinka.</li>
+            <li class="article__list-element">Bardzo ważna jest kolejność tranformacji:
+              <code class="article__code">tranlate() transform()</code> da inne wyniki, niż
+              <code class="article__code">transform() translate()</code></li>
+          </ul>
+        </article>
+  
+        <!-- Animations -->
+        <article class="article">
+          <h3 class="article__title">Animacje</h3>
+          <ul class="article__list">
+            <li class="article__list-element"><code class="article__code">animation-play-state: paused;</code> Animacja
+              zatrzymuje się /
+              zamraża.</li>
+            <li class="article__list-element"><code class="article__code">both</code> oznacza, że animacja weźmie punkt 0%
+              oraz 100% spoza
+              animacji jako punkty startowe. Mam
+              pozycję np. margin-left: 20px;, a w animacji przy 0% jest margin-left: 200px. Animacja zaczynając się od
+              razu przeskoczy na 200px. Wartość BOTH zmieni 0% oraz 100% na wartości tuż przed/po animacji</li>
+            <li class="article__list-element"><code class="article__code">steps(4);</code> animacja wykona się nie
+              płynnie, tylko w 4 krokach
+            </li>
+            <li class="article__list-element"><code class="article__code">animation-fill-mode</code> Jest ważne gdy
+              animacja nie uruchamia się
+              od razu, a np. po kliku lub
+              animacja nie jest nieskończona, ma jakieś zakończenie. W wartości 'none' to co jest poza animacją decyduje o
+              stanie przed i po animacji. Jeśli nie ma opóźnienia animacji, to ona i tak od razu się zacznie, więc nie
+              trzeba się przejmować animation-fill-mode. Mając <code
+                class="article__code">animation-fill-mode: both;</code> nie interesuje nas
+              co jest przed animacją, tylko własności 0% i 100% animacji. Jest jeszcze forwards i backwards. Przydatne
+            </li>
+            <li class="article__list-element">Dwie wymagane wartości: animation-name, animation-duration. Domyślnie
+              duration =0 i name = none</li>
+          </ul>
+        </article>
+      </section>
+      <!-- EO animations section -->
+  
+      <!-- console - konsola -->
+      <section class="section section--green" id="section-console">
+        <h2 class="section__title">Konsola</h2>
+  
+        <!-- polecenia konsoli -->
+        <article class="article">
+          <h3 class="article__title">Polecenia konsoli</h3>
+          <ul class="article__list">
+            <li class="article__list-element"><code class="article__code">cd C:\</code> przejście do C:</li>
+            <li class="article__list-element"><code class="article__code">cd ..</code> przejście o poziom w górę</li>
+            <li class="article__list-element"> <code class="article__code">cd nazwa</code> przejście do katalogu "nazwa"
+            </li>
+            <li class="article__list-element"><code class="article__code">cd</code> wyświetlenie aktualnej ścieżki</li>
+            <li class="article__list-element"><code class="article__code">mkdir nazwa</code> utworzenie katalogu "nazwa"
+            </li>
+            <li class="article__list-element"><code class="article__code">code .</code> uruchomienie VSC w aktualnym
+              katalogu</li>
+              <li class="article__list-element"><code class="article__code">dir</code> wyświetlenie wszystkich plików  w katalogu</li>
+          </ul>
+        </article>
+      </section>
+      <!-- EO console section -->
+  
+      <!-- good practices - dobre praktyki -->
+      <section class="section section--red" id="section-good-practices">
+        <h2 class="section__title">Dobre praktyki</h2>
+  
+        <!-- BEM -->
+        <article class="article">
+          <h3 class="article__title">BEM - Block Element Modifier</h3>
+          <p class="article__content">Opis poszczególnych składowych metodologii BEM:</p>
+          <ul class="article__list">
+            <li class="article__list-element"><strong class="article__strong">Blok</strong> - element, którego nie dzielę
+              na mniejsze częśći, a elementy wewnątrz niego są ze sobą ściśle powiazane. Przykładem możę być stopka, ale
+              też i przycisk.</li>
+            <li class="article__list-element"><strong class="article__strong">Element</strong> - znaczniki powiązane
+              ściśle z blokiem. Przykładem może być ikona przycisku lub tekst przycisku.</li>
+            <li class="article__list-element"><strong class="article__strong">Modyfikator</strong> - w selektorze
+              modyfikatora zapisujemy tylko wartości, które on modyfikuje.</li>
+            <li class="article__list-element"><strong class="article__strong">block__element--js</strong> Służy do
+              umieszczdenia klasy, której będziemy używać w JS.</li>
+          </ul>
+          <p class="article__content">Ważna jest kolejność zapisu. Najpierw zapisujemy selektor dla bloku, dopiero później
+            tworzymy selektor modyfikatora.</p>
+          <p class="article__content">Kiedy wybrać blok, a kiedy element?
+            Może się zdarzyć, że wpadniemy w zakłopotanie, czy dany dany fragment nazwać blokiem, czy elementem. W takich
+            momentach powinniśmy chwilę się zastanowić i wybrać jedną możliwość.
+            Jeżeli kod będzie używany w wielu miejscach na stronie, a jego wygląd ma być niezależny od miejsca
+            występowania — powinniśmy stworzyć blok.
+            Jeżeli kod będzie nieodłączną częścią rodzica i będzie od niego zależne — powinniśmy stworzyć element.</p>
+          <p class="article__content">Modyfikator musi zawsze iść w parze z oryginalnym elementem. Tak jest dobrze: <code
+              class="article__code">.blok__element .blok__element--modyfikator</code> . Tak nie jest dobrze: <code
+              class="article__code">.blok__element--modyfikator</code></p>
+        </article>
+  
+        <!-- inne praktyki -->
+        <article class="article">
+          <h3 class="article__title">Inne praktyki</h3>
+          <p class="article__content">Lepiej nie używać resetu styli, a zamiast tego normalizacji styli. Dobrą praktyką
+            jest plik <a class="article__link" href="https://necolas.github.io/normalize.css/)">'normalize.css'</a>. Do
+            styli zawartych z pliku 'normalize.css' warto dodać style u siebie: <code
+              class="article__code">html {box-sizing: border-box;} *,*:before, *:after {box-sizing: inherit;}</code></p>
+          <p class="article__content">HTML stanowi instrukcję, a DOM jest wygenerowany na serwerze
+            właśnie z tej instrukcji.
+          </p>
+          <p class="article__content">Warto zaglądać w narzędziach developera 'F12' do zakładki
+            'network' i tam sprawdzać, czy wszystko jest w porządku. Ponadto warto wyłączyć w tej zakładce opcję 'disable
+            cash' wtedy, gdy często coś sprawdzam i zmieniam na stronie. Dzięi temu efekty będą widoczne.</p>
+          <p class="article__content">GULP: Czasem niektóre pliki musza być na górze stosu (zmienne, mixiny) a inne na
+            dole. Tak samo może być z @media-queries</p>
+          <p class="article__content">Nie używa się już KEYWORDSÓW</p>
+          <p class="article__content">grid i position sticky / fixed raczej nie powinny isc ze sobą (bo ten obszar na
+            górze i tak jest poza gridem)</p>
+          <p class="article__content">Prefixy: <a href="http://autoprefixer.github.io/"
+              class="article__link">autoprefixer.github.io</a> Samodzielnie dodaje autoprefixy do wklejonego kodu. Mogę
+            też zerkać na stronę caniuse i sprawdzać, czy cos potrzebuje dodania prefixu. Autoprefixer jest zainstalowany
+            już w paczce kursowego starterkita.</p>
+        </article>
+  
+        <!-- Obrazy -->
+        <article class="article">
+          <h3 class="article__title">Obrazy</h3>
+          <ul class="article__list">
+            <li class="article__list-element">Mając zdjęcia o różnych rozmiarach - można dać DIV (np. article__cover) i
+              dać mu sztywne wymiary, a IMG w środku z własnością <code class="article__code">object-fit: cover</code>.
+              Można też użyć <code class="article__code">order</code> dozmiany kolejności elementów na mobile</li>
+          </ul>
+        </article>
+  
+        <!-- formularze -->
+        <article class="article">
+          <h3 class="article__title">Formularze</h3>
+          <ul class="article__list">
+            <li class="article__list-element">Dobrze używać takich typów jak NUMBER, EMAIL, TEL - ich układ np. na
+              telefonie jest dostosowany do typu</li>
+            <li class="article__list-element"><code
+                class="article__code">	 	&lt;option value=&quot;user selected yes&quot;&gt; yes &lt;option&gt;</code>
+              Jeśli mam np. w opcji napisane &quot;yes&quot; ale zawarłem value=&quot;user selecteed ...&quot;, to
+              zostanie wysłana wartość value wraz z formularzem.</li>
+            <li class="article__list-element"><code class="article__code">action="https://strona.pl"</code> Atrybut
+              zawarty w FORM wysyła dane z formularza na podaną stronę.</li>
+            <li class="article__list-element"><code class="article__code">GET</code> Dane z formularza wysyłane w pasku
+              adresu są wysyłane metodą GET</li>
+            <li class="article__list-element"><code class="article__code">POST</code></li>
+            <li class="article__list-element"><code
+                class="article__code">enctype="application/x-www-form-urlencoded"</code> Wartość domyślna. <code
+                class="article__code">enctype="multipart/form-data"</code> Uzywane wtedy, gdy wysyłamy pliki</li>
+            <li class="article__list-element">Walidacja: atrybut <code class="article__code">required</code></li>
+            <li class="article__list-element"><code class="article__code">pattern="[a-zA-Z0-9]+"</code></li>
+            <li class="article__list-element">Strona do podpatrzenia patternów: <a class="article__link"
+                href="http://html5pattern.com/">html5pattern</a></li>
+          </ul>
+        </article>
+  
+        <!-- czytniki ekranowe -->
+        <article class="article">
+          <h3 class="article__title">Dostępność strony - czytniki itp</h3>
+          <ul class="article__list">
+            <li class="article__list-element"><code class="article__code">aria-label="open the menu"</code> Opis dla
+              czytników ekranowych - opisany np. button w hamburger menu, aby czyniki wiedziały, co się stanie po
+              kliknięciu, co to jest za przycisk.</li>
+          </ul>
+        </article>
+  
+        <!-- pseudoelementy i pseudoselektory -->
+        <article class="article">
+          <h3 class="article__title">Pseudoelementy i pseudoselektory</h3>
+          <ul class="article__list">
+            <li class="article__list-element"><code class="article__code">.klasa::before { content: " costam ";</code>
+              Umieściłem właściwości: <code
+                class="article__code">display: block; width: 16px; height: 16px; border-radius: 50%; background: yellow;</code>
+              celem stworzenia żółtego kółka przed treścią. Jeśli usunę CONTENT, nic mi się nie wyświetli! element
+              ::before
+              nie będize wyświetlany. Musi mieć CONTENT. On musi być choćby pusty: <code
+                class="article__code">content: ""; </code>.</li>
+            <li class="article__list-element">Nie umieszczamy w pseudoelementach treści istotnych dla czytników. Raczej
+              elementy dekoracyjne, do wyglądu.</li>
+            <li class="article__list-element">Prawidłowo używa się "::" - 2x dwukropek do pseudoelementów. Pojedynczy
+              dwukropek to zaszłość historyczna, choć będize działać.</li>
+            <li class="article__list-element">Do pseudoselektorów używa się pojedynczego dwukropka.</li>
+            <li class="article__list-element"><code class="article__code">"focus"</code> Zastosowanie w formularzach przy
+              inputach.</li>
+            <li class="article__list-element"><code class="article__code">.day:first-child; .day:last-child</code>
+              Zadziała, jeśli .day będzie pierwszym dzieckiem rodzica. Nadawane dziecku!</li>
+          </ul>
+        </article>
+  
+      </section>
+      <!-- EO good practices - dobre praktyki -->
+  
+      <!-- layout -->
+      <section class="section section--green" id="section-layout">
+        <h2 class="section__title">Układ strony</h2>
+  
+        <!-- Flexbox -->
+        <article class="article">
+          <h3 class="article__title">FLexbox</h3>
+          <ul class="article__list">
+            <li class="article__list-element">Polecenie <code class="article__code">display: flex</code> nadaję rodzicowi
+              elementów, które chcę układać flexem. Od razu po nadaniu tej właściwości zmienia się układ. </li>
+            <li class="article__list-element"><code
+                class="article__code">Flex-direction: row, column, row-reverse, column-reverse</code> .Domyślna wartość to
+              ROW - elementy układają się pionowo jeden obok drugiego od lewej do prawej. Zmieniając na COLUMN układ
+              będzie pionowy - elementy będą się układać od góry do dołu. Czasem aby zadziałało dobrze COLUMN, to dobrze
+              mieć wysokość elementów</li>
+            <li class="article__list-element"><code class="article__code">Flex-wrap: nowrap, wrap, wrap-reverse</code>.
+              Domyślnie NO-WRAP. Zawijanie wiersza bądź kolumny. Domyślnie elementy ścieśnią się aby nie wychodzić za
+              obszar rodzica. Mając WRAPA elementy się zawiną do kolejnego wiersza bądź kolumny. WRAP-REVERSE zrobi tak,
+              że zawijanie będzie np. od dołu szło - zamienia wiersze, aby szły od dołu.</li>
+            <li class="article__list-element"><code class="article__code">Flex-flow: (flex-direction) (flex-wrap)</code>
+              Zbiorcza właściwość dla DIRECTION i WRAP. </li>
+            <li class="article__list-element"><code
+                class="article__code">justify-content: (flex-start) (flex-end) (center) (space-between) (space-around) </code>Ustawia
+              elementy wzdłuż osi FLEX-DIRECTION. Jeśli mam elementy ustawione w wierszach, to własność FLEX-END sprawi,
+              że wiersze przykleją się do prawej krawędzi rodzica. Mając ustawione CENTER - kazdy wiersz wyśrodkuje się
+              względem rodzica.</li>
+            <li class="article__list-element"><code
+                class="article__code">align-content: (stretch) (flex-start) (flex-end) (center) (space-between) (space-around)</code>.
+              Domyślną wartością jest STRETCH. Np. dla elementów w 2 wierszach, każdy z nich zajmuje po połowie wysokości
+              - bo jest rozciągnięty. Ustawia wiersz bądź kolumnę w osi przeciwnie do flex-direction. Jeśli ustawię np.
+              (CENTER) to nie mając podanej wysokości, elementy się skurczą.</li>
+            <li class="article__list-element"><code
+                class="article__code">align-items: (stretch) (flex-start) (flex-end) (center) (baseline)</code> Ustawia
+              elementy wzdłuż osi przeciwnej do FLEX-DIRECTION ale w obrębie pojedynczego wiersza. Jeśli jeden element
+              jest np. wyższy od pozostałych, to tutaj wypozycjonujemy elementy w wierszu.</li>
+            <li class="article__list-element"><code class="article__code">align-self: (center)</code> Ustawi
+              pojedynczy element np. centralnie w wierszu z innymi elementami - tyczy się tylko jednego elementu. jest to
+              właściwość ALIGN-ITEMS dla pojedynczego elementu.</li>
+            <li class="article__list-element"><code class="article__code">order</code> Można wskazać elementom kolejność.
+            </li>
+            <li class="article__list-element"><code class="article__code">flex-grow</code> Jak bardzo element rośnie.
+              Mając flex-grow:1; nie będzie wolnego miejsca, wszystkie będą miały tę samą szerokość. Jeśli elementowi
+              nadam flex-grow:2; to będzie on 2x szerszy od pozostałych elementów z flex-frow:1;</li>
+            <li class="article__list-element"><code class="article__code">flex-shink</code> Ustawione na "0" sprawia, że
+              elementy kurczą się maks. do swoich rozmiarów. Dobrze działa, gdy ustawimy wszystkim elementom jakąś
+              wartość, a niektórym np. 2x większa wartość</li>
+            <li class="article__list-element"><code class="article__code">flex-basis</code> Rozmiar bazowy. Określenie
+              minimalnej szerokości lub wysokości elementu. </li>
+            <li class="article__list-element"><code
+                class="article__code">flex: (flex-grow) (flex-shrink) (flex-basis)</code> Własność zbiorcza.</li>
+          </ul>
+        </article>
+  
+        <!-- GRID -->
+        <article class="article">
+          <h3 class="article__title">CSS GRID - najfajniejsze narzędzie do budowania layoutów</h3>
+          <ul class="article__list">
+            <li class="article__list-element">W GRIDZIE numerujemy od "1" a nie od "0"</li>
+            <li class="article__list-element"><code class="article__code">>grid-template-columns: 100px 20% 1fr 2fr</code>
+              Określamy liczbę kolumn oraz szerokości kolumn.</li>
+            <li class="article__list-element"><code class="article__code">repeat(4, 2fr)</code> Ważny jest przecinek oraz
+              spacja.</li>
+            <li class="article__list-element"><code class="article__code">grid-template-rows </code> Wysokość danego
+              wiersza</li>
+            <li class="article__list-element">Grid nie przerzuca elementów do nowego wiersza, jeśli zabraknie na ekranie
+              np. szerokości, a elementy mają ustalone szerokości.</li>
+            <li class="article__list-element">Jednostka <code class="article__code">fr</code> - jednostka dysponująca
+              danym ułamkiem wolnej przestrzeni do ustalania szerokości. </li>
+            <li class="article__list-element"><code class="article__code">grid-column-gap: 16px;</code> Odstęp między
+              kolumnami. Nie ma odstępów po zewnętrznych krawędziach, tylko wenwętrzne między elementami.</li>
+            <li class="article__list-element"><code class="article__code">grid-row-gap: 16px;</code> Odstęp między
+              wierszami. Nie ma odstępów po zewnętrznych krawędziach, tylko wenwętrzne między elementami.</li>
+            <li class="article__list-element"><code class="article__code">minmax(minWartość, maxWartość)</code> Element
+              będzie w podanym przedziale</li>
+            <li class="article__list-element"><code
+                class="article__code">grid template-columns: 1fr minmax(200px, 1fr)</code> Przykład użycia MINMAX</li>
+            <li class="article__list-element"><code
+                class="article__code">grid-template-areas: "header header header" <br>"content . menu" <br>"footer footer footer"<br></code>
+              Tworzę layout dla headera, contentu, menu i footera. 3x header w nawiasach oznacza 3 kolumny, które header
+              zajmie. Wiersz niżej jest content . menu. Kropka między conent a menu oznacza wolne miejsce. To jest sposób
+              na "rysowanie" layoutu. </li>
+            <li class="article__list-element"><code class="article__code">.footer {grid-area: footer};</code> Przypisanie
+              klasie footer obszar nakreślony wcześniej</li>
+            <li class="article__list-element"><code
+                class="article__code">grid area: &lt;nazwaObszaru&gt;  &lt;row-start&gt; &sol; &lt;col-start&gt; &sol; &lt;row-end&gt; &sol; &lt;col-end&gt; &sol;</code>
+            </li>
+            <li class="article__list-element"><code class="article__code"> </code> Definiowanie obszarów drugim sposobem -
+              za pomocą linii: <code
+                class="article__code">grid-row-start: 1; grid-row-end: 3; grid-column-start: 1; gid-column-end: 3;</code>
+              Utworzy pole pomiędzy 1. a 3. liniami gridu.</li>
+            <li class="article__list-element"><code
+                class="article__code">grid-template-columns: [pierwsza] 1fr [druga] 100px [trzecia] 200px;</code>
+              Stworzone nazwy dla linii gridu - pierwsza, druga, trzecia. Można te nazwy wykorzystać zamiast numerów linii
+              gridu.</li>
+            <li class="article__list-element"><code
+                class="article__code">grid-row-start: 1; grid-row-end: 3; grid-column-start: 1; grid-column-end: span 3;</code>
+              Span oznacza, że element będzie na szerokość "3" linii leciał. Działa to też na wiersze.</li>
+            <li class="article__list-element">Grid nie zastepuje flexboxa! Grid do budowy layoutu, a flexbox do
+              pozycjonowania elementów wewnątrz np. grida bądź innych elementów.</li>
+          </ul>
+          <figure class="img-container">
+            <img class="img-container__image" src="img/grid001.jpg">
+            <figcaption class="img-container__title">Wyjaśnienie podstawowych pojęć GRIDa</figcaption>
+          </figure>
+        </article>
+  
+        <!-- media queries -->
+        <article class="article">
+          <h2 class="article__title">Media queries</h2>
+          <ul class="article__list">
+            <li class="article__list-element"><code class="article__code">@media (screen) (print) (all) (...)</code>
+              Wpisuję typ medium, do którego tworzę regułę. Domyślna wartość to (all)</li>
+            <li class="article__list-element"><code
+                class="article__code">(min-width) (max-width) (color) (aspect-radio) (orientation)</code> Tzw. media
+              feature podawane w dalszej kolejności, doprecyzowujące typ medium. (min-width) (max-width) to najczęściej
+              wykorzystywane rzeczy. (aspect-ratio) - współczynnik szerokości do wysokości ekranu, np. ekrany w proporcji
+              16:9. (orientation) - orientacja telefonu w pionie lub poziomie).</li>
+            <li class="article__list-element"><code class="article__code">(and) (not (,)</code> Operatory, których można
+              używać przy tworzeniu mediaqueries. Przykład: <code
+                class="article__code">@media screen and (min-width: 640px) and (min-width: 1000px)</code></li>
+            <li class="article__list-element">Breakpointy - pierwszy breakpont może mieć 640px</li>
+            <li class="article__list-element">Mediaqueries najlepiej pisać na końcu danej grupy BEMowej stosując np. SASS
+              (nie na końcu tylko pod koniec pisania danych własności).
+          </ul>
+  
+        </article>
+      </section>
+      <!-- EO layout section -->
+  
+      <!-- JS -->
+      <section class="section section--yellow" id="section-js">
+        <h2 class="section__title">JavaScript</h2>
+  
+        <!-- polecenia -->
+        <article class="article">
+          <h3 class="article__title">Polecenia w JS</h3>
+          <ul class="article__list">
+            <li class="article__list-element"><code class="article__code">document.querySelector('.nazwa-klasy');</code>
+              dostaję się do DOMu i do danej klasy.</li>
+            <li class="article__list-element"><code class="article__code">document.querySelecdtorAll('p');</code> wybiera
+              wszystkie selektory 'p'</li>
+            <li class="article__list-element"><code class="article__code">console.log(paragraphs[3]);</code> dostaję się
+              do trzeciego elementu zmiennej 'paragraphs'</li>
+            <li class="article__list-element"><code class="article__code">console.log(about.innerHTML);</code> Dostaję się
+              do treści klasy 'about'</li>
+            <li class="article__list-element"><code
+                class="article__code">console.log(`Witaj ${name}, masz ${age} lat`);</code> Tutaj nie ma zwykłych górnych
+              kreseczek (') ale ukośne (`)!</li>
+            <li class="article__list-element"><code
+                class="article__code">element.classList (add) (remove) (toggle) (contains)</code> Podajemy samą nazwę
+              klasy - bez kropki. Możemy sprawdzić, czy element posiada jakąś klasę, dodać, usunąć klasę elementu. </li>
+            <li class="article__list-element">Stosując .querySelector()stawiamy kropkę powołując się na klasę, natomiast
+              stosując .add() nie dajemy kropki powołując się na klasę.</li>
+          </ul>
+        </article>
+  
+        <!-- logika JS -->
+        <article class="article">
+          <h3 class="article__title">Logika w JS</h3>
+          <ul class="article__list">
+            <li class="article__list-element"><code class="article__code">=</code> Znak przypisania</li>
+            <li class="article__list-element"><code class="article__code">==</code> Obie strony równe</li>
+            <li class="article__list-element"><code class="article__code">===</code> Obie strony równe (sprawdza również
+              typeof)</li>
+            <li class="article__list-element"><code class="article__code">!=</code> Obie strony różne</li>
+            <li class="article__list-element"><code class="article__code">!==</code> Obie strony różne (sprawdza również
+              typeof)</li>
+            <li class="article__list-element">6 wartości, które zwracają 'false': <code
+                class="article__code">false</code>, <code class="article__code">0</code>, <code
+                class="article__code">""</code>, <code class="article__code">null</code>, <code
+                class="article__code">undefined</code>, <code class="article__code">NaN</code></li>
+            <li class="article__list-element">Pozostałe wartości zwracają 'false (przykładowo <code
+                class="article__code">'Tekst'</code>, <code class="article__code">12</code>, <code
+                class="article__code">[]</code>, <code class="article__code">{}</code> )</li>
+            <li class="article__list-element"><code class="article__code">if ((warunek1) && (warunek2)) {...}</code> AND -
+              wszystkie warunki muszą być TRUE</li>
+            <li class="article__list-element"><code class="article__code">!true => false</code>natomiast <code
+                class="article__code">!false => true</code> .Czasem się z tego korzysta, choć nie wpływa to korzystnie na
+              czytelność kodu. </li>
+            <li class="article__list-element">Zapis skrócony IFa: <code
+                class="article__code">(zmienna1 > zmienna2) ? console.log('true') : console.log('false')</code></li>
+            <li class="article__list-element">Funkcja zawsze coś zwraca - nawet, jeśli nie mamy 'return' - wtedy funkcja
+              zwraca 'undefined'.</li>
+            <li class="article__list-element">Funkcje strzałkowe (fat arrows =>): inny zapis funkcji. Skraca zapis
+              deklaracji funkcji, nie tworzy nowego kontekstu 'this' i nie ma adostępu do 'arguments' i 'super' (ma to
+              swoje plusy i minusy).</li>
+          </ul>
+        </article>
+  
+        <!-- Funkcje -->
+        <article class="article">
+          <h3 class="article__title">Funkcje</h3>
+          <p class="article__content">Budowa prostej funkcji:<br>
+            <code
+              class="article__code">function calculate(x) {<br> x=x+3; <br>console.log(x); <br> return x*7; <br>}</code>
+          </p>
+          <p class="article__content">Funkcja FAT w początkowym stanie:<br>
+            <code class="article__code">const calculateFat = (x) => { <br>
+            x = x + 3; <br>
+            console.log('fat: ${x}'); <br>
+            return x*7; <br>
+            }</code>
+          </p>
+          <p class="article__content">Funkcja FAT skrócona (bez console loga tutaj):<br>
+            <code class="article__code">const calculate = x => (x+3)*7; <br>
+          } <br> </code> Dzięki Fat Arrow Function skraca zapis deklaracji, nie tworzy też nowego kontekstu THIS oraz
+            nie ma dostępu do ARGUMENTS i SUPER. To nie jest nowy zapis funkcji, ma inne przeznaczenie, choć na początku
+            sprawdza się tak samo.</p>
+        </article>
+  
+        <!-- Obiekty -->
+        <article class="article">
+          <h3 class="article__title">Obiekty</h3>
+          <ul class="article__list">
+            <li class="article__list-element">Zmienne w obiektach to własności (property)</li>
+            <li class="article__list-element">Funkcje w obiektach to metody (methods)</li>
+            <li class="article__list-element"><code class="article__code">deathStar.isOperating = false;</code> Weszlismy
+              do własności obiektu isOperating i zmienilismy jej wartość na false.</li>
+            <li class="article__list-element"><code class="article__code">deathStar["population"]</code> Wejście do
+              własności population w obiekcie deathStar. Jest to inny sposób zapisu. Dzięki niemu można podać własności,
+              które są dwuwyrazowe, mają spację w nazwie - np. tworząc własność deathStar["population living"]=0; .</li>
+            <li class="article__list-element"> Nie jest polecane tworzenie dwuwyrazowych własności!</li>
+          </ul>
+        </article>
+  
+        <!-- JSON -->
+        <article class="article">
+          <h3 class="article__title">JSON - JavaScript Object Notation</h3>
+          <ul class="article__list">
+            <li class="article__list-element">Notacja JSONa różni się od notacji zapisu obiektów w JS - np. w JSON nie
+              zapisuje się funkcji (metod).</li>
+          </ul>
+        </article>
+  
+        <!-- krókie zadania -->
+        <article class="article">
+          <h3 class="article__title">Krótkie zadanka z JS</h3>
+          <h4 class="article__title--small">Wstawienie treści do DIVa</h4>
+          <ol class="article__list">
+            <li class="article__list-element"><code
+                class="article__code">const pickedHTML = document.querySelector('.div--js');</code> Pobieram klasę
+              .div--js do zmiennej pickedHTML</li>
+            <li class="article__list-element"><code
+                class="article__code">pickedHTML.innerHTML = ('wypelnienie trescia');</code> Wstawiam jakąś treść</li>
+          </ol>
+          <h4 class="article__title--small">Button zmieniający treść diva</h4>
+          <button class="article__button article__button--js-change" aria-label="zmien treść paragrafu powyżej">
+            Kliknij aby zmienić treść paragrafu poniżej
+          </button>
+          <p class="article__content article__content--js-change">Treść paragrafu, która się zmieni po kliknięciu w
+            przycisk
+            powyżej.</p>
+          <h4 class="article__title--small">Button dodający klasę</h4>
+          <button class="article__button article__button--js-add" aria-label="dodaj klasę elementowi">
+            Kliknij aby dodać klasę, która zmieni kolor na czerwony.
+          </button>
+          <p class="article__content article__content--js-add">Po kliknięciu ten napis zrobi się czerwony - zostanie do
+            niego dodana klasa z własnością color: red</p>
+          <h4 class="article__title--small">Button żonglujący klasą</h4>
+          <button class="article__button article__button--js-toggle"
+            aria-label="ćwiczenie - dodaj / usuń klasę elementowi">
+            Kliknij aby włączyć / wyłączyć klasę.
+          </button>
+          <p class="article__content article__content--js-toggle">Po kliknięciu ten napis zrobi się czerwony. Po
+            kliknięciu ponownym napis wróci do pierwotnej postaci.</p>
+        </article>
+  
+        <!-- inne JS -->
+        <article class="article">
+          <h3 class="article__title">Inne z JS</h3>
+          <figure class="img-container">
+            <img class="img-container__image" src="img/where_put_js.jpg">
+            <figcaption class="img-container__title">Gdzie wstawić skrypty w JS</figcaption>
+          </figure>
+        </article>
+  
+      </section>
+      <!-- EO JS section-->
+  
+      <!-- formularze -->
+      <form class="form section section-yellow" id="section-form" action="https://dev.cotenfrontend.pl" method="post">
+        <p>
+          <label for="name">Wpisz swoje imię</label>
+          <input placeholder="Rafał P." pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" name="name" id="name"
+            class="form__focus">
+        </p>
+        <p>
+          <label for="riddle">Wpisz słowo cotenfrontend</label>
+          <input name="riddle" id="riddle">
+          <p>
+            <label for="surname">Your surname</label>
+            <input required type="text" value="Kowalski" name="surname" id="surname">
+          </p>
+          <fieldset>
+            <legend>Ankietka</legend>
+            <p>
+              <label for="radio1">Opcja 1</label>
+              <input type="radio" name="radio" id="radio1">
+            </p>
+            <p>
+              <label for="radio2">Opcja 2</label>
+              <input type="radio" name="radio" id="radio2">
+            </p>
+            <p>
+              <label for="radio3">Opcja 3</label>
+              <input type="radio" checked value="niewidoczne, dopiero przy przesylaniu" name="radio" id="radio3">
+            </p>
+            <p>
+              <label for="radio4">Opcja 4</label>
+              <input type="radio" name="radio" id="radio4">
+            </p>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Ankietka druga, więcej niż jedna odpowiedź</legend>
+            <p>
+              <input type="checkbox" name="checkbox" id="checkbox1">
+              <label for="checkbox1">Opcja 1</label>
+            </p>
+            <p>
+              <input type="checkbox" name="checkbox" id="checkbox2">
+              <label for="checkbox2">Opcja 2</label>
+            </p>
+            <p>
+              <input type="checkbox" name="checkbox" id="checkbox3">
+              <label for="checkbox3">Opcja 3</label>
+            </p>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Inne typy </legend>
+            <p>
+              <label for="age">Wpisz wiek</label>
+              <input type="number" value="31" name="age" id="age">
+            </p>
+            <p>
+              <label for="telephone">Wpisz nr telefonu</label>
+              <input type="tel" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" name="telephone" id="telephone">
+            </p>
+            <p>
+              <label for="email1">Wpisz swoj e-mail</label>
+              <input type="email" name="email" id="email1">
+            </p>
+            <p>
+              <label for="range1">Zasięg co 5</label>
+              <input type="range" id="range1" name="rangers" min="0" max="100" value="90">
+            </p>
+            <p>
+              <label for="password">Hasło</label>
+              <input type="password" name="password" id="password">
+            </p>
+            <p>
+              <label for="file">Wgraj plik ze zdjęciem</label>
+              <input type="file" name="file" id="file">
+            </p>
+          </fieldset>
+          <fieldset>
+            <p>
+              <label for="select">Wybór</label>
+              <select name="select" id="select">
+                <option value="user selected yes">yes</option>
+                <option value="user selected no">no</option>
+                <option value="user selected maybe">maybe</option>
+              </select>
+            </p>
+          </fieldset>
+          <fieldset>
+            <p>
+              <label for="textarea">Pole tekstowe</label>
+              <textarea id="textarea" name="textarea">Textarea nie posiada atrybutu VALUE</textarea>
+            </p>
+          </fieldset>
+          <fieldset>
+            <p>
+              <input type="submit" value="send the form">
+            </p>
+          </fieldset>
+      </form>
+  
+    </main>
+  
+    <footer class="footer">
+      <p class="footer__content">Strona do rozwoju umiejętności związanych z frontendem</p>
+      <p class="footer__content">Zdjęcia: <a class="article__link" href="https://www.pexels.com/">Pexels.com</a>
+      </p>
+    </footer>
 
     <script src="js/main.js"></script>
   </body>
