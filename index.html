@@ -214,6 +214,31 @@
           <li class="article__list-element"><code
               class="article__code">git clone https://github.com/rafalpiekarski/homepage</code> Pobieranie</li>
         </ol>
+        <h4 class="article__title--small">Branchowanie</h4>
+        <ol class="article__list">
+          <li class="article__list-element">Domyślna gałąź to master. Paczka gulpa sama stworzyła brancha na githuba i
+            trzyma w nim zawartość katalogu dist. Ale branch gh-pages jest tylko na githubie. Nie ma go nawet lokalnie -
+            jest usuwany od razu po wypchnięciu zmian na githuba.</li>
+          <li class="article__list-element"><code class="article__code">git branch</code> Polecenie pozwala podejrzeć,
+            jakie gałęzie są w projekcie.</li>
+          <li class="article__list-element"><code class="article__code">git branch nazwaBrancha</code> Polecenie pozwala
+            stworzyć gałąź o danej nazwie.</li>
+          <li class="article__list-element"><code class="article__code">git checkout nazwaBrancha</code> przejście na
+            gałąź o danej nazwie</li>
+          <li class="article__list-element">Mogę teraz tworzyć zmiany, commitować je. Podgląd w narzędizu gitk pokaże
+            jak wygląda sytuacja na danej gałęzi - nowy commit jest tylko na nowej gałęzi.</li>
+          <li class="article__list-element"><code class="article__code">git branch master</code> przechodzę na główną
+            gałąź - mogę przechodzić po gałęziach.</li>
+          <li class="article__list-element"><code class="article__code">git push</code> Jeśli będę chciał zapushować
+            zmiany, to wyskoczy mi komunikat - to push the current branch and set the remote as upstream, use ...
+            Powinienem użyć wtedy wyświetlonego polecenia: <code
+              class="article__code">git push --set-upstream origin nazwaBranchaNieMaster</code></li>
+          <li class="article__list-element"><code class="article__code">git merge nazwaBranchaNieMaster</code> Jeśli
+            chcę zmiany z nowej gałęzi włączyć do głównej gałęzi master, muszę zmiany zmergować. Będąc na gałęzi master,
+            wpiszę podane tu polecenie. Nasz master dogoni wtedy poboczny branch. Master ma ściągnięte zmiany z brancha
+            bocznego.</li>
+            <li class="article__list-element"><code class="article__code">git pull</code> Zrobiłem cos na githubie - na przykład przerobiłem plik redme. Mam teraz nieaktualną wersję u siebie. Robię polecenie git pull i ściągam dzięki temu zawartość z githuba do siebie na repozytorium.</li>
+        </ol>
       </article>
 
       <!-- GITK -->
@@ -394,6 +419,28 @@
             <code class="article__code">npm run deploy</code> .Polecenie run oznacza, że chcemy coś uruchomić, a deploy
             to nazwa paczki. Opublikuje się nowa gałąź na githubie, która posłuży do wyświetlania strony na ghpages.
           </li>
+        </ul>
+      </article>
+
+      <!-- markdown -->
+      <article class="article">
+        <h3 class="article__title">Markdown</h3>
+        <ul class="article__list">
+          <li class="article__list-element">Markdown to prosty język opisu treści, prostszy od HTMLa. Jest stosowany na przykład w readme na githubie</li>
+          <li class="article__list-element"># Nagłówek pierwszego poziomu</li>
+          <li class="article__list-element">## Nagłówek drugiego poziomu</li>
+          <li class="article__list-element">### Nagłówek trzeciego poziomu</li>
+          <li class="article__list-element">[opis](http://www.linkstrony)</li>
+          <li class="article__list-element">![opis](adresObrazka)</li>
+
+          <li class="article__list-element">`polecenie`</li>
+          <li class="article__list-element">```javascript -nazwa języka<br>
+          console.log('polecenia języka');<br>
+          ```</li>
+          <li class="article__list-element">*kursywa*</li>
+          <li class="article__list-element">**pogrubienie**</li>
+          <li class="article__list-element">***pogrubienie z kursywą***</li>
+          <li class="article__list-element">>cytat</li>
         </ul>
       </article>
 
@@ -917,105 +964,105 @@
     <!-- formularze -->
     <section class="section section--red" id="section-form">
       <h2 class="section__title">Formularz</h2>
-    <form class="form section section-yellow" id="section-form" action="https://dev.cotenfrontend.pl" method="post">
-      <p>
-        <label for="name">Wpisz swoje imię</label>
-        <input placeholder="Rafał P." pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" name="name" id="name"
-          class="form__focus">
-      </p>
-      <p>
-        <label for="riddle">Wpisz słowo cotenfrontend</label>
-        <input name="riddle" id="riddle">
+      <form class="form section section-yellow" id="section-form" action="https://dev.cotenfrontend.pl" method="post">
         <p>
-          <label for="surname">Your surname</label>
-          <input required type="text" value="Kowalski" name="surname" id="surname">
+          <label for="name">Wpisz swoje imię</label>
+          <input placeholder="Rafał P." pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" name="name" id="name"
+            class="form__focus">
         </p>
-        <fieldset>
-          <legend>Ankietka</legend>
+        <p>
+          <label for="riddle">Wpisz słowo cotenfrontend</label>
+          <input name="riddle" id="riddle">
           <p>
-            <label for="radio1">Opcja 1</label>
-            <input type="radio" name="radio" id="radio1">
+            <label for="surname">Your surname</label>
+            <input required type="text" value="Kowalski" name="surname" id="surname">
           </p>
-          <p>
-            <label for="radio2">Opcja 2</label>
-            <input type="radio" name="radio" id="radio2">
-          </p>
-          <p>
-            <label for="radio3">Opcja 3</label>
-            <input type="radio" checked value="niewidoczne, dopiero przy przesylaniu" name="radio" id="radio3">
-          </p>
-          <p>
-            <label for="radio4">Opcja 4</label>
-            <input type="radio" name="radio" id="radio4">
-          </p>
-        </fieldset>
+          <fieldset>
+            <legend>Ankietka</legend>
+            <p>
+              <label for="radio1">Opcja 1</label>
+              <input type="radio" name="radio" id="radio1">
+            </p>
+            <p>
+              <label for="radio2">Opcja 2</label>
+              <input type="radio" name="radio" id="radio2">
+            </p>
+            <p>
+              <label for="radio3">Opcja 3</label>
+              <input type="radio" checked value="niewidoczne, dopiero przy przesylaniu" name="radio" id="radio3">
+            </p>
+            <p>
+              <label for="radio4">Opcja 4</label>
+              <input type="radio" name="radio" id="radio4">
+            </p>
+          </fieldset>
 
-        <fieldset>
-          <legend>Ankietka druga, więcej niż jedna odpowiedź</legend>
-          <p>
-            <input type="checkbox" name="checkbox" id="checkbox1">
-            <label for="checkbox1">Opcja 1</label>
-          </p>
-          <p>
-            <input type="checkbox" name="checkbox" id="checkbox2">
-            <label for="checkbox2">Opcja 2</label>
-          </p>
-          <p>
-            <input type="checkbox" name="checkbox" id="checkbox3">
-            <label for="checkbox3">Opcja 3</label>
-          </p>
-        </fieldset>
+          <fieldset>
+            <legend>Ankietka druga, więcej niż jedna odpowiedź</legend>
+            <p>
+              <input type="checkbox" name="checkbox" id="checkbox1">
+              <label for="checkbox1">Opcja 1</label>
+            </p>
+            <p>
+              <input type="checkbox" name="checkbox" id="checkbox2">
+              <label for="checkbox2">Opcja 2</label>
+            </p>
+            <p>
+              <input type="checkbox" name="checkbox" id="checkbox3">
+              <label for="checkbox3">Opcja 3</label>
+            </p>
+          </fieldset>
 
-        <fieldset>
-          <legend>Inne typy </legend>
-          <p>
-            <label for="age">Wpisz wiek</label>
-            <input type="number" value="31" name="age" id="age">
-          </p>
-          <p>
-            <label for="telephone">Wpisz nr telefonu</label>
-            <input type="tel" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" name="telephone" id="telephone">
-          </p>
-          <p>
-            <label for="email1">Wpisz swoj e-mail</label>
-            <input type="email" name="email" id="email1">
-          </p>
-          <p>
-            <label for="range1">Zasięg co 5</label>
-            <input type="range" id="range1" name="rangers" min="0" max="100" value="90">
-          </p>
-          <p>
-            <label for="password">Hasło</label>
-            <input type="password" name="password" id="password">
-          </p>
-          <p>
-            <label for="file">Wgraj plik ze zdjęciem</label>
-            <input type="file" name="file" id="file">
-          </p>
-        </fieldset>
-        <fieldset>
-          <p>
-            <label for="select">Wybór</label>
-            <select name="select" id="select">
-              <option value="user selected yes">yes</option>
-              <option value="user selected no">no</option>
-              <option value="user selected maybe">maybe</option>
-            </select>
-          </p>
-        </fieldset>
-        <fieldset>
-          <p>
-            <label for="textarea">Pole tekstowe</label>
-            <textarea id="textarea" name="textarea">Textarea nie posiada atrybutu VALUE</textarea>
-          </p>
-        </fieldset>
-        <fieldset>
-          <p>
-            <input type="submit" value="send the form">
-          </p>
-        </fieldset>
-    </form>
-  </section>
+          <fieldset>
+            <legend>Inne typy </legend>
+            <p>
+              <label for="age">Wpisz wiek</label>
+              <input type="number" value="31" name="age" id="age">
+            </p>
+            <p>
+              <label for="telephone">Wpisz nr telefonu</label>
+              <input type="tel" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" name="telephone" id="telephone">
+            </p>
+            <p>
+              <label for="email1">Wpisz swoj e-mail</label>
+              <input type="email" name="email" id="email1">
+            </p>
+            <p>
+              <label for="range1">Zasięg co 5</label>
+              <input type="range" id="range1" name="rangers" min="0" max="100" value="90">
+            </p>
+            <p>
+              <label for="password">Hasło</label>
+              <input type="password" name="password" id="password">
+            </p>
+            <p>
+              <label for="file">Wgraj plik ze zdjęciem</label>
+              <input type="file" name="file" id="file">
+            </p>
+          </fieldset>
+          <fieldset>
+            <p>
+              <label for="select">Wybór</label>
+              <select name="select" id="select">
+                <option value="user selected yes">yes</option>
+                <option value="user selected no">no</option>
+                <option value="user selected maybe">maybe</option>
+              </select>
+            </p>
+          </fieldset>
+          <fieldset>
+            <p>
+              <label for="textarea">Pole tekstowe</label>
+              <textarea id="textarea" name="textarea">Textarea nie posiada atrybutu VALUE</textarea>
+            </p>
+          </fieldset>
+          <fieldset>
+            <p>
+              <input type="submit" value="send the form">
+            </p>
+          </fieldset>
+      </form>
+    </section>
 
   </main>
 
