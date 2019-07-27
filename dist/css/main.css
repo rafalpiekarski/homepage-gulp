@@ -465,6 +465,9 @@ body {
     right: 16px;
     top: 16px;
     z-index: 100; }
+    @media (min-with: 860px) {
+      .navigation__switcher {
+        display: none; } }
 
 .section {
   padding: 40px;
@@ -532,9 +535,5 @@ body {
     display: flex; }
   .navigation {
     margin-top: 50px; } }
-
-@media (min-width: 840px) {
-  .navigation__switcher {
-    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

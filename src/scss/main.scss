@@ -171,6 +171,9 @@ body {
     right: 16px;
     top: 16px;
     z-index: 100;
+    @media (min-with: $desktop) {
+      display: none;
+    }
   }  
 }
 
@@ -234,11 +237,5 @@ body {
   }
   .navigation {
     margin-top: 50px;
-  }
-}
-
-@media (min-width: 840px) {
-  .navigation__switcher {
-    display: none;
   }
 }
