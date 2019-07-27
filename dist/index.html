@@ -39,22 +39,22 @@
           <a class="navigation__link" href="#section-purpose">Cel strony</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#section-sites">Miejsca, które warto odwiedzić</a>
+          <a class="navigation__link" href="#section-sites">Polecane strony</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#section-tools">Obsługa narzędzi pobocznych</a>
+          <a class="navigation__link" href="#section-tools">Narzędzia</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#section-animations">Animacje</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#section-console">Konsola</a>
-        </li>
-        <li class="navigation__item">
           <a class="navigation__link" href="#section-good-practices">Dobre praktyki</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#section-js">JS</a>
+          <a class="navigation__link" href="#section-js">JavaScript</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#section-form">Formularz</a>
         </li>
       </ul>
       <button class="navigation__switcher navigation__switcher--js" aria-label="otwórz menu">&#9776; </button>
@@ -157,6 +157,24 @@
     <!-- tools - narzedzia -->
     <section class="section section--orange" id="section-tools">
       <h2 class="section__title">Obsługa narzędzi pobocznych - Github, Git, Gitk, konsola</h2>
+
+      <!-- console - konsola -->
+      <article class="article">
+        <h3 class="article__title">Polecenia konsoli</h3>
+        <ul class="article__list">
+          <li class="article__list-element"><code class="article__code">cd C:\</code> przejście do C:</li>
+          <li class="article__list-element"><code class="article__code">cd ..</code> przejście o poziom w górę</li>
+          <li class="article__list-element"> <code class="article__code">cd nazwa</code> przejście do katalogu "nazwa"
+          </li>
+          <li class="article__list-element"><code class="article__code">cd</code> wyświetlenie aktualnej ścieżki</li>
+          <li class="article__list-element"><code class="article__code">mkdir nazwa</code> utworzenie katalogu "nazwa"
+          </li>
+          <li class="article__list-element"><code class="article__code">code .</code> uruchomienie VSC w aktualnym
+            katalogu</li>
+          <li class="article__list-element"><code class="article__code">dir</code> wyświetlenie wszystkich plików w
+            katalogu</li>
+        </ul>
+      </article>
 
       <!-- GIT -->
       <article class="article">
@@ -487,27 +505,6 @@
     </section>
     <!-- EO animations section -->
 
-    <!-- console - konsola -->
-    <section class="section section--green" id="section-console">
-      <h2 class="section__title">Konsola</h2>
-
-      <!-- polecenia konsoli -->
-      <article class="article">
-        <h3 class="article__title">Polecenia konsoli</h3>
-        <ul class="article__list">
-          <li class="article__list-element"><code class="article__code">cd C:\</code> przejście do C:</li>
-          <li class="article__list-element"><code class="article__code">cd ..</code> przejście o poziom w górę</li>
-          <li class="article__list-element"> <code class="article__code">cd nazwa</code> przejście do katalogu "nazwa"
-          </li>
-          <li class="article__list-element"><code class="article__code">cd</code> wyświetlenie aktualnej ścieżki</li>
-          <li class="article__list-element"><code class="article__code">mkdir nazwa</code> utworzenie katalogu "nazwa"
-          </li>
-          <li class="article__list-element"><code class="article__code">code .</code> uruchomienie VSC w aktualnym
-            katalogu</li>
-          <li class="article__list-element"><code class="article__code">dir</code> wyświetlenie wszystkich plików w
-            katalogu</li>
-        </ul>
-      </article>
     </section>
     <!-- EO console section -->
 
@@ -918,6 +915,8 @@
     <!-- EO JS section-->
 
     <!-- formularze -->
+    <section class="section section--red" id="section-form">
+      <h2 class="section__title">Formularz</h2>
     <form class="form section section-yellow" id="section-form" action="https://dev.cotenfrontend.pl" method="post">
       <p>
         <label for="name">Wpisz swoje imię</label>
@@ -1016,6 +1015,7 @@
           </p>
         </fieldset>
     </form>
+  </section>
 
   </main>
 
