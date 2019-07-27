@@ -1,9 +1,30 @@
-# wtf-gulp-starter
+![site view](misc/readmeimg.jpg)
 
-`npm install -g gulp-cli`
+[Link to github pages](https://rafalpiekarski.github.io/homepage-gulp/)
 
-`npm install`
+# Site presents my personnal efforts to learn frontend and my current abilities
 
-`gulp`
+## site purpose
+1. to learn frontend
+2. to test my skills
+3. to show results for others
 
-To publish your page using github pages use `npm run deploy`
+## Markdown commands
+
+> każda podróż zaczyna się od pierwszego kroku - quote
+
+`command`
+
+```javascript
+console.log('firstly language description
+```
+
+*coursive*
+
+**bold**
+
+***bold and coursive***
+
+1. list element
+2. list element
+  1. list inner element - 4 spaces needed
