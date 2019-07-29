@@ -233,10 +233,11 @@
             zmiany, to wyskoczy mi komunikat - to push the current branch and set the remote as upstream, use ...
             Powinienem użyć wtedy wyświetlonego polecenia: <code
               class="article__code">git push --set-upstream origin nazwaBranchaNieMaster</code></li>
-          <li class="article_-list-element"><code class="article__code">git merge nazwaBranchaNieMaster</code> Jeśli
+          <li class="article__list-element"><code class="article__code">git merge nazwaBranchaNieMaster</code> Jeśli
             chcę zmiany z nowej gałęzi włączyć do głównej gałęzi master, muszę zmiany zmergować. Będąc na gałęzi master,
             wpiszę podane tu polecenie. Nasz master dogoni wtedy poboczny branch. Master ma ściągnięte zmiany z brancha
             bocznego.</li>
+            <li class="article__list-element"><code class="article__code">git pull</code> Zrobiłem cos na githubie - na przykład przerobiłem plik redme. Mam teraz nieaktualną wersję u siebie. Robię polecenie git pull i ściągam dzięki temu zawartość z githuba do siebie na repozytorium.</li>
         </ol>
       </article>
 
@@ -912,6 +913,26 @@
         <ul class="article__list">
           <li class="article__list-element">Notacja JSONa różni się od notacji zapisu obiektów w JS - np. w JSON nie
             zapisuje się funkcji (metod).</li>
+        </ul>
+      </article>
+
+      <!-- Tablice -->
+      <article class="article">
+        <h3 class="article__title">Tablice</h3>
+        <ul class="article__list">
+          <li class="article__list-element">Tablica (array) != tabela (table)</li>
+          <li class="article__list-element"><code class="article__code">console.log(tablica[1]);</code> Wypisanie drugiego elementu z tablicy o nazwie "tablica".</li>
+          <li class="article__list-element"><code class="article__code">console.log(tablica.lenght);</code> Wypisanie ilości elementów w tablicy.</li>
+          <li class="article__list-element"><code class="article__code">tablica.push("nazwa elementu");</code> Dodanie elementu na koniec tablicy.oczywiście można dodać nowe obiekty do tablicy.</li>
+          <li class="article__list-element"><code class="article__code">tablica.unshift("nazwa elementu");</code> Dodanie elementu na początek tablicy.oczywiście można dodać nowe obiekty do tablicy.</li>
+          <li class="article__list-element"><code class="article__code">talica.shift();</code> Usunięcie elementu z początku tablicy.</li>
+          <li class="article__list-element"><code class="article__code">tablica.pop();</code> Usunięcie elementu z końca tablicy.</li>
+          <li class="article__list-element"><code class="article__code">tablica.indexOf("szukany element");</code> Podanie, pod którym indeksem jest dany element w tablicy, o ile jest częścią tablicy. Jeśi nie ma danego elementu, dostanę w zwrotce wartość (-1)</li>
+          <li class="article__list-element"><code class="article__code">tablica.pop();</code> Usunięcie elementu z końca tablicy.</li>
+          <li class="article__list-element"><code class="article__code">tablica.splice(index, liczbaElementów);</code> Usunięcie n elementów od danej pozycji</li>
+          <li class="article__list-element"><code class="article__code">hardware.splice(1, 2);</code> Usunięcie 2 elementów z tablicy o nazwie hardware</li>
+          <li class="article__list-element"><code class="article__code">tablica.slice(index, liczbaElementów-1);</code> Pobranie n elementów od danej pozycji</li>
+          <li class="article__list-element"><code class="article__code">tablica.slice(2, 3);</code> Pobranie jednego elementu z tablicy - inaczej niż w metodzie splice .</li>
         </ul>
       </article>
 

@@ -119,3 +119,22 @@ if (deathStar.isOperating) {console.log('działa')
 }
 else {console.log('nie dziala');
 };
+
+//
+// tablice
+//
+
+// definiowanie tablicy stringów z 3 elementami
+const hardware=['keyboard', 'mouse', 'tower'];
+
+//definiowanie tablicy obiektów
+const news = [
+    {title: 'wtf',
+     content: 'lorem ipsum dolor'
+    },
+    {title: 'co ten frontend',
+    content: 'lorem ipsum dolor',
+    link: 'https://cotenfrontend.pl'
+    }
+]
+
