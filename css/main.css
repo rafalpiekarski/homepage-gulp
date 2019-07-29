@@ -352,11 +352,9 @@ html {
     padding-bottom: 10px;
     padding-top: 15px; }
     .article__title--small {
-      color: #353839;
-      font-family: 'Roboto', sans-serif;
       font-size: 24px;
-      padding-bottom: 10px;
-      padding-top: 15px; }
+      color: #353839;
+      font-family: 'Roboto', sans-serif; }
 
 body {
   background-color: #efefee;
@@ -508,6 +506,13 @@ body {
     background-image: -webkit-linear-gradient(330deg, #f6d365 0%, #fda085 100%);
     background-image: -o-linear-gradient(330deg, #f6d365 0%, #fda085 100%);
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); }
+
+.section-small__title {
+  color: #353839;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 15px; }
 
 .site-header {
   background-color: #353839;
