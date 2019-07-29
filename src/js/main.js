@@ -127,7 +127,7 @@ else {console.log('nie dziala');
 // definiowanie tablicy stringów z 3 elementami
 const hardware=['keyboard', 'mouse', 'tower'];
 
-//definiowanie tablicy obiektów
+// definiowanie tablicy obiektów
 const news = [
     {title: 'wtf',
      content: 'lorem ipsum dolor'
@@ -138,3 +138,54 @@ const news = [
     }
 ]
 
+//
+// pętle
+//
+
+// pętla for
+for (let i=0; i<3; i++) {
+    console.log(`${i+1} wykonań pętli`);
+}
+
+// wypisanie elementów tablicy dzięki pętli for
+
+const foundationBooks = ['preludium fundacji', 'narodziny fundacji', 'fundacja'];
+for (i = 0; i < foundationBooks.length; i++) {
+    console.log(`Na miejscu ${i} znajduje się element: ${foundationBooks[i]}`);
+};
+
+for (i=0; i < cookBooks.length; i++) {
+    console.log(`element o indeksie ${i} ma treść ${cookBooks[i]}`);
+};
+
+// pętla while
+
+let whileA = 3;
+while (whileA < 9) {
+    console.log(whileA);
+    whileA = whileA+3;
+}
+console.log(whileA);
+
+// pętla do-while
+let doWhileA = 9;
+do {
+    console.log(doWhileA);
+    n=n+3;
+}   while (doWhileA < 9);
+console.log(doWhileA);
+
+//pętla for in
+const personForIn = {
+    name: 'Rafal',
+    age: 31,
+}
+for (let propertyName in personForIn) {
+    console.log(`${propertyName}: ${personForIn[propertyName]}`);
+}
+
+//pętla for of - prostsza of for do wypisania elementów tablicy
+const loopForOf = ['element1', 'element2', 'element3'];
+for (let element of loopForOf) {
+    console.log(element);
+}

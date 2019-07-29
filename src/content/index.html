@@ -838,6 +838,17 @@
         </ul>
       </article>
 
+      <!-- różne -->
+      <article class="article">
+        <h3 class="article__title">Różne</h3>
+        <ul class="article__list">
+          <li class="article__list-element"><code class="article__code">i++</code> Postinkrementacja - zdarzenie, które dzieje się po wykonaniu kodu</li>
+          <li class="article__list-element"><code class="article__code">let a = 1; console.log(a++); console.log(a);</code> na pierszy rzut oka może dać dziwne wyniki. Najpierw wypisuje się pierwsze a = 1, później nastepuje inkrementacja i później wypisanie zinkrementowanej wartości a=2.</li>
+          <li class="article__list-element"><code class="article__code">i--</code> Postdekrementacja - zdarzenie odejmujące 1 od wartości, które dzieje się po wykonaniu kodu</li>
+          <li class="article__list-element"><code class="article__code">++i</code> preinkrementacja - zdarzenie dodające 1 od wartości, które dzieje się przed wykonaniem kodu.</li>
+          </ul>
+      </article>
+
       <!-- logika JS -->
       <article class="article">
         <h3 class="article__title">Logika w JS</h3>
@@ -933,6 +944,34 @@
           <li class="article__list-element"><code class="article__code">hardware.splice(1, 2);</code> Usunięcie 2 elementów z tablicy o nazwie hardware</li>
           <li class="article__list-element"><code class="article__code">tablica.slice(index, liczbaElementów-1);</code> Pobranie n elementów od danej pozycji</li>
           <li class="article__list-element"><code class="article__code">tablica.slice(2, 3);</code> Pobranie jednego elementu z tablicy - inaczej niż w metodzie splice .</li>
+        </ul>
+      </article>
+
+      <article class="article">
+        <h3 class="article__title">Pętle</h3>
+          <h4 class="article__title--small">Pętla for</h4>
+        <ul class="article__list">
+          <li class="article__list-element">W pętlach rzeczy podajemy nie po przecinku, a po średniku</li>
+          <li class="article__list-element"><code class="article__code">for (inicjalizacja; warunek stopu; wyrażenie inrekementacji) {kod};</code> Podstawowa pętla wystepująca w wielu jezykach programowania.</li>
+          <li class="article__list-element"><code class="article__code">for (let i=0; i &lt; 3; i++) {console.log(` ${i} wykonanie pętli`};}</code></li>
+          <li class="article_-list-element"><code class="article__code">const elements = ['preludium fundacji', 'narodziny fundacji', 'fundacja'];<br> for (let i=0; i &lt; elements.length; i++) {console.log('na miejscu ${i} jest ${element[i]};}</code> Pętli for możemy użyć do wypisania elementów tablicy</li>
+        </ul>
+        <h4 class="article__title--small">Pętla while</h4>
+        <ul class="article__list">
+          <li class="article__list-element"><code class="article__code">while (warunek logiczny) {kod}</code> </li>
+          <li class="article__list-element"><code class="article__code">let a=10;</br> while (a>0) {console.log(a--)}</code> Dopóki a&lt;0, odejmuj 1 od a i wypisuj a.</li>
+        </ul>
+        <h4 class="article__title--small">Pętla do-while</h4>
+        <ul class="article__list">
+          <li class="article__list-element"><code class="article__code">do {kod} while(warunek) </code> Kod wykonuje się, dopiero później sprawdza sie warunek. Dlatego zawsze przynajmniej raz się wykona kod.</li>
+        </ul>
+        <h4 class="article__title--small">Pętla for in</h4>
+        <ul class="article__list">
+          <li class="article__list-element"><code class="article__code">for (własność in obiekt)</code> Głównie do wypisywania naszego obiektu - chcielibyśmy wypisać elementy obiektu, lub coś z nimi zrobić.</li>
+        </ul>
+        <h4 class="article__title--small">Pętla for of</h4>
+        <ul class="article__list">
+          <li class="article__list-element"><code class="article__code">for (własność of obiekt)</code> Wygodniejsza do użycia z tablicami. Nie trzeba podawać długości tablicy.</li>
         </ul>
       </article>
 

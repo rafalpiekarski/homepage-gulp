@@ -52,11 +52,9 @@ html {
     padding-bottom: 10px;
     padding-top: 15px;
     &--small {
+      font-size: 24px;
       color: #353839;
       font-family: 'Roboto', sans-serif;
-      font-size: 24px;
-      padding-bottom: 10px;
-      padding-top: 15px;
     }
   }
 }
@@ -211,6 +209,14 @@ body {
     background-color: #ffffba;
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   }
+}
+
+.section-small__title {
+  color: #353839;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 15px;
 }
 
 .site-header {
