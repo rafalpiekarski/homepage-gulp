@@ -947,6 +947,7 @@
         </ul>
       </article>
 
+      <!-- loops -->
       <article class="article">
         <h3 class="article__title">Pętle</h3>
           <h4 class="article__title--small">Pętla for</h4>
@@ -972,6 +973,29 @@
         <h4 class="article__title--small">Pętla for of</h4>
         <ul class="article__list">
           <li class="article__list-element"><code class="article__code">for (własność of obiekt)</code> Wygodniejsza do użycia z tablicami. Nie trzeba podawać długości tablicy.</li>
+        </ul>
+      </article>
+
+      <!-- Przechowywanie danych -->
+      <article class="article">
+        <h3 class="article__title">Przechowywanie danych</h3>
+        <ul class="article__list">
+          <li class="article__list-element">Cookies - trochę przestarzałe. Obecnie stosuje się local stories.</li>
+          <li class="article__list-element"><code class="article__code">document.cookie</code> Dobranie się do ciastek z dokumentu.</li>
+          <li class="article__list-element"><code class="article__code">document.cookie = "nazwa = wartość";</code> Dodawanie cookie, które ma nazwę i daną wartość.</li>
+          <li class="article__list-element"><code class="article__code">document.cookie = "nazwa = wartośćKolejna"lo;</code> Dodawanie kolejnego cookie, które ma nazwę i daną wartość. Nie nadpisze się kolejne, tylko doda.</li>
+          <li class="article__list-element">Ciastka nie są tak istotne dla początkującego frontendowca. Są też trochę archaiczne. Ważniejsze są web storage: local storage oraz session storage.</li>
+          <li class="article__list-element"><code class="article__code">localStorage.setItem('nazwa', 'wartość');</code> Mtoda wstawi do Local Storage klucz o nazwie 'nazwa' mający wartość 'wartość'.</li>
+          <li class="article__list-element"><code class="article__code">localStorage.setItem('person', person);</code> Chcemy do Local Storage wstawić obiekt o nazwie person. Ustawiłem nazwę na person a w wartości jest obiekt person (stworzony wcześniej, tutaj tylko przykładowo). Wchodząc teraz w tę local storage w wartości będzie pisało [object Object] - po prostu obiektu nie można wrzucić w ten sposób do local storage.</li>
+          <li class="article__list-element"><code class="article__code">JSON.stringify(person)</code> Jeżeli chcemy zapakować obiekt do Local Storage, to musimy użyć metody JSON.stringify - zamienimy go w string JSONowy i on trafi w takiej formie do Local Storage.</li>
+          <li class="article__list-element"><code class="article__code">console.log(JSON.stringify(person)); const jsonPerson = JSON.stringify(person);</code> Używam console.log aby sobie sprawdzić, jak taki obiekt teraz wygląda. Stworzył się jednolinijkowy string z danymi. To nie jest jeszcze obiekt.</li>
+          <li class="article__list-element"><code class="article__code">console.log(localStorage.getItem('name'));</code> Pobieram wartość, jaka jest w kluczu o nazwie 'name' i wypisuje ją w konsoli.</li>
+          <li class="article__list-element"><code class="article__code">console.log(localStorage.getItem('person'));</code> Problem: Jeśli person jest obiektem, to w zwrotce dostanę [object object]</li>
+          <li class="article__list-element"><code class="article__code">const personStringify = localStorage.getItem('person'); const newPerson = JSON.parse(personStringify);</code> Najpierw zapisuję do zmiennej pobrany string zawierający dane z obiektu person. Później mogę go zamienić na obiekt</li>
+          <li class="article__list-element"><code class="article__code">localStorage.removeItem('nazwa');</code> usuwam dany klucz z Local Storage.</li>
+          <li class="article__list-element"><code class="article__code"></code>
+
+
         </ul>
       </article>
 
