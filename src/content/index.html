@@ -237,7 +237,9 @@
             chcę zmiany z nowej gałęzi włączyć do głównej gałęzi master, muszę zmiany zmergować. Będąc na gałęzi master,
             wpiszę podane tu polecenie. Nasz master dogoni wtedy poboczny branch. Master ma ściągnięte zmiany z brancha
             bocznego.</li>
-            <li class="article__list-element"><code class="article__code">git pull</code> Zrobiłem cos na githubie - na przykład przerobiłem plik redme. Mam teraz nieaktualną wersję u siebie. Robię polecenie git pull i ściągam dzięki temu zawartość z githuba do siebie na repozytorium.</li>
+          <li class="article__list-element"><code class="article__code">git pull</code> Zrobiłem cos na githubie - na
+            przykład przerobiłem plik redme. Mam teraz nieaktualną wersję u siebie. Robię polecenie git pull i ściągam
+            dzięki temu zawartość z githuba do siebie na repozytorium.</li>
         </ol>
       </article>
 
@@ -426,7 +428,8 @@
       <article class="article">
         <h3 class="article__title">Markdown</h3>
         <ul class="article__list">
-          <li class="article__list-element">Markdown to prosty język opisu treści, prostszy od HTMLa. Jest stosowany na przykład w readme na githubie</li>
+          <li class="article__list-element">Markdown to prosty język opisu treści, prostszy od HTMLa. Jest stosowany na
+            przykład w readme na githubie</li>
           <li class="article__list-element"># Nagłówek pierwszego poziomu</li>
           <li class="article__list-element">## Nagłówek drugiego poziomu</li>
           <li class="article__list-element">### Nagłówek trzeciego poziomu</li>
@@ -435,8 +438,8 @@
 
           <li class="article__list-element">`polecenie`</li>
           <li class="article__list-element">```javascript -nazwa języka<br>
-          console.log('polecenia języka');<br>
-          ```</li>
+            console.log('polecenia języka');<br>
+            ```</li>
           <li class="article__list-element">*kursywa*</li>
           <li class="article__list-element">**pogrubienie**</li>
           <li class="article__list-element">***pogrubienie z kursywą***</li>
@@ -676,6 +679,34 @@
         </ul>
       </article>
 
+      <!-- projektowanie graficzne -->
+      <article class="article">
+        <h3 class="article__title">Projektowanie graficzne</h3>
+        <h4 class="article__title--small">Zasady dobrego projektowania</h4>
+        <ol class="article__list">
+          <li class="article__list-element">Zacznij od prawdziwej treści - wymyślanie contentu sprawi, że elementy
+            strony nie będą odpowiadać rzeczywistości.</li>
+          <li class="article__list-element">Naszkicuj wstepny układ na papierze- szybciej i łatwiej, niż kodować od
+            razu.</li>
+          <li class="article__list-element">Porzuć wizję strony idealnej. Osoba wchodząca na stronę ma dostać po
+            pierwsze treść, po którą przyszła.</li>
+            <li class="article__list-element">Działamy krok po kroku - one step at a time</li>
+            <li class="article__list-element">Zacznij od białego, szarego i szarości - pomoże skupić się na treści i oszczędza czas.</li>
+            <li class="article__list-element">Wykorzystaj gotowe elementy, wykorzystaj UI KITy - np. <link class="article__link" href="https://pdkit.co/">pdkit.co</link> paczka do figmy, do projektowania</li>
+            <li class="article__list-element"></li>
+            <li class="article__list-element"></li>
+        </ol>
+        <h4 class="article__title--small">Polecane strony</h4>
+        <ul class="article__list-element"><a class="article__link" href="https://dribbble.com/">Dribbble.com</a></ul>
+        <ul class="article__list-element"><a class="article__link" href="https://www.behance.net/">behance.net</a></ul>
+        <ul class="article__list-element"><a class="article__link" href="https://refactoringui.com/">refactoringui.com</a></ul>
+        <ul class="article__list-element" ><a class="article__link" href="https://www.awwwards.com/websites/">awwwards.com/websites</a></ul>
+        <ul class="article__list-element"><a class="article__link" href="https://www.siteinspire.com/">siteinspire</a></ul>
+        <ul class="article__list-element"><a class="article__link" href="https://codepen.io/popular/pens/">codepen.io</a></ul>
+        <ul class="article__list-element"><a class="article__link" href="https://tympanus.net/codrops/">tympanus.net/codrops</a> W wyszukiwarce tympanus button effect np. wpisać</ul>
+        <ul class="article__list-element"><a class="article__link" href="https://cssdesignawards.com/">cssdesignawards.com</a></ul>
+      </article>
+
     </section>
     <!-- EO good practices - dobre praktyki -->
 
@@ -839,11 +870,17 @@
       <article class="article">
         <h3 class="article__title">Różne</h3>
         <ul class="article__list">
-          <li class="article__list-element"><code class="article__code">i++</code> Postinkrementacja - zdarzenie, które dzieje się po wykonaniu kodu</li>
-          <li class="article__list-element"><code class="article__code">let a = 1; console.log(a++); console.log(a);</code> na pierszy rzut oka może dać dziwne wyniki. Najpierw wypisuje się pierwsze a = 1, później nastepuje inkrementacja i później wypisanie zinkrementowanej wartości a=2.</li>
-          <li class="article__list-element"><code class="article__code">i--</code> Postdekrementacja - zdarzenie odejmujące 1 od wartości, które dzieje się po wykonaniu kodu</li>
-          <li class="article__list-element"><code class="article__code">++i</code> preinkrementacja - zdarzenie dodające 1 od wartości, które dzieje się przed wykonaniem kodu.</li>
-          </ul>
+          <li class="article__list-element"><code class="article__code">i++</code> Postinkrementacja - zdarzenie, które
+            dzieje się po wykonaniu kodu</li>
+          <li class="article__list-element"><code
+              class="article__code">let a = 1; console.log(a++); console.log(a);</code> na pierszy rzut oka może dać
+            dziwne wyniki. Najpierw wypisuje się pierwsze a = 1, później nastepuje inkrementacja i później wypisanie
+            zinkrementowanej wartości a=2.</li>
+          <li class="article__list-element"><code class="article__code">i--</code> Postdekrementacja - zdarzenie
+            odejmujące 1 od wartości, które dzieje się po wykonaniu kodu</li>
+          <li class="article__list-element"><code class="article__code">++i</code> preinkrementacja - zdarzenie dodające
+            1 od wartości, które dzieje się przed wykonaniem kodu.</li>
+        </ul>
       </article>
 
       <!-- logika JS -->
@@ -929,47 +966,70 @@
         <h3 class="article__title">Tablice</h3>
         <ul class="article__list">
           <li class="article__list-element">Tablica (array) != tabela (table)</li>
-          <li class="article__list-element"><code class="article__code">console.log(tablica[1]);</code> Wypisanie drugiego elementu z tablicy o nazwie "tablica".</li>
-          <li class="article__list-element"><code class="article__code">console.log(tablica.lenght);</code> Wypisanie ilości elementów w tablicy.</li>
-          <li class="article__list-element"><code class="article__code">tablica.push("nazwa elementu");</code> Dodanie elementu na koniec tablicy.oczywiście można dodać nowe obiekty do tablicy.</li>
-          <li class="article__list-element"><code class="article__code">tablica.unshift("nazwa elementu");</code> Dodanie elementu na początek tablicy.oczywiście można dodać nowe obiekty do tablicy.</li>
-          <li class="article__list-element"><code class="article__code">talica.shift();</code> Usunięcie elementu z początku tablicy.</li>
-          <li class="article__list-element"><code class="article__code">tablica.pop();</code> Usunięcie elementu z końca tablicy.</li>
-          <li class="article__list-element"><code class="article__code">tablica.indexOf("szukany element");</code> Podanie, pod którym indeksem jest dany element w tablicy, o ile jest częścią tablicy. Jeśi nie ma danego elementu, dostanę w zwrotce wartość (-1)</li>
-          <li class="article__list-element"><code class="article__code">tablica.pop();</code> Usunięcie elementu z końca tablicy.</li>
-          <li class="article__list-element"><code class="article__code">tablica.splice(index, liczbaElementów);</code> Usunięcie n elementów od danej pozycji</li>
-          <li class="article__list-element"><code class="article__code">hardware.splice(1, 2);</code> Usunięcie 2 elementów z tablicy o nazwie hardware</li>
-          <li class="article__list-element"><code class="article__code">tablica.slice(index, liczbaElementów-1);</code> Pobranie n elementów od danej pozycji</li>
-          <li class="article__list-element"><code class="article__code">tablica.slice(2, 3);</code> Pobranie jednego elementu z tablicy - inaczej niż w metodzie splice .</li>
+          <li class="article__list-element"><code class="article__code">console.log(tablica[1]);</code> Wypisanie
+            drugiego elementu z tablicy o nazwie "tablica".</li>
+          <li class="article__list-element"><code class="article__code">console.log(tablica.lenght);</code> Wypisanie
+            ilości elementów w tablicy.</li>
+          <li class="article__list-element"><code class="article__code">tablica.push("nazwa elementu");</code> Dodanie
+            elementu na koniec tablicy.oczywiście można dodać nowe obiekty do tablicy.</li>
+          <li class="article__list-element"><code class="article__code">tablica.unshift("nazwa elementu");</code>
+            Dodanie elementu na początek tablicy.oczywiście można dodać nowe obiekty do tablicy.</li>
+          <li class="article__list-element"><code class="article__code">talica.shift();</code> Usunięcie elementu z
+            początku tablicy.</li>
+          <li class="article__list-element"><code class="article__code">tablica.pop();</code> Usunięcie elementu z końca
+            tablicy.</li>
+          <li class="article__list-element"><code class="article__code">tablica.indexOf("szukany element");</code>
+            Podanie, pod którym indeksem jest dany element w tablicy, o ile jest częścią tablicy. Jeśi nie ma danego
+            elementu, dostanę w zwrotce wartość (-1)</li>
+          <li class="article__list-element"><code class="article__code">tablica.pop();</code> Usunięcie elementu z końca
+            tablicy.</li>
+          <li class="article__list-element"><code class="article__code">tablica.splice(index, liczbaElementów);</code>
+            Usunięcie n elementów od danej pozycji</li>
+          <li class="article__list-element"><code class="article__code">hardware.splice(1, 2);</code> Usunięcie 2
+            elementów z tablicy o nazwie hardware</li>
+          <li class="article__list-element"><code class="article__code">tablica.slice(index, liczbaElementów-1);</code>
+            Pobranie n elementów od danej pozycji</li>
+          <li class="article__list-element"><code class="article__code">tablica.slice(2, 3);</code> Pobranie jednego
+            elementu z tablicy - inaczej niż w metodzie splice .</li>
         </ul>
       </article>
 
       <!-- loops -->
       <article class="article">
         <h3 class="article__title">Pętle</h3>
-          <h4 class="article__title--small">Pętla for</h4>
+        <h4 class="article__title--small">Pętla for</h4>
         <ul class="article__list">
           <li class="article__list-element">W pętlach rzeczy podajemy nie po przecinku, a po średniku</li>
-          <li class="article__list-element"><code class="article__code">for (inicjalizacja; warunek stopu; wyrażenie inrekementacji) {kod};</code> Podstawowa pętla wystepująca w wielu jezykach programowania.</li>
-          <li class="article__list-element"><code class="article__code">for (let i=0; i &lt; 3; i++) {console.log(` ${i} wykonanie pętli`};}</code></li>
-          <li class="article_-list-element"><code class="article__code">const elements = ['preludium fundacji', 'narodziny fundacji', 'fundacja'];<br> for (let i=0; i &lt; elements.length; i++) {console.log('na miejscu ${i} jest ${element[i]};}</code> Pętli for możemy użyć do wypisania elementów tablicy</li>
+          <li class="article__list-element"><code
+              class="article__code">for (inicjalizacja; warunek stopu; wyrażenie inrekementacji) {kod};</code>
+            Podstawowa pętla wystepująca w wielu jezykach programowania.</li>
+          <li class="article__list-element"><code
+              class="article__code">for (let i=0; i &lt; 3; i++) {console.log(` ${i} wykonanie pętli`};}</code></li>
+          <li class="article_-list-element"><code
+              class="article__code">const elements = ['preludium fundacji', 'narodziny fundacji', 'fundacja'];<br> for (let i=0; i &lt; elements.length; i++) {console.log('na miejscu ${i} jest ${element[i]};}</code>
+            Pętli for możemy użyć do wypisania elementów tablicy</li>
         </ul>
         <h4 class="article__title--small">Pętla while</h4>
         <ul class="article__list">
           <li class="article__list-element"><code class="article__code">while (warunek logiczny) {kod}</code> </li>
-          <li class="article__list-element"><code class="article__code">let a=10;</br> while (a>0) {console.log(a--)}</code> Dopóki a&lt;0, odejmuj 1 od a i wypisuj a.</li>
+          <li class="article__list-element"><code
+              class="article__code">let a=10;</br> while (a>0) {console.log(a--)}</code> Dopóki a&lt;0, odejmuj 1 od a i
+            wypisuj a.</li>
         </ul>
         <h4 class="article__title--small">Pętla do-while</h4>
         <ul class="article__list">
-          <li class="article__list-element"><code class="article__code">do {kod} while(warunek) </code> Kod wykonuje się, dopiero później sprawdza sie warunek. Dlatego zawsze przynajmniej raz się wykona kod.</li>
+          <li class="article__list-element"><code class="article__code">do {kod} while(warunek) </code> Kod wykonuje
+            się, dopiero później sprawdza sie warunek. Dlatego zawsze przynajmniej raz się wykona kod.</li>
         </ul>
         <h4 class="article__title--small">Pętla for in</h4>
         <ul class="article__list">
-          <li class="article__list-element"><code class="article__code">for (własność in obiekt)</code> Głównie do wypisywania naszego obiektu - chcielibyśmy wypisać elementy obiektu, lub coś z nimi zrobić.</li>
+          <li class="article__list-element"><code class="article__code">for (własność in obiekt)</code> Głównie do
+            wypisywania naszego obiektu - chcielibyśmy wypisać elementy obiektu, lub coś z nimi zrobić.</li>
         </ul>
         <h4 class="article__title--small">Pętla for of</h4>
         <ul class="article__list">
-          <li class="article__list-element"><code class="article__code">for (własność of obiekt)</code> Wygodniejsza do użycia z tablicami. Nie trzeba podawać długości tablicy.</li>
+          <li class="article__list-element"><code class="article__code">for (własność of obiekt)</code> Wygodniejsza do
+            użycia z tablicami. Nie trzeba podawać długości tablicy.</li>
         </ul>
       </article>
 
@@ -978,18 +1038,42 @@
         <h3 class="article__title">Przechowywanie danych</h3>
         <ul class="article__list">
           <li class="article__list-element">Cookies - trochę przestarzałe. Obecnie stosuje się local stories.</li>
-          <li class="article__list-element"><code class="article__code">document.cookie</code> Dobranie się do ciastek z dokumentu.</li>
-          <li class="article__list-element"><code class="article__code">document.cookie = "nazwa = wartość";</code> Dodawanie cookie, które ma nazwę i daną wartość.</li>
-          <li class="article__list-element"><code class="article__code">document.cookie = "nazwa = wartośćKolejna";</code> Dodawanie kolejnego cookie, które ma nazwę i daną wartość. Nie nadpisze się kolejne, tylko doda.</li>
-          <li class="article__list-element">Ciastka nie są tak istotne dla początkującego frontendowca. Są też trochę archaiczne. Ważniejsze są web storage: local storage oraz session storage.</li>
-          <li class="article__list-element"><code class="article__code">localStorage.setItem('nazwa', 'wartość');</code> Mtoda wstawi do Local Storage klucz o nazwie 'nazwa' mający wartość 'wartość'.</li>
-          <li class="article__list-element"><code class="article__code">localStorage.setItem('person', person);</code> Chcemy do Local Storage wstawić obiekt o nazwie person. Ustawiłem nazwę na person a w wartości jest obiekt person (stworzony wcześniej, tutaj tylko przykładowo). Wchodząc teraz w tę local storage w wartości będzie pisało [object Object] - po prostu obiektu nie można wrzucić w ten sposób do local storage.</li>
-          <li class="article__list-element"><code class="article__code">JSON.stringify(person)</code> Jeżeli chcemy zapakować obiekt do Local Storage, to musimy użyć metody JSON.stringify - zamienimy go w string JSONowy i on trafi w takiej formie do Local Storage.</li>
-          <li class="article__list-element"><code class="article__code">console.log(JSON.stringify(person));</code> Używam console.log aby sobie sprawdzić, jak taki obiekt teraz wygląda. Jak widać w console log, stworzył się jednolinijkowy string z danymi. Można go wrzucić do Local Storage właśnie w tej formie - JSONowego stringa - mogę użyć <code class="article__code">localStorage.setItem</code> aby wstawić do Local Storage taki ciąg.</li>
-          <li class="article__list-element"><code class="article__code">console.log(localStorage.getItem('name'));</code> Pobieram wartość, jaka jest w kluczu o nazwie 'name' i wypisuje ją w konsoli - dostaję wartość z klucza.</li>
-          <li class="article__list-element"><code class="article__code">console.log(localStorage.getItem('person'));</code> Problem: Pobiore dane  w formie stringa JSONowego, bo takie były w Local Storage. Będę więc musiał później zamienić ten string na obiekt.</li>
-          <li class="article__list-element"><code class="article__code">const personStringify = localStorage.getItem('person'); const newPerson = JSON.parse(personStringify);</code> Najpierw zapisuję do zmiennej pobrany string zawierający dane z obiektu person. Później mogę go zamienić na obiekt</li>
-          <li class="article__list-element"><code class="article__code">localStorage.removeItem('nazwa');</code> usuwam dany klucz z Local Storage.</li>
+          <li class="article__list-element"><code class="article__code">document.cookie</code> Dobranie się do ciastek z
+            dokumentu.</li>
+          <li class="article__list-element"><code class="article__code">document.cookie = "nazwa = wartość";</code>
+            Dodawanie cookie, które ma nazwę i daną wartość.</li>
+          <li class="article__list-element"><code
+              class="article__code">document.cookie = "nazwa = wartośćKolejna";</code> Dodawanie kolejnego cookie, które
+            ma nazwę i daną wartość. Nie nadpisze się kolejne, tylko doda.</li>
+          <li class="article__list-element">Ciastka nie są tak istotne dla początkującego frontendowca. Są też trochę
+            archaiczne. Ważniejsze są web storage: local storage oraz session storage.</li>
+          <li class="article__list-element"><code class="article__code">localStorage.setItem('nazwa', 'wartość');</code>
+            Mtoda wstawi do Local Storage klucz o nazwie 'nazwa' mający wartość 'wartość'.</li>
+          <li class="article__list-element"><code class="article__code">localStorage.setItem('person', person);</code>
+            Chcemy do Local Storage wstawić obiekt o nazwie person. Ustawiłem nazwę na person a w wartości jest obiekt
+            person (stworzony wcześniej, tutaj tylko przykładowo). Wchodząc teraz w tę local storage w wartości będzie
+            pisało [object Object] - po prostu obiektu nie można wrzucić w ten sposób do local storage.</li>
+          <li class="article__list-element"><code class="article__code">JSON.stringify(person)</code> Jeżeli chcemy
+            zapakować obiekt do Local Storage, to musimy użyć metody JSON.stringify - zamienimy go w string JSONowy i on
+            trafi w takiej formie do Local Storage.</li>
+          <li class="article__list-element"><code class="article__code">console.log(JSON.stringify(person));</code>
+            Używam console.log aby sobie sprawdzić, jak taki obiekt teraz wygląda. Jak widać w console log, stworzył się
+            jednolinijkowy string z danymi. Można go wrzucić do Local Storage właśnie w tej formie - JSONowego stringa -
+            mogę użyć <code class="article__code">localStorage.setItem</code> aby wstawić do Local Storage taki ciąg.
+          </li>
+          <li class="article__list-element"><code
+              class="article__code">console.log(localStorage.getItem('name'));</code> Pobieram wartość, jaka jest w
+            kluczu o nazwie 'name' i wypisuje ją w konsoli - dostaję wartość z klucza.</li>
+          <li class="article__list-element"><code
+              class="article__code">console.log(localStorage.getItem('person'));</code> Problem: Pobiore dane w formie
+            stringa JSONowego, bo takie były w Local Storage. Będę więc musiał później zamienić ten string na obiekt.
+          </li>
+          <li class="article__list-element"><code
+              class="article__code">const personStringify = localStorage.getItem('person'); const newPerson = JSON.parse(personStringify);</code>
+            Najpierw zapisuję do zmiennej pobrany string zawierający dane z obiektu person. Później mogę go zamienić na
+            obiekt</li>
+          <li class="article__list-element"><code class="article__code">localStorage.removeItem('nazwa');</code> usuwam
+            dany klucz z Local Storage.</li>
           <li class="article__list-element"><code class="article__code"></code></li>
 
 
