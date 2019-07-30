@@ -195,12 +195,15 @@
 //
 
 // //cookies
+// //wstawianie pary klucz - wartość do cookies
 // document.cookie = "testoweCiacho = jakaśWartość";
 // console.log(document.cookie);
+// //wstawianie drugiej pary klucz - wartość. Nie nadpisuje się a dodaje
 // document.cookie = "testoweCiacho = drugieCookies";
 // console.log(document.cookie);
 
-// local storage
+
+// // local storage
 // localStorage.setItem('name', 'wartość pierwsza');
 // console.log(localStorage);
 // localStorage.setItem('name', 'wartość druga, dopisuje się a nie nadpisuje');
@@ -210,19 +213,62 @@
 // localStorage.setItem('name', 'wartość trzecia');
 // console.log(localStorage);
 
-const book = {
-    name: 'book of contamination',
-    size: '47 x 44',
-    year: 1999
-};
+// //deklaracja przykładowego obiektu do wstawiania go do Local Storage
+// const book = {
+//     name: 'book of contamination',
+//     size: '47 x 44',
+//     year: 1999
+// };
 
-console.log(book);
-JSON.stringify(book);
-const bookStringify = JSON.stringify(book);
-console.log(bookStringify);
-// console.log(localStorage.getItem('name'));
+// //próba wstawienia obiektu do localStorage
+// //nie uda się - w localStorage będzie [object object]
+// localStorage.setItem('book', book);
+// console.log(JSON.stringify(book));
 
-// console.log(book);
+// //używam JSON.stringify aby dostać ciąg stringów JSONowy
+// const bookString = JSON.stringify(book);
+// console.log(bookString);
+// //wrzucam dane w formacie JSONowym do localStorage - teraz OK
+// localStorage.setItem('book', bookString);
+
+// //pobieranie klucza i wartosci z localStorage
+// //nie ma problemu - pojedyncza wartość pobrana
+// console.log(localStorage.getItem('name')); //wartość trzecia
+
+// //pobieranie klucza i wartości obiektu z localStorage
+// //pobrany ciąg znaków w formacie JSONa - taki jak tam był
+// console.log(localStorage.getItem('book'));
+
+// //zamiana stringa JSONowego na obiekt
 // const bookObject = localStorage.getItem('book');
 // console.log(bookObject);
-// const userData = JSON.parse()
+// const newBookObject = JSON.parse(bookObject);
+// console.log(newBookObject);
+
+// wstawianie danych do inputa odpornych na odświeżanie
+// dzięki trzymaniu tego, co wpisuję w Local Storage
+
+// 1. Pobieram inputa
+const focusInput = document.querySelector('.form__focus--js');
+// 2. podnoszę klawisz czyli akcja 'keyup'
+// do Local Storage ma się zapisać wartość z inputa
+// console.log - aby zobaczyć o co chodzi
+focusInput.addEventListener('keyup', (e) => {
+    console.log(e.target);
+});
+// e.target daje w wyniku cały element
+// zastosujemy więc e.target.value
+// console.log - aby zobaczyć o co chodzi
+focusInput.addEventListener('keyup', (e) => {
+    console.log(e.target.value);
+});
+// wartość zapisuję do Local Storage
+// za każdym razem jak puszcze klawisz, to wartośc => localStorage
+focusInput.addEventListener('keyup', (e) => {
+    localStorage.setItem('focusInput', e.target.value);
+});
+// wartość mamy w Local Storage, 
+// ale po wczytaniu strony nie są jeszcze pobierane
+if (localStorage.getItem('focusInput').length > 0) {
+    focusInput.value = localStorage.getItem('focusInput');
+};

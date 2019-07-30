@@ -552,9 +552,6 @@
     </section>
     <!-- EO animations section -->
 
-    </section>
-    <!-- EO console section -->
-
     <!-- good practices - dobre praktyki -->
     <section class="section section--red" id="section-good-practices">
       <h2 class="section__title">Dobre praktyki</h2>
@@ -983,17 +980,17 @@
           <li class="article__list-element">Cookies - trochę przestarzałe. Obecnie stosuje się local stories.</li>
           <li class="article__list-element"><code class="article__code">document.cookie</code> Dobranie się do ciastek z dokumentu.</li>
           <li class="article__list-element"><code class="article__code">document.cookie = "nazwa = wartość";</code> Dodawanie cookie, które ma nazwę i daną wartość.</li>
-          <li class="article__list-element"><code class="article__code">document.cookie = "nazwa = wartośćKolejna"lo;</code> Dodawanie kolejnego cookie, które ma nazwę i daną wartość. Nie nadpisze się kolejne, tylko doda.</li>
+          <li class="article__list-element"><code class="article__code">document.cookie = "nazwa = wartośćKolejna";</code> Dodawanie kolejnego cookie, które ma nazwę i daną wartość. Nie nadpisze się kolejne, tylko doda.</li>
           <li class="article__list-element">Ciastka nie są tak istotne dla początkującego frontendowca. Są też trochę archaiczne. Ważniejsze są web storage: local storage oraz session storage.</li>
           <li class="article__list-element"><code class="article__code">localStorage.setItem('nazwa', 'wartość');</code> Mtoda wstawi do Local Storage klucz o nazwie 'nazwa' mający wartość 'wartość'.</li>
           <li class="article__list-element"><code class="article__code">localStorage.setItem('person', person);</code> Chcemy do Local Storage wstawić obiekt o nazwie person. Ustawiłem nazwę na person a w wartości jest obiekt person (stworzony wcześniej, tutaj tylko przykładowo). Wchodząc teraz w tę local storage w wartości będzie pisało [object Object] - po prostu obiektu nie można wrzucić w ten sposób do local storage.</li>
           <li class="article__list-element"><code class="article__code">JSON.stringify(person)</code> Jeżeli chcemy zapakować obiekt do Local Storage, to musimy użyć metody JSON.stringify - zamienimy go w string JSONowy i on trafi w takiej formie do Local Storage.</li>
-          <li class="article__list-element"><code class="article__code">console.log(JSON.stringify(person)); const jsonPerson = JSON.stringify(person);</code> Używam console.log aby sobie sprawdzić, jak taki obiekt teraz wygląda. Stworzył się jednolinijkowy string z danymi. To nie jest jeszcze obiekt.</li>
-          <li class="article__list-element"><code class="article__code">console.log(localStorage.getItem('name'));</code> Pobieram wartość, jaka jest w kluczu o nazwie 'name' i wypisuje ją w konsoli.</li>
-          <li class="article__list-element"><code class="article__code">console.log(localStorage.getItem('person'));</code> Problem: Jeśli person jest obiektem, to w zwrotce dostanę [object object]</li>
+          <li class="article__list-element"><code class="article__code">console.log(JSON.stringify(person));</code> Używam console.log aby sobie sprawdzić, jak taki obiekt teraz wygląda. Jak widać w console log, stworzył się jednolinijkowy string z danymi. Można go wrzucić do Local Storage właśnie w tej formie - JSONowego stringa - mogę użyć <code class="article__code">localStorage.setItem</code> aby wstawić do Local Storage taki ciąg.</li>
+          <li class="article__list-element"><code class="article__code">console.log(localStorage.getItem('name'));</code> Pobieram wartość, jaka jest w kluczu o nazwie 'name' i wypisuje ją w konsoli - dostaję wartość z klucza.</li>
+          <li class="article__list-element"><code class="article__code">console.log(localStorage.getItem('person'));</code> Problem: Pobiore dane  w formie stringa JSONowego, bo takie były w Local Storage. Będę więc musiał później zamienić ten string na obiekt.</li>
           <li class="article__list-element"><code class="article__code">const personStringify = localStorage.getItem('person'); const newPerson = JSON.parse(personStringify);</code> Najpierw zapisuję do zmiennej pobrany string zawierający dane z obiektu person. Później mogę go zamienić na obiekt</li>
           <li class="article__list-element"><code class="article__code">localStorage.removeItem('nazwa');</code> usuwam dany klucz z Local Storage.</li>
-          <li class="article__list-element"><code class="article__code"></code>
+          <li class="article__list-element"><code class="article__code"></code></li>
 
 
         </ul>
@@ -1051,7 +1048,7 @@
         <p>
           <label for="name">Wpisz swoje imię</label>
           <input placeholder="Rafał P." pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" name="name" id="name"
-            class="form__focus">
+            class="form__focus form__focus--js">
         </p>
         <p>
           <label for="riddle">Wpisz słowo cotenfrontend</label>

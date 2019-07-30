@@ -352,9 +352,9 @@ html {
     padding-bottom: 10px;
     padding-top: 15px; }
     .article__title--small {
-      font-size: 24px;
       color: #353839;
-      font-family: 'Roboto', sans-serif; }
+      font-family: 'Roboto', sans-serif;
+      font-size: 24px; }
 
 body {
   background-color: #efefee;
