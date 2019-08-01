@@ -578,6 +578,28 @@
     <section class="section section--red" id="section-good-practices">
       <h2 class="section__title">Dobre praktyki</h2>
 
+      <!-- HEAD i OpenGraph-->
+      <article class="article">
+        <h3 class="article__title">HEAD</h3>
+        <ul class="article__list">
+          <li class="article__list-element">Mamy znaczniki meta: (name="viewport" + content) (http-equiv + content) (charset="UTF-8")</li>
+          <li class="article__list-element">Mamy znacznik (title)</li>
+          <li class="article__list-element">Mamy też znacznik meta (name="description" + content - to jest opis widoczny w wyszukiwarce. Istotne</li>
+          <li class="article__list-element"><code class="article__code">link rel="icon" type="image/png" href=""</code> Aby użyć ikony. Kiedyś były favicony, teraz nie jest tokonieczne, wystarczy np. png w rozmiarze odpowiednim. Można też tworzyć animowane ikonny. To może też być przeźroczyste png.</li>
+        </ul>
+        <h3 class="article__title">OpenGraph</h3>
+        <ul class="article__list">
+            <li class="article__list-element">OpenGraph pozwala na lepsze opisywanie tego, co znajduje się w internecie. Używane przez firmy, którym nie wystarczy description w znacznikach meta. Jest to uniwersalny protokół do opisywania rzeczy w internecie.</li>
+            <li class="article__list-element">Udostępniając link na facebooku można skorzystać z OpenGraphu: wyśle się tytuł + link + opis + zdjęcie.</li>
+            <li class="article__list-element"><code class="article__code">meta property="og:title" content="CV Rafał Piekarski"</code> Przykład zastosowania OpenGraph do tytułu.</li>
+            <li class="article__list-element"><code class="article__code">meta property="og:description" content="CV doświadczonego kierownika produkcji pracującego w przemyśle stoczniowym."</code> Opis</li>
+            <li class="article__list-element"><code class="article__code">meta property="og:url" content="pełny adres ze slashem"</code></li>
+            <li class="article__list-element"><code class="article__code">meta property="og:image" content="pełny adres ze slashem"</code></li>
+            <li class="article__list-element"><a class="article__link" href="http://ogp.me/">ogp.me</a> Link do strony, gdzie mogę sprawdzić tworzony OpenGraph dla facebooka</li>
+        </ul>
+      </article>
+
+
       <!-- BEM -->
       <article class="article">
         <h3 class="article__title">BEM - Block Element Modifier</h3>
