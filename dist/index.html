@@ -366,6 +366,7 @@
             zmieniamy w nim nic! Plik pozwala na zablokowanie wersji, pomaga w pilnowaniu czy wersja jest odpowiednia.
             Pobierając od kogoś projekt wiemy, jakie wersje których paczek są w projekcie - nie wyjdzie sytuacja, gdy
             mamy np. nowszą paczkę, która jest niekompatybilna z wersją zastosowaną w projekcie.</li>
+            <li class="article__list-element"><code class="article__code">npm audit</code> Polecenie sprawdza stan aktualizacji i błędów w pakietach npm. Drugim poleceniem powinno byc <code class="article__code">npm audit fix</code> Aby npm spróbował naprawić zauważone błędy.</li>
         </ol>
       </article>
 
@@ -467,13 +468,14 @@
             Najczęściej spotykany sposób na zastosowanie jakiegoś efektu to dodawanie / odejmowanie klasy w zależności
             od potrzeb (np. <code class="article__code">button</code> vs <code
               class="article__code">button.show</code>).</li>
-          <li class="article__list-element">co warto animować: kolory, opacity, pozycję, model pudełkowy (marign,
+          <li class="article__list-element">co warto animować: kolory, opacity, pozycję, model pudełkowy (margin,
             padding, border), transformacje
             (rotate, scale).
           </li>
           <li class="article__list-element">Do czego nie warto stosować transition: display, float, position, rodzaj
-            czcionki.</li>
-          <li class="article__list-element">Aby użyć transition potrzeba: wartośći początkowej + wartości końcowej +
+            czcionki, width, height - są to właściwości, których przeliczanie bardzo mocno obciąża przeglądarkę. </li>
+            <li class="article__list-element"><code class="article__code">transition all .3s ease-in-out</code> Niepolecane jest, aby przejścia stosować dla wszystkich właściwości, gdyż bardzo to obciąża zasoby.</li>
+          <li class="article__list-element"><code class="article__code">transition: (none) (duration) (timing function) (delay)</code>Aby użyć transition potrzeba: wartośći początkowej + wartości końcowej +
             określenia samego przejścia +
             zdefiniowanie triggera (wyzwalacza)</li>
           <li class="article__list-element">Przykład zastosowania transition dla kilku właściwośći:
@@ -552,8 +554,25 @@
             duration =0 i name = none</li>
         </ul>
       </article>
+
+      <!-- SVG -->
+      <article class="article">
+        <h2 class="article__title">SVG</h2>
+        <ul class="article__list">
+          <li class="article__list-element">Obraz SVG można otworzyć w edytorze HTML.</li>
+          <li class="article__list-element"><code class="article__code">{fill:#30613;}</code> Wypełnienie</li>
+          <li class="article__list-element">Plik SVG to tak naprawdę plik XML</li>
+          <li class="article__list-element">SVG można wstawić jak zwykły obrazek przez img= </li>
+          <li class="article__list-element">SVG można wrzucić też w kod HTMLa! Wtedy jest dostęp do poszczególnych elementów pliku SVG. Można animować, stylować pojedyncze elementy pliku SVG</li>
+          <li class="article__list-element"><code class="article__code">&lt;g class="scale"&gt; &lt;path ...&gt; &lt;path ... &gt; </code>Mogę opakować poszczególne ścieżki w znacznik 'g' i nadać mu klasę, a później stylować całość po klasie. Wywołam to stosując: <code class="article__code">g.scale {}
+          </code></li>
+          <li class="article__code">SVG powinienem stosować gdziekolwiek się da, bo te pliki niewiele ważą.</li>
+        </ul>
+      </article>
+
     </section>
     <!-- EO animations section -->
+    
 
     <!-- good practices - dobre praktyki -->
     <section class="section section--red" id="section-good-practices">
@@ -609,6 +628,7 @@
             class="article__link">autoprefixer.github.io</a> Samodzielnie dodaje autoprefixy do wklejonego kodu. Mogę
           też zerkać na stronę caniuse i sprawdzać, czy cos potrzebuje dodania prefixu. Autoprefixer jest zainstalowany
           już w paczce kursowego starterkita.</p>
+          <p class="article__content">Projektując przycisk ustawiam mu szerokość w ten sposób: <code class="article__code">min-width: 200px</code> Po to ma minimalną szerokość, aby treść nie zawijała się, jeśli jest za długa.</p>
       </article>
 
       <!-- Obrazy -->
