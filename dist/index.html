@@ -448,6 +448,17 @@
         </ul>
       </article>
 
+      <!-- PWA -->
+      <article class="article">
+        <h3 class="article__title">PWA - Progressive Web Apps</h3>
+        <ul class="article__list">
+          <li class="article__list-element">Aplikacje natywne pisane w technologiach HTML, CSS, JS - bez konieczności nauki nowych technologii (powiadomienia, aparat itp). Działają offline, łatwa aktualizacja i dystrybucja. </li>
+          <li class="article__list-element">Technologia w trakcie rozwoju, ale bardzo przyszłościowa</li>
+          <li class="article__list-element">Umożliwia stosowanie jednego kodu</li>
+          <li class="article__list-element">
+        </ul>
+      </article>
+
     </section>
     <!-- EO tools section -->
 
@@ -572,11 +583,31 @@
 
     </section>
     <!-- EO animations section -->
-    
 
     <!-- good practices - dobre praktyki -->
     <section class="section section--red" id="section-good-practices">
       <h2 class="section__title">Dobre praktyki</h2>
+
+      <!-- HEAD i OpenGraph-->
+      <article class="article">
+        <h3 class="article__title">HEAD</h3>
+        <ul class="article__list">
+          <li class="article__list-element">Mamy znaczniki meta: (name="viewport" + content) (http-equiv + content) (charset="UTF-8")</li>
+          <li class="article__list-element">Mamy znacznik (title)</li>
+          <li class="article__list-element">Mamy też znacznik meta (name="description" + content - to jest opis widoczny w wyszukiwarce. Istotne</li>
+          <li class="article__list-element"><code class="article__code">link rel="icon" type="image/png" href=""</code> Aby użyć ikony. Kiedyś były favicony, teraz nie jest tokonieczne, wystarczy np. png w rozmiarze odpowiednim. Można też tworzyć animowane ikonny. To może też być przeźroczyste png.</li>
+        </ul>
+        <h3 class="article__title">OpenGraph</h3>
+        <ul class="article__list">
+            <li class="article__list-element">OpenGraph pozwala na lepsze opisywanie tego, co znajduje się w internecie. Używane przez firmy, którym nie wystarczy description w znacznikach meta. Jest to uniwersalny protokół do opisywania rzeczy w internecie.</li>
+            <li class="article__list-element">Udostępniając link na facebooku można skorzystać z OpenGraphu: wyśle się tytuł + link + opis + zdjęcie.</li>
+            <li class="article__list-element"><code class="article__code">meta property="og:title" content="CV Rafał Piekarski"</code> Przykład zastosowania OpenGraph do tytułu.</li>
+            <li class="article__list-element"><code class="article__code">meta property="og:description" content="CV doświadczonego kierownika produkcji pracującego w przemyśle stoczniowym."</code> Opis</li>
+            <li class="article__list-element"><code class="article__code">meta property="og:url" content="pełny adres ze slashem"</code></li>
+            <li class="article__list-element"><code class="article__code">meta property="og:image" content="pełny adres ze slashem"</code></li>
+            <li class="article__list-element"><a class="article__link" href="http://ogp.me/">ogp.me</a> Link do strony, gdzie mogę sprawdzić tworzony OpenGraph dla facebooka</li>
+        </ul>
+      </article>
 
       <!-- BEM -->
       <article class="article">
@@ -726,6 +757,23 @@
         <ul class="article__list-element"><a class="article__link" href="https://tympanus.net/codrops/">tympanus.net/codrops</a> W wyszukiwarce tympanus button effect np. wpisać</ul>
         <ul class="article__list-element"><a class="article__link" href="https://cssdesignawards.com/">cssdesignawards.com</a></ul>
       </article>
+
+      <!-- WCAG -->
+      <article class="article">
+      <h3 class="article__title">WCAG</h3>
+      <ul class="article__list">
+        <li class="article__list-element">WAI - Web Accessibility Initiative - część W3C zajmująca się dostępnością - wypuszcza wskazówki i wytyczne takie, aby jak najwięcej osób mogło korzystać ze stron www.</li>
+        <li class="article__list-element">WCAG - Web Content Accessibility Guidelines - wytyczne</li>
+        <li class="article__list-element"><a class="article__link" href="http://widzialni.org/">Fundacja Widzialni</a> </li>
+        <li class="article__list-element"><a class="article__link" href="https://color.a11y.com/">a11y.com</a> Strona do sprawdzania kontrastu własnej strony</li>
+        <li class="article__list-element"><a class="article__link" href="colorsafe.co">Colorsafe.co</a> Palety kolorów bazujące na wytycznych WCAG</li>
+        <li class="article__list-element">Unikamy autoplay</li>
+        <li class="article__list-element">Nie ograniczamy rzeczy czasowo</li>
+        <li class="article__list-element">Nie usuwamy :focus - dla osób słabowidzących jest to wskazówka.</li>
+        <li class="article__list-element">Używam atrubutu ALT. Opisujemy co jest na zdjęciu, jakie są emocje na nim wyrażone, aby lepiej wyrazić to, co jest na zdjęciu. Opis kończymy kropką! Dzięki temu czytnik wie, że jest przerwa - koniec zdania.</li>
+        <li class="article__list-element">ARIA stozujemy bardziej do aplikacji</li>
+      </ul>
+    </article>
 
     </section>
     <!-- EO good practices - dobre praktyki -->
