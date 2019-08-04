@@ -455,7 +455,12 @@
           <li class="article__list-element">Aplikacje natywne pisane w technologiach HTML, CSS, JS - bez konieczności nauki nowych technologii (powiadomienia, aparat itp). Działają offline, łatwa aktualizacja i dystrybucja. </li>
           <li class="article__list-element">Technologia w trakcie rozwoju, ale bardzo przyszłościowa</li>
           <li class="article__list-element">Umożliwia stosowanie jednego kodu</li>
-          <li class="article__list-element">
+          <li class="article__list-element">Potrzebne są dwa pliki do uruchomienia PWA: serviceworker.js oraz manifest.json (lub inna nazwa, nie ma jednego standardu na to).</li>
+          <li class="article__list-element">Plikiem serviceworker.js nie będziemy się zajmować - jest przygotowany do pracy i nie trzeba w nim nic robić.</li>
+          <li class="article__list-element">W pliku manifest.json istotne jest scope oraz start_url, które w przypadku adresu np.: https://rafalpiekarski.github.io/homepage-gulp/ powinno mieć formę: /homepage-gulp/</li>
+          <li class="article__list-element">wchodzimy w chrome w zakładkę application. Mamy zakładkę Manifest oraz zakładkę Service Workers.</li>
+          <li class="article__list-element">Wszedłem na adres strony na githubie: w simple-editor. Otwierając ten adres na telefonie, android zapyta sie, czy dodać aplikację do ekranu głównego. Mam już wtedy stronę w formie aplikacji na telefonie. Odpalając npm run deploy ona też się powinna zaktualizować (?).</li>
+          
         </ul>
       </article>
 
