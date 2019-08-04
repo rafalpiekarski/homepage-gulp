@@ -34,6 +34,9 @@ html {
     font-family: 'Roboto Mono', monospace;
     padding: 1px 5px;
     color: black;
+    &:hover {
+      background-color: rgb(56, 151, 151);
+    }
     &--wrong {
       color: red;
     }

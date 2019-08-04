@@ -337,6 +337,8 @@ html {
     font-family: 'Roboto Mono', monospace;
     padding: 1px 5px;
     color: black; }
+    .article__link:hover {
+      background-color: #389797; }
     .article__link--wrong {
       color: red; }
   .article__list {
