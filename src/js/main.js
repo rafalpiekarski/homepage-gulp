@@ -248,27 +248,55 @@
 // wstawianie danych do inputa odpornych na odświeżanie
 // dzięki trzymaniu tego, co wpisuję w Local Storage
 
-// 1. Pobieram inputa
-const focusInput = document.querySelector('.form__focus--js');
-// 2. podnoszę klawisz czyli akcja 'keyup'
-// do Local Storage ma się zapisać wartość z inputa
-// console.log - aby zobaczyć o co chodzi
-focusInput.addEventListener('keyup', (e) => {
-    console.log(e.target);
-});
-// e.target daje w wyniku cały element
-// zastosujemy więc e.target.value
-// console.log - aby zobaczyć o co chodzi
-focusInput.addEventListener('keyup', (e) => {
-    console.log(e.target.value);
-});
-// wartość zapisuję do Local Storage
-// za każdym razem jak puszcze klawisz, to wartośc => localStorage
-focusInput.addEventListener('keyup', (e) => {
-    localStorage.setItem('focusInput', e.target.value);
-});
-// wartość mamy w Local Storage, 
-// ale po wczytaniu strony nie są jeszcze pobierane
-if (localStorage.getItem('focusInput').length > 0) {
-    focusInput.value = localStorage.getItem('focusInput');
-};
+// // 1. Pobieram inputa
+// const focusInput = document.querySelector('.form__focus--js');
+// // 2. podnoszę klawisz czyli akcja 'keyup'
+// // do Local Storage ma się zapisać wartość z inputa
+// // console.log - aby zobaczyć o co chodzi
+// focusInput.addEventListener('keyup', (e) => {
+//     console.log(e.target);
+// });
+// // e.target daje w wyniku cały element
+// // zastosujemy więc e.target.value
+// // console.log - aby zobaczyć o co chodzi
+// focusInput.addEventListener('keyup', (e) => {
+//     console.log(e.target.value);
+// });
+// // wartość zapisuję do Local Storage
+// // za każdym razem jak puszcze klawisz, to wartośc => localStorage
+// focusInput.addEventListener('keyup', (e) => {
+//     localStorage.setItem('focusInput', e.target.value);
+// });
+// // wartość mamy w Local Storage, 
+// // ale po wczytaniu strony nie są jeszcze pobierane
+// if (localStorage.getItem('focusInput').length > 0) {
+//     focusInput.value = localStorage.getItem('focusInput');
+// };
+
+//Fetch API
+fetch('https://api.github.com/users/rafalpiekarski/repos')
+.then(resp => resp.json()) //zamienamy resp na jsona
+.then(resp => {             //podmieniony json tu już jest
+    console.log(resp)
+})
+.catch(error => {
+    console.log('error')
+})
+console.log('test 2');
+//teraz można wypisac sobie pobrane repozytoria
+const list = document.querySelector('.list--js');
+fetch('https://api.github.com/users/rafalpiekarski/repos?sort=updated&direction=asc')
+.then(resp => resp.json()) //zamienamy resp na jsona
+.then(resp => {             //podmieniony json tu już jest
+    const repos = resp;
+    for (const repo of repos) {
+        //console.log(repo); //wszystko wypisze
+        console.log(repo.name); //tylko nazwy repozytoriow
+        console.log(repo.html_url);
+        console.log(`repozytorium o nazwie: ${repo.name} ma adres: ${repo.html_url}`);
+        list.innerHTML += `<li>${repo.name} <a href="${repo.html_url}"> ${repo.html_url}</a></li>`;
+    }
+})
+.catch(error => {
+    console.log('error')
+})

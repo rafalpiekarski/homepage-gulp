@@ -1153,6 +1153,51 @@
         </ul>
       </article>
 
+      <!-- praca z API / JSON -->
+      <article class="article">
+        <h3 class="article__title">Praca z API / JSON</h3>
+        <ul class="article__list">
+          <li class="article__list-element">Pobieranie danych z zewnątrz w taki sposób, aby przeglądarka klienta sama sobie pobrała te dane a twórca nie musiał  o tym pamiętać</li>
+          <li class="article__list-element">API pozwala na wykonywanie operacji (pobieranie, dodawanie, usuwanie, modyfikacja) w aplikacji bez konieczności znania jej budowy</li>
+          <li class="article__list-element">JS udostępnia szereg różnych API. Wiele gotowych produktów udostępnia swoje API (Google, slack, github, ...). Local Storage jest też takim rodzajem API - piszemy localStorage.getItem - pobieramy.</li>
+          <li class="article__list-element">Idziemy do sklepu i chcemy coś kupić - sprzedawca nam ją podaje a my nie musimy wiedzieć, gdzie ona leży i jak wygląda.</li>
+          <li class="article__list-element">REST - Representational State Transfer - przykład architektury API.</li>
+          <li class="article__list-element">GraphQl - zaczyna być popularny, powoli wypiera RESTa</li>
+          <li class="article__list-element">Łączenie się z przykładowym API: API Githuba. Pomoce nas stronie: <a class="article__link" href="https://developer.github.com/">developer.github.com</a> Wchodzimy w sekcję Dosc / REST API V3.</li>
+          <li class="article__list-element">Pobieramy i instalujemy program postman: <a class="article__link" href="https://www.getpostman.com/downloads/">getpostman.com</a> Pobieramy aplikację. Nie trzeba się logować. </li>
+          <li class="article__list-element">Metodą post odpytajmy w prorgamie Postman następujący adres: dev.cotenfrontend.pl</li>
+          <li class="article__list-element">Możemy wysłać zapytanie metodą GET z parametrami: np. key=name + value=Rafal lub przykładowo drugie: key=age + value=32. </li>
+          <li class="article__list-element">Metodą POST nie uda się tego zrobić w taki sposób. Ttzeba wybrać Body / x-www-form-urlencoded</li>
+          <li class="article__list-element">Na stronie Githuba we wspomnianej uprzednio sekcji REST API V3, w tytule sekcji 'Current version widnieje adres: https://api.github.com. Jest to adres do kominikacji z API.</li>
+          <li class="article__list-element">Wchodzimy w zakładkę 'repositories' i np. w sekcję 'List user repositories'. Widnieje tam polecenie: 'GET /users/:username/repos'. </li>
+          <li class="article__list-element">Docelowym poleceniem, jaki epwiszę w metodzie GET w programie POSTMAN będize więc: https://api.github.com/users/rafalpiekarski/repos</li>
+          <li class="article__list-element">Parametry, jakie można wpisać szukając repozytoriów, to (dla strony Github) 'type', 'sort', 'direction'. Jesli chciałbym posortować np. według daty tworzenia, to zrobiłbym to następująco: https://api.github.com/users/rafalpiekarski/repos?sort=created. Postman pomaga w tym.</li>
+          <li class="article__list-element">Często pracując z jakimś projektem dostajemy listę tego, co można i gdzie odpytać.</li>
+        </ul>
+          <h3 class="article__title--small">Fetch API</h3>
+          <ul class="article__list">
+          <li class="article__list-element">'Fetch API' - kolejne API, które pozwala nam na pobieranie rzeczy na stronę za pomocą JS.</li>
+          <li class="article__list-element">Fetch API opiera się o mechanizm zwany 'PROMISE' - obietnica wykonania czegoś po danej akcji. Przykład:<br>
+            <code class="article__code">something()<br>
+            .then((response) =>{<br>
+              do something;<br>
+            })<br>
+            .catch((error) => {<br>
+            })<br>
+            console.log('test');</code> /może wykonać się przed akcją 'do something'<br>
+            Dzieje się to dzięki asynchroniczności - bardzo potrzebne.</li>
+            <li class="article__list-element"><code class="article__code">fetch("https://api.github.com/users/rafalpiekarski/repos")<br>
+            .then(resp => resp.json() ) //zamieni odpowiedź na jsona<br>
+            .then(resp => {<br>
+            //pod zmienną resp mamy jsona z odpowiedzią<br>
+            })<br></code></li>
+            <li class="article__list-element">Przykład Fetch APi w kodzie JS, a poniżej lista zbudowana z odwołania się do API Githuba.</li>
+            <ul class="article__list list--js">
+
+            </ul>
+        </ul>
+      </article>
+
       <!-- krókie zadania -->
       <article class="article">
         <h3 class="article__title">Krótkie zadanka z JS</h3>
@@ -1184,6 +1229,7 @@
         </button>
         <p class="article__content article__content--js-toggle">Po kliknięciu ten napis zrobi się czerwony. Po
           kliknięciu ponownym napis wróci do pierwotnej postaci.</p>
+
       </article>
 
       <!-- inne JS -->
