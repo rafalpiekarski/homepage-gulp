@@ -11,7 +11,8 @@
   <!-- Title -->
   <meta property="og:title" content="Ćwiczenia z frontendu" />
   <!-- OPTIONAL description. 2-4 sentences. -->
-  <meta property="og:description" content="My way to learn Frontend by doing this site - in this place you can see my efforts." />
+  <meta property="og:description"
+    content="My way to learn Frontend by doing this site - in this place you can see my efforts." />
   <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
   <meta property="og:url" content="https://rafalpiekarski.github.io/homepage-gulp/" />
   <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
@@ -213,6 +214,7 @@
             wiedział, że ma ignorować plik node_modules</li>
           <li class="article__list-element"><code
               class="article__code">git clone https://github.com/rafalpiekarski/homepage</code> Pobieranie</li>
+              <li class="article__list-element"><a class="article__link" href="https://gitexplorer.com">gitexplorer.com</a> Łatwe narzędzie do tego, by uzyskać odpowiedź, jak coś zrobić w gicie.</li>
         </ol>
         <h4 class="article__title--small">Branchowanie</h4>
         <ol class="article__list">
@@ -366,7 +368,9 @@
             zmieniamy w nim nic! Plik pozwala na zablokowanie wersji, pomaga w pilnowaniu czy wersja jest odpowiednia.
             Pobierając od kogoś projekt wiemy, jakie wersje których paczek są w projekcie - nie wyjdzie sytuacja, gdy
             mamy np. nowszą paczkę, która jest niekompatybilna z wersją zastosowaną w projekcie.</li>
-            <li class="article__list-element"><code class="article__code">npm audit</code> Polecenie sprawdza stan aktualizacji i błędów w pakietach npm. Drugim poleceniem powinno byc <code class="article__code">npm audit fix</code> Aby npm spróbował naprawić zauważone błędy.</li>
+          <li class="article__list-element"><code class="article__code">npm audit</code> Polecenie sprawdza stan
+            aktualizacji i błędów w pakietach npm. Drugim poleceniem powinno byc <code
+              class="article__code">npm audit fix</code> Aby npm spróbował naprawić zauważone błędy.</li>
         </ol>
       </article>
 
@@ -452,15 +456,23 @@
       <article class="article">
         <h3 class="article__title">PWA - Progressive Web Apps</h3>
         <ul class="article__list">
-          <li class="article__list-element">Aplikacje natywne pisane w technologiach HTML, CSS, JS - bez konieczności nauki nowych technologii (powiadomienia, aparat itp). Działają offline, łatwa aktualizacja i dystrybucja. </li>
+          <li class="article__list-element">Aplikacje natywne pisane w technologiach HTML, CSS, JS - bez konieczności
+            nauki nowych technologii (powiadomienia, aparat itp). Działają offline, łatwa aktualizacja i dystrybucja.
+          </li>
           <li class="article__list-element">Technologia w trakcie rozwoju, ale bardzo przyszłościowa</li>
           <li class="article__list-element">Umożliwia stosowanie jednego kodu</li>
-          <li class="article__list-element">Potrzebne są dwa pliki do uruchomienia PWA: serviceworker.js oraz manifest.json (lub inna nazwa, nie ma jednego standardu na to).</li>
-          <li class="article__list-element">Plikiem serviceworker.js nie będziemy się zajmować - jest przygotowany do pracy i nie trzeba w nim nic robić.</li>
-          <li class="article__list-element">W pliku manifest.json istotne jest scope oraz start_url, które w przypadku adresu np.: https://rafalpiekarski.github.io/homepage-gulp/ powinno mieć formę: /homepage-gulp/</li>
-          <li class="article__list-element">wchodzimy w chrome w zakładkę application. Mamy zakładkę Manifest oraz zakładkę Service Workers.</li>
-          <li class="article__list-element">Wszedłem na adres strony na githubie: w simple-editor. Otwierając ten adres na telefonie, android zapyta sie, czy dodać aplikację do ekranu głównego. Mam już wtedy stronę w formie aplikacji na telefonie. Odpalając npm run deploy ona też się powinna zaktualizować (?).</li>
-          
+          <li class="article__list-element">Potrzebne są dwa pliki do uruchomienia PWA: serviceworker.js oraz
+            manifest.json (lub inna nazwa, nie ma jednego standardu na to).</li>
+          <li class="article__list-element">Plikiem serviceworker.js nie będziemy się zajmować - jest przygotowany do
+            pracy i nie trzeba w nim nic robić.</li>
+          <li class="article__list-element">W pliku manifest.json istotne jest scope oraz start_url, które w przypadku
+            adresu np.: https://rafalpiekarski.github.io/homepage-gulp/ powinno mieć formę: /homepage-gulp/</li>
+          <li class="article__list-element">wchodzimy w chrome w zakładkę application. Mamy zakładkę Manifest oraz
+            zakładkę Service Workers.</li>
+          <li class="article__list-element">Wszedłem na adres strony na githubie: w simple-editor. Otwierając ten adres
+            na telefonie, android zapyta sie, czy dodać aplikację do ekranu głównego. Mam już wtedy stronę w formie
+            aplikacji na telefonie. Odpalając npm run deploy ona też się powinna zaktualizować (?).</li>
+
         </ul>
       </article>
 
@@ -490,8 +502,11 @@
           </li>
           <li class="article__list-element">Do czego nie warto stosować transition: display, float, position, rodzaj
             czcionki, width, height - są to właściwości, których przeliczanie bardzo mocno obciąża przeglądarkę. </li>
-            <li class="article__list-element"><code class="article__code">transition all .3s ease-in-out</code> Niepolecane jest, aby przejścia stosować dla wszystkich właściwości, gdyż bardzo to obciąża zasoby.</li>
-          <li class="article__list-element"><code class="article__code">transition: (none) (duration) (timing function) (delay)</code>Aby użyć transition potrzeba: wartośći początkowej + wartości końcowej +
+          <li class="article__list-element"><code class="article__code">transition all .3s ease-in-out</code>
+            Niepolecane jest, aby przejścia stosować dla wszystkich właściwości, gdyż bardzo to obciąża zasoby.</li>
+          <li class="article__list-element"><code
+              class="article__code">transition: (none) (duration) (timing function) (delay)</code>Aby użyć transition
+            potrzeba: wartośći początkowej + wartości końcowej +
             określenia samego przejścia +
             zdefiniowanie triggera (wyzwalacza)</li>
           <li class="article__list-element">Przykład zastosowania transition dla kilku właściwośći:
@@ -568,6 +583,7 @@
           </li>
           <li class="article__list-element">Dwie wymagane wartości: animation-name, animation-duration. Domyślnie
             duration =0 i name = none</li>
+            <li class="article__list-element">Letter spacing można animować - ciekawostka.
         </ul>
       </article>
 
@@ -579,8 +595,12 @@
           <li class="article__list-element"><code class="article__code">{fill:#30613;}</code> Wypełnienie</li>
           <li class="article__list-element">Plik SVG to tak naprawdę plik XML</li>
           <li class="article__list-element">SVG można wstawić jak zwykły obrazek przez img= </li>
-          <li class="article__list-element">SVG można wrzucić też w kod HTMLa! Wtedy jest dostęp do poszczególnych elementów pliku SVG. Można animować, stylować pojedyncze elementy pliku SVG</li>
-          <li class="article__list-element"><code class="article__code">&lt;g class="scale"&gt; &lt;path ...&gt; &lt;path ... &gt; </code>Mogę opakować poszczególne ścieżki w znacznik 'g' i nadać mu klasę, a później stylować całość po klasie. Wywołam to stosując: <code class="article__code">g.scale {}
+          <li class="article__list-element">SVG można wrzucić też w kod HTMLa! Wtedy jest dostęp do poszczególnych
+            elementów pliku SVG. Można animować, stylować pojedyncze elementy pliku SVG</li>
+          <li class="article__list-element"><code
+              class="article__code">&lt;g class="scale"&gt; &lt;path ...&gt; &lt;path ... &gt; </code>Mogę opakować
+            poszczególne ścieżki w znacznik 'g' i nadać mu klasę, a później stylować całość po klasie. Wywołam to
+            stosując: <code class="article__code">g.scale {}
           </code></li>
           <li class="article__code">SVG powinienem stosować gdziekolwiek się da, bo te pliki niewiele ważą.</li>
         </ul>
@@ -597,20 +617,34 @@
       <article class="article">
         <h3 class="article__title">HEAD</h3>
         <ul class="article__list">
-          <li class="article__list-element">Mamy znaczniki meta: (name="viewport" + content) (http-equiv + content) (charset="UTF-8")</li>
+          <li class="article__list-element">Mamy znaczniki meta: (name="viewport" + content) (http-equiv + content)
+            (charset="UTF-8")</li>
           <li class="article__list-element">Mamy znacznik (title)</li>
-          <li class="article__list-element">Mamy też znacznik meta (name="description" + content - to jest opis widoczny w wyszukiwarce. Istotne</li>
-          <li class="article__list-element"><code class="article__code">link rel="icon" type="image/png" href=""</code> Aby użyć ikony. Kiedyś były favicony, teraz nie jest tokonieczne, wystarczy np. png w rozmiarze odpowiednim. Można też tworzyć animowane ikonny. To może też być przeźroczyste png.</li>
+          <li class="article__list-element">Mamy też znacznik meta (name="description" + content - to jest opis widoczny
+            w wyszukiwarce. Istotne</li>
+          <li class="article__list-element"><code class="article__code">link rel="icon" type="image/png" href=""</code>
+            Aby użyć ikony. Kiedyś były favicony, teraz nie jest tokonieczne, wystarczy np. png w rozmiarze odpowiednim.
+            Można też tworzyć animowane ikonny. To może też być przeźroczyste png.</li>
         </ul>
         <h3 class="article__title">OpenGraph</h3>
         <ul class="article__list">
-            <li class="article__list-element">OpenGraph pozwala na lepsze opisywanie tego, co znajduje się w internecie. Używane przez firmy, którym nie wystarczy description w znacznikach meta. Jest to uniwersalny protokół do opisywania rzeczy w internecie.</li>
-            <li class="article__list-element">Udostępniając link na facebooku można skorzystać z OpenGraphu: wyśle się tytuł + link + opis + zdjęcie.</li>
-            <li class="article__list-element"><code class="article__code">meta property="og:title" content="CV Rafał Piekarski"</code> Przykład zastosowania OpenGraph do tytułu.</li>
-            <li class="article__list-element"><code class="article__code">meta property="og:description" content="CV doświadczonego kierownika produkcji pracującego w przemyśle stoczniowym."</code> Opis</li>
-            <li class="article__list-element"><code class="article__code">meta property="og:url" content="pełny adres ze slashem"</code></li>
-            <li class="article__list-element"><code class="article__code">meta property="og:image" content="pełny adres ze slashem"</code></li>
-            <li class="article__list-element"><a class="article__link" href="http://ogp.me/">ogp.me</a> Link do strony, gdzie mogę sprawdzić tworzony OpenGraph dla facebooka</li>
+          <li class="article__list-element">OpenGraph pozwala na lepsze opisywanie tego, co znajduje się w internecie.
+            Używane przez firmy, którym nie wystarczy description w znacznikach meta. Jest to uniwersalny protokół do
+            opisywania rzeczy w internecie.</li>
+          <li class="article__list-element">Udostępniając link na facebooku można skorzystać z OpenGraphu: wyśle się
+            tytuł + link + opis + zdjęcie.</li>
+          <li class="article__list-element"><code
+              class="article__code">meta property="og:title" content="CV Rafał Piekarski"</code> Przykład zastosowania
+            OpenGraph do tytułu.</li>
+          <li class="article__list-element"><code
+              class="article__code">meta property="og:description" content="CV doświadczonego kierownika produkcji pracującego w przemyśle stoczniowym."</code>
+            Opis</li>
+          <li class="article__list-element"><code
+              class="article__code">meta property="og:url" content="pełny adres ze slashem"</code></li>
+          <li class="article__list-element"><code
+              class="article__code">meta property="og:image" content="pełny adres ze slashem"</code></li>
+          <li class="article__list-element"><a class="article__link" href="http://ogp.me/">ogp.me</a> Link do strony,
+            gdzie mogę sprawdzić tworzony OpenGraph dla facebooka</li>
         </ul>
       </article>
 
@@ -639,7 +673,10 @@
           Jeżeli kod będzie nieodłączną częścią rodzica i będzie od niego zależne — powinniśmy stworzyć element.</p>
         <p class="article__content">Modyfikator musi zawsze iść w parze z oryginalnym elementem. Tak jest dobrze: <code
             class="article__code">.blok__element .blok__element--modyfikator</code> . Tak nie jest dobrze: <code
-            class="article__code">.blok__element--modyfikator</code></p>
+            class="article__code">.blok__element--modyfikator</code>
+          </p>
+          <p class="article__content">Nie zagnieżdżamy więcej niż raz. Strukturra blok - element - modyfikator. Blok nie musi mieć elementów (blok to może być 'articles, a w nim moga być zawarte bloki 'article').</p>
+          <p class="article__content">Dodawanie modyfikatora JSowego do istniejącego już modyfikatora (nie do elementu, a właśnie modyfikatora) poprzez pojedynczą kreskę: <code class="article__code">button class="button button--add button--add-s"</code></p>
       </article>
 
       <!-- inne praktyki -->
@@ -664,7 +701,9 @@
             class="article__link">autoprefixer.github.io</a> Samodzielnie dodaje autoprefixy do wklejonego kodu. Mogę
           też zerkać na stronę caniuse i sprawdzać, czy cos potrzebuje dodania prefixu. Autoprefixer jest zainstalowany
           już w paczce kursowego starterkita.</p>
-          <p class="article__content">Projektując przycisk ustawiam mu szerokość w ten sposób: <code class="article__code">min-width: 200px</code> Po to ma minimalną szerokość, aby treść nie zawijała się, jeśli jest za długa.</p>
+        <p class="article__content">Projektując przycisk ustawiam mu szerokość w ten sposób: <code
+            class="article__code">min-width: 200px</code> Po to ma minimalną szerokość, aby treść nie zawijała się,
+          jeśli jest za długa.</p>
       </article>
 
       <!-- Obrazy -->
@@ -746,39 +785,95 @@
             razu.</li>
           <li class="article__list-element">Porzuć wizję strony idealnej. Osoba wchodząca na stronę ma dostać po
             pierwsze treść, po którą przyszła.</li>
-            <li class="article__list-element">Działamy krok po kroku - one step at a time</li>
-            <li class="article__list-element">Zacznij od białego, szarego i szarości - pomoże skupić się na treści i oszczędza czas.</li>
-            <li class="article__list-element">Wykorzystaj gotowe elementy, wykorzystaj UI KITy - np. <link class="article__link" href="https://pdkit.co/">pdkit.co</link> paczka do figmy, do projektowania</li>
-            <li class="article__list-element"></li>
-            <li class="article__list-element"></li>
+          <li class="article__list-element">Działamy krok po kroku - one step at a time</li>
+          <li class="article__list-element">Zacznij od białego, szarego i szarości - pomoże skupić się na treści i
+            oszczędza czas.</li>
+          <li class="article__list-element">Wykorzystaj gotowe elementy, wykorzystaj UI KITy - np.
+            <link class="article__link" href="https://pdkit.co/">pdkit.co</link> paczka do figmy, do projektowania</li>
+          <li class="article__list-element"></li>
+          <li class="article__list-element"></li>
         </ol>
         <h4 class="article__title--small">Polecane strony</h4>
         <ul class="article__list-element"><a class="article__link" href="https://dribbble.com/">Dribbble.com</a></ul>
         <ul class="article__list-element"><a class="article__link" href="https://www.behance.net/">behance.net</a></ul>
-        <ul class="article__list-element"><a class="article__link" href="https://refactoringui.com/">refactoringui.com</a></ul>
-        <ul class="article__list-element" ><a class="article__link" href="https://www.awwwards.com/websites/">awwwards.com/websites</a></ul>
-        <ul class="article__list-element"><a class="article__link" href="https://www.siteinspire.com/">siteinspire</a></ul>
-        <ul class="article__list-element"><a class="article__link" href="https://codepen.io/popular/pens/">codepen.io</a></ul>
-        <ul class="article__list-element"><a class="article__link" href="https://tympanus.net/codrops/">tympanus.net/codrops</a> W wyszukiwarce tympanus button effect np. wpisać</ul>
-        <ul class="article__list-element"><a class="article__link" href="https://cssdesignawards.com/">cssdesignawards.com</a></ul>
+        <ul class="article__list-element"><a class="article__link"
+            href="https://refactoringui.com/">refactoringui.com</a></ul>
+        <ul class="article__list-element"><a class="article__link"
+            href="https://www.awwwards.com/websites/">awwwards.com/websites</a></ul>
+        <ul class="article__list-element"><a class="article__link" href="https://www.siteinspire.com/">siteinspire</a>
+        </ul>
+        <ul class="article__list-element"><a class="article__link"
+            href="https://codepen.io/popular/pens/">codepen.io</a></ul>
+        <ul class="article__list-element"><a class="article__link"
+            href="https://tympanus.net/codrops/">tympanus.net/codrops</a> W wyszukiwarce tympanus button effect np.
+          wpisać</ul>
+        <ul class="article__list-element"><a class="article__link"
+            href="https://cssdesignawards.com/">cssdesignawards.com</a></ul>
       </article>
 
       <!-- WCAG -->
       <article class="article">
-      <h3 class="article__title">WCAG</h3>
-      <ul class="article__list">
-        <li class="article__list-element">WAI - Web Accessibility Initiative - część W3C zajmująca się dostępnością - wypuszcza wskazówki i wytyczne takie, aby jak najwięcej osób mogło korzystać ze stron www.</li>
-        <li class="article__list-element">WCAG - Web Content Accessibility Guidelines - wytyczne</li>
-        <li class="article__list-element"><a class="article__link" href="http://widzialni.org/">Fundacja Widzialni</a> </li>
-        <li class="article__list-element"><a class="article__link" href="https://color.a11y.com/">a11y.com</a> Strona do sprawdzania kontrastu własnej strony</li>
-        <li class="article__list-element"><a class="article__link" href="colorsafe.co">Colorsafe.co</a> Palety kolorów bazujące na wytycznych WCAG</li>
-        <li class="article__list-element">Unikamy autoplay</li>
-        <li class="article__list-element">Nie ograniczamy rzeczy czasowo</li>
-        <li class="article__list-element">Nie usuwamy :focus - dla osób słabowidzących jest to wskazówka.</li>
-        <li class="article__list-element">Używam atrubutu ALT. Opisujemy co jest na zdjęciu, jakie są emocje na nim wyrażone, aby lepiej wyrazić to, co jest na zdjęciu. Opis kończymy kropką! Dzięki temu czytnik wie, że jest przerwa - koniec zdania.</li>
-        <li class="article__list-element">ARIA stozujemy bardziej do aplikacji</li>
-      </ul>
-    </article>
+        <h3 class="article__title">WCAG</h3>
+        <ul class="article__list">
+          <li class="article__list-element">WAI - Web Accessibility Initiative - część W3C zajmująca się dostępnością -
+            wypuszcza wskazówki i wytyczne takie, aby jak najwięcej osób mogło korzystać ze stron www.</li>
+          <li class="article__list-element">WCAG - Web Content Accessibility Guidelines - wytyczne</li>
+          <li class="article__list-element"><a class="article__link" href="http://widzialni.org/">Fundacja Widzialni</a>
+          </li>
+          <li class="article__list-element"><a class="article__link" href="https://color.a11y.com/">a11y.com</a> Strona
+            do sprawdzania kontrastu własnej strony</li>
+          <li class="article__list-element"><a class="article__link" href="colorsafe.co">Colorsafe.co</a> Palety kolorów
+            bazujące na wytycznych WCAG</li>
+          <li class="article__list-element">Unikamy autoplay</li>
+          <li class="article__list-element">Nie ograniczamy rzeczy czasowo</li>
+          <li class="article__list-element">Nie usuwamy :focus - dla osób słabowidzących jest to wskazówka.</li>
+          <li class="article__list-element">Używam atrubutu ALT. Opisujemy co jest na zdjęciu, jakie są emocje na nim
+            wyrażone, aby lepiej wyrazić to, co jest na zdjęciu. Opis kończymy kropką! Dzięki temu czytnik wie, że jest
+            przerwa - koniec zdania.</li>
+          <li class="article__list-element">ARIA stozujemy bardziej do aplikacji</li>
+        </ul>
+      </article>
+
+      <!-- Optymalizacja-->
+      <article class="article">
+        <h3 class="article__title">Optymalizacja</h3>
+        <ul class="article__list">
+          <li class="article__list-element">Zakładka DevTools / network</li>
+          <li class="article__list-element">Zakładka Audits - można puścić audyt o zadanych parametrach, zobaczyć wynik
+            oraz sprawdzić, co jest nie tak. Warto sprawdzać test mobile i test dla desktop</li>
+          <li class="article__list-element"><a class="article__link" href="https://www.web.dev">web.dev</a> Zakładka
+            audits. Czasem są różne wyniki performance, więc warto kilka razy sprawdzać (może to wynika z dalekiego
+            położenia serwerów).</li>
+          <li class="article__list-element"><a class="article__link" href="https://www.tinypng.com">TinyPNG</a> albo <a
+              class="article__link" href="https://www.tinyjpg.com">TinyJOG</a> Darmowe narzędzie do kompresji obrazów.
+          </li>
+          <li class="article__list-element">Pytanie czy potrzebne są wszystkie paczki? Paczki zajmują dużo. Sam
+            bootstrap załączony do wyświetlenia grida zajmuje 168kb, a możemy zrobić to sami za pomoca grida.</li>
+          <li class="article__list-element">Minifikacja</li>
+          <li class="article__list-element">Obfuskacja - uglify</li>
+          <li class="article__list-element">CSS krytyczny - <a class="article__link"
+              href="https://web.dev/extract-critical-css">web.dev/extract-critical-css</a> W znacznik 'style' w sekcji
+            head powinniśmy wrzucić niezbędne klasy po to, by przyśpieszyć moment, gdy użytkownik zobaczy wyrenderowaną
+            stronę. Style wykorzystywane niżej, bądź na podstronach doczytają się w trakcie. Nie jest to obecnie bardzo
+            popularne.</li>
+          <li class="article__list-element">Sourcemap - mapa źródeł. Dodane do starterkita. Pokazują, w któej linijce
+            pokazuje się błąd w naszym kodzie (nie w tym zminifikowanym).</li>
+        </ul>
+      </article>
+
+      <!-- Typografia i rem / em -->
+      <article class="article">
+        <h3 class="article__title">Typografia oraz jednostki rem, em</h3>
+        <ul class="article__list-element">
+          <li class="article__list-element">em - jednostka zależna, nie stała. Można wykorzystać np. do paddingów. Odeszła trochę w zapomnienie, gdy pojawiły się remy.</li>
+          <li class="article__list-element">rem - zależy od wartości roota. </li>
+          <li class="article__list-element">pixele odeszły w zapomnienie, bo teraz robimy strony responsywne - na remach.</li>
+          <li class="article__list-element">Nie każda przeglądarka ma bazowo ustawiony font na 16px - przeglądarka na Kinde ma ponad 20px ustawione.</li>
+          <li class="article__list-element">Nigdy nie ustawiać <code class="article__code">html {font-size: 10px;}</code> </li>         
+          <li class="article__list-element">Nigdy nie ustawiać <code class="article__code">html {font-size: 62,5%;}</code> </li>
+          <li class="article__list-element">Rekomendowane font-size domyślny albo ustawiony na 16px</li>
+        </ul>
+      </article>
 
     </section>
     <!-- EO good practices - dobre praktyki -->
@@ -791,6 +886,7 @@
       <article class="article">
         <h3 class="article__title">FLexbox</h3>
         <ul class="article__list">
+          <li class="article__list-element">W bardzo prostej stronie można nawet użyć tylko flexboxa zamiast gita.</li>
           <li class="article__list-element">Polecenie <code class="article__code">display: flex</code> nadaję rodzicowi
             elementów, które chcę układać flexem. Od razu po nadaniu tej właściwości zmienia się układ. </li>
           <li class="article__list-element"><code
@@ -953,6 +1049,15 @@
             odejmujące 1 od wartości, które dzieje się po wykonaniu kodu</li>
           <li class="article__list-element"><code class="article__code">++i</code> preinkrementacja - zdarzenie dodające
             1 od wartości, które dzieje się przed wykonaniem kodu.</li>
+          <li class="article__list-element">Hoisting (windowanie). Przykład: <code
+              class="article__code">console.log(a);</code> W tej sytuacji konsola wywali komunikat, że a jest
+            niezdefiniowane ('Uncaught ReferenceError: a is not defined'). <code
+              class="article__code">console.log(a); var a=7;</code> W tej sytuacji konsola nie wywali błędu, że a jest
+            niezdefiniowane, ale pokaże, że jest wartość 'undefined'. Najpierw jest odwołanie się do 'a', a dopiero później jest sama deklaracja. Pomimo tego, przeglądarka wie, że wartość 'a' została zadeklarowana - najpierw nastąpił hoisting, czyli odczytanie zmiennych - tak, jakby deklaracja zmiennej (bez jej wartości) były wywindowane na górę kodu.</li>
+            <li class="article__list-element">"Use strict" wstawione na początku kodu JS. Można użyć go wewnątrz bloku kodu - policjant pilnujący tego, co możemy używać. Naprawia dużo rzeczy, pilnuje składni i poprawności. Jest do optymalizacji i poprawiania doświadczeń developerskich.</li>
+            <li class="article__list-element">Destrukturyzacja - przykład zawarty w kodzie JS. Wyciągnięcie własności z obiektów lub tablic w prostszy sposób.
+             </li>
+             <li class="article__list-element">Spread operator - łączenie np. dwóch obiektów. Więcej w kodzie JS</li>
         </ul>
       </article>
 
@@ -1157,27 +1262,47 @@
       <article class="article">
         <h3 class="article__title">Praca z API / JSON</h3>
         <ul class="article__list">
-          <li class="article__list-element">Pobieranie danych z zewnątrz w taki sposób, aby przeglądarka klienta sama sobie pobrała te dane a twórca nie musiał  o tym pamiętać</li>
-          <li class="article__list-element">API pozwala na wykonywanie operacji (pobieranie, dodawanie, usuwanie, modyfikacja) w aplikacji bez konieczności znania jej budowy</li>
-          <li class="article__list-element">JS udostępnia szereg różnych API. Wiele gotowych produktów udostępnia swoje API (Google, slack, github, ...). Local Storage jest też takim rodzajem API - piszemy localStorage.getItem - pobieramy.</li>
-          <li class="article__list-element">Idziemy do sklepu i chcemy coś kupić - sprzedawca nam ją podaje a my nie musimy wiedzieć, gdzie ona leży i jak wygląda.</li>
+          <li class="article__list-element">Pobieranie danych z zewnątrz w taki sposób, aby przeglądarka klienta sama
+            sobie pobrała te dane a twórca nie musiał o tym pamiętać</li>
+          <li class="article__list-element">API pozwala na wykonywanie operacji (pobieranie, dodawanie, usuwanie,
+            modyfikacja) w aplikacji bez konieczności znania jej budowy</li>
+          <li class="article__list-element">JS udostępnia szereg różnych API. Wiele gotowych produktów udostępnia swoje
+            API (Google, slack, github, ...). Local Storage jest też takim rodzajem API - piszemy localStorage.getItem -
+            pobieramy.</li>
+          <li class="article__list-element">Idziemy do sklepu i chcemy coś kupić - sprzedawca nam ją podaje a my nie
+            musimy wiedzieć, gdzie ona leży i jak wygląda.</li>
           <li class="article__list-element">REST - Representational State Transfer - przykład architektury API.</li>
           <li class="article__list-element">GraphQl - zaczyna być popularny, powoli wypiera RESTa</li>
-          <li class="article__list-element">Łączenie się z przykładowym API: API Githuba. Pomoce nas stronie: <a class="article__link" href="https://developer.github.com/">developer.github.com</a> Wchodzimy w sekcję Dosc / REST API V3.</li>
-          <li class="article__list-element">Pobieramy i instalujemy program postman: <a class="article__link" href="https://www.getpostman.com/downloads/">getpostman.com</a> Pobieramy aplikację. Nie trzeba się logować. </li>
-          <li class="article__list-element">Metodą post odpytajmy w prorgamie Postman następujący adres: dev.cotenfrontend.pl</li>
-          <li class="article__list-element">Możemy wysłać zapytanie metodą GET z parametrami: np. key=name + value=Rafal lub przykładowo drugie: key=age + value=32. </li>
-          <li class="article__list-element">Metodą POST nie uda się tego zrobić w taki sposób. Ttzeba wybrać Body / x-www-form-urlencoded</li>
-          <li class="article__list-element">Na stronie Githuba we wspomnianej uprzednio sekcji REST API V3, w tytule sekcji 'Current version widnieje adres: https://api.github.com. Jest to adres do kominikacji z API.</li>
-          <li class="article__list-element">Wchodzimy w zakładkę 'repositories' i np. w sekcję 'List user repositories'. Widnieje tam polecenie: 'GET /users/:username/repos'. </li>
-          <li class="article__list-element">Docelowym poleceniem, jaki epwiszę w metodzie GET w programie POSTMAN będize więc: https://api.github.com/users/rafalpiekarski/repos</li>
-          <li class="article__list-element">Parametry, jakie można wpisać szukając repozytoriów, to (dla strony Github) 'type', 'sort', 'direction'. Jesli chciałbym posortować np. według daty tworzenia, to zrobiłbym to następująco: https://api.github.com/users/rafalpiekarski/repos?sort=created. Postman pomaga w tym.</li>
-          <li class="article__list-element">Często pracując z jakimś projektem dostajemy listę tego, co można i gdzie odpytać.</li>
+          <li class="article__list-element">Łączenie się z przykładowym API: API Githuba. Pomoce nas stronie: <a
+              class="article__link" href="https://developer.github.com/">developer.github.com</a> Wchodzimy w sekcję
+            Dosc / REST API V3.</li>
+          <li class="article__list-element">Pobieramy i instalujemy program postman: <a class="article__link"
+              href="https://www.getpostman.com/downloads/">getpostman.com</a> Pobieramy aplikację. Nie trzeba się
+            logować. </li>
+          <li class="article__list-element">Metodą post odpytajmy w prorgamie Postman następujący adres:
+            dev.cotenfrontend.pl</li>
+          <li class="article__list-element">Możemy wysłać zapytanie metodą GET z parametrami: np. key=name + value=Rafal
+            lub przykładowo drugie: key=age + value=32. </li>
+          <li class="article__list-element">Metodą POST nie uda się tego zrobić w taki sposób. Ttzeba wybrać Body /
+            x-www-form-urlencoded</li>
+          <li class="article__list-element">Na stronie Githuba we wspomnianej uprzednio sekcji REST API V3, w tytule
+            sekcji 'Current version widnieje adres: https://api.github.com. Jest to adres do kominikacji z API.</li>
+          <li class="article__list-element">Wchodzimy w zakładkę 'repositories' i np. w sekcję 'List user repositories'.
+            Widnieje tam polecenie: 'GET /users/:username/repos'. </li>
+          <li class="article__list-element">Docelowym poleceniem, jaki epwiszę w metodzie GET w programie POSTMAN będize
+            więc: https://api.github.com/users/rafalpiekarski/repos</li>
+          <li class="article__list-element">Parametry, jakie można wpisać szukając repozytoriów, to (dla strony Github)
+            'type', 'sort', 'direction'. Jesli chciałbym posortować np. według daty tworzenia, to zrobiłbym to
+            następująco: https://api.github.com/users/rafalpiekarski/repos?sort=created. Postman pomaga w tym.</li>
+          <li class="article__list-element">Często pracując z jakimś projektem dostajemy listę tego, co można i gdzie
+            odpytać.</li>
         </ul>
-          <h3 class="article__title--small">Fetch API</h3>
-          <ul class="article__list">
-          <li class="article__list-element">'Fetch API' - kolejne API, które pozwala nam na pobieranie rzeczy na stronę za pomocą JS.</li>
-          <li class="article__list-element">Fetch API opiera się o mechanizm zwany 'PROMISE' - obietnica wykonania czegoś po danej akcji. Przykład:<br>
+        <h3 class="article__title--small">Fetch API</h3>
+        <ul class="article__list">
+          <li class="article__list-element">'Fetch API' - kolejne API, które pozwala nam na pobieranie rzeczy na stronę
+            za pomocą JS.</li>
+          <li class="article__list-element">Fetch API opiera się o mechanizm zwany 'PROMISE' - obietnica wykonania
+            czegoś po danej akcji. Przykład:<br>
             <code class="article__code">something()<br>
             .then((response) =>{<br>
               do something;<br>
@@ -1186,15 +1311,16 @@
             })<br>
             console.log('test');</code> /może wykonać się przed akcją 'do something'<br>
             Dzieje się to dzięki asynchroniczności - bardzo potrzebne.</li>
-            <li class="article__list-element"><code class="article__code">fetch("https://api.github.com/users/rafalpiekarski/repos")<br>
+          <li class="article__list-element"><code class="article__code">fetch("https://api.github.com/users/rafalpiekarski/repos")<br>
             .then(resp => resp.json() ) //zamieni odpowiedź na jsona<br>
             .then(resp => {<br>
             //pod zmienną resp mamy jsona z odpowiedzią<br>
             })<br></code></li>
-            <li class="article__list-element">Przykład Fetch APi w kodzie JS, a poniżej lista zbudowana z odwołania się do API Githuba.</li>
-            <ul class="article__list list--js">
+          <li class="article__list-element">Przykład Fetch APi w kodzie JS, a poniżej lista zbudowana z odwołania się do
+            API Githuba.</li>
+          <ul class="article__list list--js">
 
-            </ul>
+          </ul>
         </ul>
       </article>
 
