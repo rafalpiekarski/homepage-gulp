@@ -214,6 +214,7 @@
             wiedział, że ma ignorować plik node_modules</li>
           <li class="article__list-element"><code
               class="article__code">git clone https://github.com/rafalpiekarski/homepage</code> Pobieranie</li>
+              <li class="article__list-element"><a class="article__link" href="https://gitexplorer.com">gitexplorer.com</a> Łatwe narzędzie do tego, by uzyskać odpowiedź, jak coś zrobić w gicie.</li>
         </ol>
         <h4 class="article__title--small">Branchowanie</h4>
         <ol class="article__list">
@@ -672,7 +673,10 @@
           Jeżeli kod będzie nieodłączną częścią rodzica i będzie od niego zależne — powinniśmy stworzyć element.</p>
         <p class="article__content">Modyfikator musi zawsze iść w parze z oryginalnym elementem. Tak jest dobrze: <code
             class="article__code">.blok__element .blok__element--modyfikator</code> . Tak nie jest dobrze: <code
-            class="article__code">.blok__element--modyfikator</code></p>
+            class="article__code">.blok__element--modyfikator</code>
+          </p>
+          <p class="article__content">Nie zagnieżdżamy więcej niż raz. Strukturra blok - element - modyfikator. Blok nie musi mieć elementów (blok to może być 'articles, a w nim moga być zawarte bloki 'article').</p>
+          <p class="article__content">Dodawanie modyfikatora JSowego do istniejącego już modyfikatora (nie do elementu, a właśnie modyfikatora) poprzez pojedynczą kreskę: <code class="article__code">button class="button button--add button--add-s"</code></p>
       </article>
 
       <!-- inne praktyki -->
@@ -882,6 +886,7 @@
       <article class="article">
         <h3 class="article__title">FLexbox</h3>
         <ul class="article__list">
+          <li class="article__list-element">W bardzo prostej stronie można nawet użyć tylko flexboxa zamiast gita.</li>
           <li class="article__list-element">Polecenie <code class="article__code">display: flex</code> nadaję rodzicowi
             elementów, które chcę układać flexem. Od razu po nadaniu tej właściwości zmienia się układ. </li>
           <li class="article__list-element"><code
