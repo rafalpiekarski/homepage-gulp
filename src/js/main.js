@@ -305,38 +305,38 @@
 //Destrukturyzacja
 //
 
-const person = {
-    name: 'Rafal', age: 31
-}
-//mam obiekt person, do ktorego elementow chce sie odwołać.
-console.log(`${person.name} ${person.age}`);
-//Odwoływanie się jest jednak długie. Zastosuję więc zmienne.
-const name = person.name;
-const age = person.age;
-console.log(`${name} ${age}`);
-//Można jednak użyć desktrukturyzacji
-const {name, age} = person;
-console.log(`${name} ${age}`);
-//Można stosować na tablicach
-const food = ['pizza', 'burger', 'wrap'];
-console.log(food);
-const [firstFood, secondFood] = food;
-console.log(firstFood);
-console.log(secondFood);
+// const person = {
+//     name: 'Rafal', age: 31
+// }
+// //mam obiekt person, do ktorego elementow chce sie odwołać.
+// console.log(`${person.name} ${person.age}`);
+// //Odwoływanie się jest jednak długie. Zastosuję więc zmienne.
+// const name = person.name;
+// const age = person.age;
+// console.log(`${name} ${age}`);
+// //Można jednak użyć desktrukturyzacji
+// const {name, age} = person;
+// console.log(`${name} ${age}`);
+// //Można stosować na tablicach
+// const food = ['pizza', 'burger', 'wrap'];
+// console.log(food);
+// const [firstFood, secondFood] = food;
+// console.log(firstFood);
+// console.log(secondFood);
 
-//
-//Spread operator - do łączenia
-//
-const contactData = {
-    email: 'test@email.com',
-    phone: 55553525
-};
-const contactAddress = {
-    zipCode: '15-555',
-    postCode: '435425'
-};
-//Chcę połączyć te dwa obiekty
-const personData = {
-    ...contactData,
-    ...contactAddress
-};
+// //
+// //Spread operator - do łączenia
+// //
+// const contactData = {
+//     email: 'test@email.com',
+//     phone: 55553525
+// };
+// const contactAddress = {
+//     zipCode: '15-555',
+//     postCode: '435425'
+// };
+// //Chcę połączyć te dwa obiekty
+// const personData = {
+//     ...contactData,
+//     ...contactAddress
+// };
