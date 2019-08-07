@@ -273,33 +273,33 @@
 //     focusInput.value = localStorage.getItem('focusInput');
 // };
 
-//Fetch API
-fetch('https://api.github.com/users/rafalpiekarski/repos')
-.then(resp => resp.json()) //zamienamy resp na jsona
-.then(resp => {             //podmieniony json tu już jest
-    console.log(resp)
-})
-.catch(error => {
-    console.log('error')
-})
-console.log('test 2');
-//teraz można wypisac sobie pobrane repozytoria
-const list = document.querySelector('.list--js');
-fetch('https://api.github.com/users/rafalpiekarski/repos?sort=updated&direction=asc')
-.then(resp => resp.json()) //zamienamy resp na jsona
-.then(resp => {             //podmieniony json tu już jest
-    const repos = resp;
-    for (const repo of repos) {
-        //console.log(repo); //wszystko wypisze
-        console.log(repo.name); //tylko nazwy repozytoriow
-        console.log(repo.html_url);
-        console.log(`repozytorium o nazwie: ${repo.name} ma adres: ${repo.html_url}`);
-        list.innerHTML += `<li>${repo.name} <a href="${repo.html_url}"> ${repo.html_url}</a></li>`;
-    }
-})
-.catch(error => {
-    console.log('error')
-})
+// //Fetch API
+// fetch('https://api.github.com/users/rafalpiekarski/repos')
+// .then(resp => resp.json()) //zamienamy resp na jsona
+// .then(resp => {             //podmieniony json tu już jest
+//     console.log(resp)
+// })
+// .catch(error => {
+//     console.log('error')
+// })
+// console.log('test 2');
+// //teraz można wypisac sobie pobrane repozytoria
+// const list = document.querySelector('.list--js');
+// fetch('https://api.github.com/users/rafalpiekarski/repos?sort=updated&direction=asc')
+// .then(resp => resp.json()) //zamienamy resp na jsona
+// .then(resp => {             //podmieniony json tu już jest
+//     const repos = resp;
+//     for (const repo of repos) {
+//         //console.log(repo); //wszystko wypisze
+//         console.log(repo.name); //tylko nazwy repozytoriow
+//         console.log(repo.html_url);
+//         console.log(`repozytorium o nazwie: ${repo.name} ma adres: ${repo.html_url}`);
+//         list.innerHTML += `<li>${repo.name} <a href="${repo.html_url}"> ${repo.html_url}</a></li>`;
+//     }
+// })
+// .catch(error => {
+//     console.log('error')
+// })
 
 //
 //Destrukturyzacja
