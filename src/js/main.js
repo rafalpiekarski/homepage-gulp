@@ -340,3 +340,21 @@
 //     ...contactData,
 //     ...contactAddress
 // };
+
+//
+// własny player video
+//
+const video = document.querySelector('.video--js');
+const playButton = document.querySelector('.play--js');
+const pauseButton = document.querySelector('.pause--js');
+const stopButton = document.querySelector('.stop--js');
+playButton.addEventListener('click', (e) => {
+  video.play();
+})
+pauseButton.addEventListener('click', (e) => {
+  video.pause();
+})
+stopButton.addEventListener('click', (e) => {
+  video.pause();
+  video.currentTime = 0;
+})
