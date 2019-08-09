@@ -36,6 +36,7 @@ html {
     color: black;
     &:hover {
       background-color: rgb(56, 151, 151);
+      transition: background-color .3s linear;
     }
     &--wrong {
       color: red;
@@ -179,8 +180,9 @@ body {
 }
 
 .section {
+  box-shadow: 4px 4px 10px rgb(65, 65, 65), -4px -4px 10px gray;
   padding: 40px;
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 800px;
   &__title {
     color: #353839;
