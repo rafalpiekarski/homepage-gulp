@@ -214,7 +214,8 @@
             wiedział, że ma ignorować plik node_modules</li>
           <li class="article__list-element"><code
               class="article__code">git clone https://github.com/rafalpiekarski/homepage</code> Pobieranie</li>
-              <li class="article__list-element"><a class="article__link" href="https://gitexplorer.com">gitexplorer.com</a> Łatwe narzędzie do tego, by uzyskać odpowiedź, jak coś zrobić w gicie.</li>
+          <li class="article__list-element"><a class="article__link" href="https://gitexplorer.com">gitexplorer.com</a>
+            Łatwe narzędzie do tego, by uzyskać odpowiedź, jak coś zrobić w gicie.</li>
         </ol>
         <h4 class="article__title--small">Branchowanie</h4>
         <ol class="article__list">
@@ -583,7 +584,7 @@
           </li>
           <li class="article__list-element">Dwie wymagane wartości: animation-name, animation-duration. Domyślnie
             duration =0 i name = none</li>
-            <li class="article__list-element">Letter spacing można animować - ciekawostka.
+          <li class="article__list-element">Letter spacing można animować - ciekawostka.
         </ul>
       </article>
 
@@ -608,7 +609,6 @@
 
     </section>
     <!-- EO animations section -->
-
 
     <!-- good practices - dobre praktyki -->
     <section class="section section--red" id="section-good-practices">
@@ -675,9 +675,12 @@
         <p class="article__content">Modyfikator musi zawsze iść w parze z oryginalnym elementem. Tak jest dobrze: <code
             class="article__code">.blok__element .blok__element--modyfikator</code> . Tak nie jest dobrze: <code
             class="article__code">.blok__element--modyfikator</code>
-          </p>
-          <p class="article__content">Nie zagnieżdżamy więcej niż raz. Strukturra blok - element - modyfikator. Blok nie musi mieć elementów (blok to może być 'articles, a w nim moga być zawarte bloki 'article').</p>
-          <p class="article__content">Dodawanie modyfikatora JSowego do istniejącego już modyfikatora (nie do elementu, a właśnie modyfikatora) poprzez pojedynczą kreskę: <code class="article__code">button class="button button--add button--add-s"</code></p>
+        </p>
+        <p class="article__content">Nie zagnieżdżamy więcej niż raz. Strukturra blok - element - modyfikator. Blok nie
+          musi mieć elementów (blok to może być 'articles, a w nim moga być zawarte bloki 'article').</p>
+        <p class="article__content">Dodawanie modyfikatora JSowego do istniejącego już modyfikatora (nie do elementu, a
+          właśnie modyfikatora) poprzez pojedynczą kreskę: <code
+            class="article__code">button class="button button--add button--add-s"</code></p>
       </article>
 
       <!-- inne praktyki -->
@@ -775,6 +778,22 @@
         </ul>
       </article>
 
+      <!-- selektory -->
+      <article class="article">
+        <h3 class="article__title">Selektory</h3>
+          <ul class="article__list">
+            <li class="article__list-element"><code class="article__code">.item + li</h3> Selektor bezpośredniego rodzeństwa. Element brata bezpośrednio za elementem. Pierwsze wystąpienie bezpośrednio po.</li>
+            <li class="article__list-element"><code class="article__code">.item ~ li</code> Selektor ogólnego rodzeństwa. Wybiera całe rodzeństwo danego typu występujące po nim.</li>
+            <li class="article__list-element"><code class="article__code">.item > li</code> Selektor wszystkich dzieci.</li>
+            <li class="article__list-element"><code class="article__code">[href]</code> Wybór wszystkich elementów, które mają atrybut 'href'</li>
+            <li class="article__list-element"><code class="article__code">[href="site.html"]</code></li>
+            <li class="article__list-element"><code class="article__code">[href*="indek"]</code> Wybiera wszystkie atrybuty, które zawierają w sobie litery 'indek'</li>
+            <li class="article__list-element"><code class="article__code">[href*="https"]</code> Wybiera wszystkie linki, które prawdopodobnie odsyłają do zewnętrznych stron.</li>
+            <li class="article__list-element"><code class="article__code">[href^="https"]</code> Wybierana wartość musi się zaczynać od jakiegoś ciągu znaków</li>
+            <li class="article__list-element"><code class="article__code">[href$="https"]</code> Wybierana wartość musi się kończyć danymi znakami</li>
+          </ul>
+      </article>
+
       <!-- projektowanie graficzne -->
       <article class="article">
         <h3 class="article__title">Projektowanie graficzne</h3>
@@ -866,12 +885,17 @@
       <article class="article">
         <h3 class="article__title">Typografia oraz jednostki rem, em</h3>
         <ul class="article__list-element">
-          <li class="article__list-element">em - jednostka zależna, nie stała. Można wykorzystać np. do paddingów. Odeszła trochę w zapomnienie, gdy pojawiły się remy.</li>
+          <li class="article__list-element">em - jednostka zależna, nie stała. Można wykorzystać np. do paddingów.
+            Odeszła trochę w zapomnienie, gdy pojawiły się remy.</li>
           <li class="article__list-element">rem - zależy od wartości roota. </li>
-          <li class="article__list-element">pixele odeszły w zapomnienie, bo teraz robimy strony responsywne - na remach.</li>
-          <li class="article__list-element">Nie każda przeglądarka ma bazowo ustawiony font na 16px - przeglądarka na Kinde ma ponad 20px ustawione.</li>
-          <li class="article__list-element">Nigdy nie ustawiać <code class="article__code">html {font-size: 10px;}</code> </li>         
-          <li class="article__list-element">Nigdy nie ustawiać <code class="article__code">html {font-size: 62,5%;}</code> </li>
+          <li class="article__list-element">pixele odeszły w zapomnienie, bo teraz robimy strony responsywne - na
+            remach.</li>
+          <li class="article__list-element">Nie każda przeglądarka ma bazowo ustawiony font na 16px - przeglądarka na
+            Kinde ma ponad 20px ustawione.</li>
+          <li class="article__list-element">Nigdy nie ustawiać <code
+              class="article__code">html {font-size: 10px;}</code> </li>
+          <li class="article__list-element">Nigdy nie ustawiać <code
+              class="article__code">html {font-size: 62,5%;}</code> </li>
           <li class="article__list-element">Rekomendowane font-size domyślny albo ustawiony na 16px</li>
         </ul>
       </article>
@@ -880,9 +904,15 @@
       <article class="article">
         <h3 class="article__title">Multimedia</h3>
         <ul class="article__list">
-          <li class="article__list-element"><audio src="https://file-blebleble.mp3" controls></audio> Wstawione 'controls' więc będzie kontrolka do odtwarzania. Player bez żadnego pisania. Można też inne opcje wstawić.</li>
-          <li class="article__list-element "><video class="video video--js" src="https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4" controls></video>Wstawione 'controls' więc będzie kontrolka do odtwarzania. Player bez żadnego pisania. Można też inne opcje wstawić.</li>
-          <li class="article__list-element">iframe - kiedyś stosowany wszędzie. Youtube z tego korzysta - można zamieścić film z YT za pomocą Iframe - link do filmu w opcjach serwisu YT.
+          <li class="article__list-element"><audio src="https://file-blebleble.mp3" controls></audio> Wstawione
+            'controls' więc będzie kontrolka do odtwarzania. Player bez żadnego pisania. Można też inne opcje wstawić.
+          </li>
+          <li class="article__list-element "><video class="video video--js"
+              src="https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4"
+              controls></video>Wstawione 'controls' więc będzie kontrolka do odtwarzania. Player bez żadnego pisania.
+            Można też inne opcje wstawić.</li>
+          <li class="article__list-element">iframe - kiedyś stosowany wszędzie. Youtube z tego korzysta - można
+            zamieścić film z YT za pomocą Iframe - link do filmu w opcjach serwisu YT.
         </ul>
         <button class="play play--js">play</button>
         <button class="pause pause--js">pause</button>
@@ -1019,6 +1049,12 @@
         </ul>
 
       </article>
+
+      <!-- Bootstrap -->
+      <article class="article">
+        <h3 class="article__class">Bootstrap - framework CSS i JS pozwalający na budowanie szybkie aplikacji, które nieźle wyglądają. Popularny, wiele szablonów Wordpressa jest budowany na Bootstrapoe. Zawiera w sobie dużo rzeczy, więc niektóre z nich są niepotrzebne. Czasem lepiej i łatwiej samemu napisać, niż korzystać z gotowców.</h3>
+      </article>
+
     </section>
     <!-- EO layout section -->
 
@@ -1067,11 +1103,17 @@
               class="article__code">console.log(a);</code> W tej sytuacji konsola wywali komunikat, że a jest
             niezdefiniowane ('Uncaught ReferenceError: a is not defined'). <code
               class="article__code">console.log(a); var a=7;</code> W tej sytuacji konsola nie wywali błędu, że a jest
-            niezdefiniowane, ale pokaże, że jest wartość 'undefined'. Najpierw jest odwołanie się do 'a', a dopiero później jest sama deklaracja. Pomimo tego, przeglądarka wie, że wartość 'a' została zadeklarowana - najpierw nastąpił hoisting, czyli odczytanie zmiennych - tak, jakby deklaracja zmiennej (bez jej wartości) były wywindowane na górę kodu.</li>
-            <li class="article__list-element">"Use strict" wstawione na początku kodu JS. Można użyć go wewnątrz bloku kodu - policjant pilnujący tego, co możemy używać. Naprawia dużo rzeczy, pilnuje składni i poprawności. Jest do optymalizacji i poprawiania doświadczeń developerskich.</li>
-            <li class="article__list-element">Destrukturyzacja - przykład zawarty w kodzie JS. Wyciągnięcie własności z obiektów lub tablic w prostszy sposób.
-             </li>
-             <li class="article__list-element">Spread operator - łączenie np. dwóch obiektów. Więcej w kodzie JS</li>
+            niezdefiniowane, ale pokaże, że jest wartość 'undefined'. Najpierw jest odwołanie się do 'a', a dopiero
+            później jest sama deklaracja. Pomimo tego, przeglądarka wie, że wartość 'a' została zadeklarowana - najpierw
+            nastąpił hoisting, czyli odczytanie zmiennych - tak, jakby deklaracja zmiennej (bez jej wartości) były
+            wywindowane na górę kodu.</li>
+          <li class="article__list-element">"Use strict" wstawione na początku kodu JS. Można użyć go wewnątrz bloku
+            kodu - policjant pilnujący tego, co możemy używać. Naprawia dużo rzeczy, pilnuje składni i poprawności. Jest
+            do optymalizacji i poprawiania doświadczeń developerskich.</li>
+          <li class="article__list-element">Destrukturyzacja - przykład zawarty w kodzie JS. Wyciągnięcie własności z
+            obiektów lub tablic w prostszy sposób.
+          </li>
+          <li class="article__list-element">Spread operator - łączenie np. dwóch obiektów. Więcej w kodzie JS</li>
         </ul>
       </article>
 
