@@ -128,6 +128,15 @@
           <li class="article__list-element"><a class="article__link" href="https://bennettfeely.com/clippy/">CSS
               clip-path makes</a></li>
         </ul>
+        <p class="article__content">Lista stron z darmowymi materiałami:</p>
+        <ul class="article__list">
+          <li class="article__list-element"><a class="article__link" href="https://undraw.co">undraw.co</a> Nie musimy podpisywać autora. Pobieramy i korzystamy. Dużo svg, więc można zmieniać kolorystykę.</li>
+          <li class="article__list-element"><a class="article__link" href="https://flaticon.co">flaticon.co</a> Można korzystać komercyjnie, ale wymaga to podpisu (np. w stopce).</li>
+          <li class="article__list-element"><a class="article__link" href="http://www.drawkit.io">drawkit.io</a></li>
+          <li class="article__list-element"><a class="article__link" href="http://unsplash.com">unsplash.com</a> Dość popularny. Ma dużo zdjęć.</li>
+          <li class="article__list-element"><a class="article__link" href="http://pixabay.com/pl/">pixabay.com/pl/</a></li>
+          <li class="article__list-element"><a class="article__link" href="https://ccsearcg.creativecommons.org">ccsearcg.creativecommons.org</a> Wyszukiwarka zdjęć na licencji creative commons. Bierze zdjęcia z różnych źródeł.</li>
+        </ul>
         <figure class="img-container">
           <img class="img-container__image" src="assets/img/grupy_polskojezyczne.jpg"
             alt="zrzut ekranu prezentujący linki do różnych grup związanych z frontendem">
@@ -268,7 +277,6 @@
           <li class="article__list-element">Zalogowanie się na stronie <a class="article__link"
               href="https://github.com/">github.com</a></li>
           <li class="article__list-element">Założenie nowego repozytorium
-            <ol class="article__list">
               <li class="article__list-element">Kliknięcie w button <code class="article__code">New</code></li>
               <li class="article__list-element">Wypełnienie podstawowych informacji: nazwa, opis, readme, etc.</li>
               <li class="article__list-element">Kliknięcie w button <code class="article__code">Create repository</code>
@@ -282,8 +290,22 @@
                   <li class="article__list-element"><code class="article__code">git push -u origin master</code></li>
                 </ol>
               </li>
-            </ol>
           </li>
+        </ol>
+        <p class="article__content">
+          Ustawianie github pages na user.github.io. Poniżej krótka instrukcja, jak to zrobić:
+        </p>
+        <ol class="article__list">
+          <li class="article__list-element">Założenie pustego repozytorium twojanazwa.github.io - dokładnie tak, jaki ma mieć adres strona, na którą będę wchodził: rafalpiekarski.github.io</li>
+          <li class="article__list-element">Sklonowanie repozytorium na komputer (w konsoli git clone + adres z klonowania repozytorium. Utworzy się katalog projektu.</li>
+          <li class="article__list-element">Wejście w terminalu do katalogu z projektem</li>
+          <li class="article__list-element">Zastosowanie polecenia: <code class="article__code">git checkout -b source</code>. Przejdziemy na branch o nazwie source.</li>
+          <li class="article__list-element">wgranie starterkita</li>
+          <li class="article__list-element">Zastosowanie polecenia: <code class="article__code">git push --set-upstream origin source</code> - wypychamy na brancha o nazwie source. Zwykłe git push pokaże, że nie mam ustawionego brancha na source. Dlatego muszę to zrobić powyższym poleceniem.</li>
+          <li class="article__list-element">Git add ., git commit -m, git push</li>
+          <li class="article__list-element">Ustawienie brancha source jako domyślnego na githubie. Z brancha master będziemy operować githubpages, a do github.io zostanie branch source. Wchodzimy w branches / wybieramy source / wybieramy update. Zostajemy na branchu source. Nie wracamy na branch master.</li>
+          <li class="article__list-element">Wyedytowanie package.json: <code class="article__code">"deploy": "gh-pages -d dist -b master"</code> Ponieważ domyślnie wrzuca to wszystko bna branch gh-pages, a chcemy aby wrzucił to na branch master.</li>
+          <li class="article__list-element">Mogę teraz utworzyć npm install, a później zobaczyć stronę za pomoca polecenia gulp. Mogę też uaktualnić stronę na githubie za pomocą polecenia npm run deploy.</li>
         </ol>
       </article>
 
@@ -473,6 +495,7 @@
           <li class="article__list-element">Wszedłem na adres strony na githubie: w simple-editor. Otwierając ten adres
             na telefonie, android zapyta sie, czy dodać aplikację do ekranu głównego. Mam już wtedy stronę w formie
             aplikacji na telefonie. Odpalając npm run deploy ona też się powinna zaktualizować (?).</li>
+            <li class="article__list-element">Wyłączenie PWA: w pliku JS od starterkita nalezy skasować kod zawarty między komentarzem //service worker...' oraz skasować w HTMLu linijkę 'link rel="manifest" href="manifest.json"'</li>
 
         </ul>
       </article>
@@ -710,13 +733,22 @@
           jeśli jest za długa.</p>
       </article>
 
-      <!-- Obrazy -->
+      <!-- Obrazy, ikony i licencje -->
       <article class="article">
-        <h3 class="article__title">Obrazy</h3>
+        <h3 class="article__title">Obrazy, ikony i licencje</h3>
         <ul class="article__list">
           <li class="article__list-element">Mając zdjęcia o różnych rozmiarach - można dać DIV (np. article__cover) i
-            dać mu sztywne wymiary, a IMG w środku z własnością <code class="article__code">object-fit: cover</code>.
-            Można też użyć <code class="article__code">order</code> dozmiany kolejności elementów na mobile</li>
+            dać mu sztywne wymiary, a IMG w środku z własnością <code class="article__code">object-fit: cover</code>. Można też użyć <code class="article__code">order</code> dozmiany kolejności elementów na mobile</li>
+            <li class="article__list-element"><a class="article__link" href="https://tldrlegal.com">tldrlegal.com</a> - strona, na której mogę łatwo sprawdzić, na czym polega dana licencja.</li>
+            <li class="article__list-element">Obrazy warto umieszczać 2x większe, niż zakładana wielkość - są ekrany o 2x większej gęstości pikseli.</li>
+        </ul>
+        <p class="article_-content">W liście poniżej znajdują się opisy tego, jak wykonać poprawnie ikonki Favicon.</p>
+        <ul class="article__list">
+          <li class="article__list-element">Nie ma jednego, uniwersalnego rozmiaru ikon.</li>
+          <li class="article__list-element">IOS Safari oczekuje ikon dotykowych. Obecnie oznacza to 180x180 PNG bez przeźroczystości. Deklaracja: <code class="article__code">link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png"</code></li>
+          <li class="article__list-element">Android Chrome opiera się na Web App Manifest. W WAM elementy są opisane za pomocą JSON. oczekuje 192x192 PNG z zachętą do przeźroczystości.</li>
+          <li class="article__list-element">MacOS nie ma favicona, ale wspiera monochromatyczne SVG z jednym kolorem. Deklaracja: <code class="article__code">link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5"</code></li>
+          <li class="article__list-element">Obecne przeglądarki desktopowe - kiedyś popularny był jeden plik favicon.ico - wciąż obsługiwany, ale może być wyświetlany niepoprawnie. Obecnie jednak raczej używane są ikony PNG, które są lżejsze. <code class="article__code"><br>link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png<br> link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png<br> link rel="shortcut icon" href="/icons/favicon.ico"</code></li>
         </ul>
       </article>
 
@@ -917,6 +949,14 @@
         <button class="play play--js">play</button>
         <button class="pause pause--js">pause</button>
         <button class="stop stop--js">pause</button>
+      </article>
+
+      <!-- źródła obrazów i licencje -->
+      <article class="article">
+        <h3 class="article__title">Źródła obrazów i licencje</h3>
+        <ul class="article__list">
+          <li class="article__list-element"></li>
+        </ul>
       </article>
 
     </section>
@@ -1239,7 +1279,7 @@
             Podstawowa pętla wystepująca w wielu jezykach programowania.</li>
           <li class="article__list-element"><code
               class="article__code">for (let i=0; i &lt; 3; i++) {console.log(` ${i} wykonanie pętli`};}</code></li>
-          <li class="article_-list-element"><code
+          <li class="article__list-element"><code
               class="article__code">const elements = ['preludium fundacji', 'narodziny fundacji', 'fundacja'];<br> for (let i=0; i &lt; elements.length; i++) {console.log('na miejscu ${i} jest ${element[i]};}</code>
             Pętli for możemy użyć do wypisania elementów tablicy</li>
         </ul>

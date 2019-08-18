@@ -338,7 +338,10 @@ html {
     padding: 1px 5px;
     color: black; }
     .article__link:hover {
-      background-color: #389797; }
+      background-color: #389797;
+      -webkit-transition: background-color .3s linear;
+      -o-transition: background-color .3s linear;
+      transition: background-color .3s linear; }
     .article__link--wrong {
       color: red; }
   .article__list {
@@ -470,8 +473,10 @@ body {
         display: none; } }
 
 .section {
+  -webkit-box-shadow: 4px 4px 10px #414141, -4px -4px 10px gray;
+          box-shadow: 4px 4px 10px #414141, -4px -4px 10px gray;
   padding: 40px;
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 800px; }
   .section__title {
     color: #353839;
