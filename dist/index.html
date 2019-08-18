@@ -277,7 +277,6 @@
           <li class="article__list-element">Zalogowanie się na stronie <a class="article__link"
               href="https://github.com/">github.com</a></li>
           <li class="article__list-element">Założenie nowego repozytorium
-            <ol class="article__list">
               <li class="article__list-element">Kliknięcie w button <code class="article__code">New</code></li>
               <li class="article__list-element">Wypełnienie podstawowych informacji: nazwa, opis, readme, etc.</li>
               <li class="article__list-element">Kliknięcie w button <code class="article__code">Create repository</code>
@@ -291,8 +290,20 @@
                   <li class="article__list-element"><code class="article__code">git push -u origin master</code></li>
                 </ol>
               </li>
-            </ol>
           </li>
+        </ol>
+        <p class="article__content">
+          Ustawianie github pages na user.github.io. Poniżej krótka instrukcja, jak to zrobić:
+        </p>
+        <ol class="article__list">
+          <li class="article__list-element">Założenie pustego repozytorium twojanazwa.github.io - dokładnie tak, jaki ma mieć adres strona, na którą będę wchodził: rafalpiekarski.github.io</li>
+          <li class="article__list-element">Sklonowanie repozytorium na komputer</li>
+          <li class="article__list-element">Wejście w terminalu do katalogu z projektem</li>
+          <li class="article__list-element">Zastosowanie polecenia: <code class="article__code">git checkout -b source</code></li>
+          <li class="article__list-element">wgranie starterkita</li>
+          <li class="article__list-element">Zastosowanie polecenia: <code class="article__code">git push --set-upstream origin source</code></li>
+          <li class="article__list-element">Ustawienie brancha source jako domyślnego na githubie</li>
+          <li class="article__list-element">Wyedytowanie package.json: <code class="article__code">"deploy": "gh-pages -d dist -b master"</code></li>
         </ol>
       </article>
 
